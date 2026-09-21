@@ -1,0 +1,98 @@
+[
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Business Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Data Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Systems Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Business Systems Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Product Owner\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Product Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Associate Product Manager\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Product Manager\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Financial Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Business Intelligence Analyst\" \"United States\" \"base salary\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Product Owner\" remote USA sponsorship",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "\"Product Owner\" hybrid USA \"$100,000\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "site:jobs.ashbyhq.com \"Product Owner\" \"United States\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "site:job-boards.greenhouse.io \"Product Owner\" \"United States\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "site:jobs.lever.co \"Product Owner\" \"United States\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  },
+  {
+    "checked_at": "2026-09-21T22:26:00Z",
+    "query": "site:apply.workable.com \"Product Owner\" \"United States\"",
+    "urls": [],
+    "outcome": "no_useful_current_employer_jd_results"
+  }
+]
