@@ -1,12 +1,12 @@
 # Daily job tracker
 
-Last collection: 2026-09-21T19:14:26+00:00
+Last collection: 2026-09-21T23:46:50+00:00
 
 **Target:** requested analyst/product titles; United States eligible; JD requires 2–5 years; full-time employee; employer-posted USD annual base range reaches at least $100,000.
 
 A disclosed range crossing $100,000 qualifies with a prominent caution. Current employer-JD evidence and a posting date within 30 days are required. Sponsorship silence remains “Not stated / needs confirmation,” never an inferred offer.
 
-**0 ready · 0 crossing-range caution · 3037 retained leads (including legacy history) · 61 discovered employer boards.** Collected leads are not qualifying jobs.
+**0 ready · 0 crossing-range caution · 3056 retained leads (including legacy history) · 61 discovered employer boards.** Collected leads are not qualifying jobs.
 
 ## Application queue
 
@@ -87,27 +87,27 @@ Public feeds have different coverage, delays and page limits. Counts include irr
 | himalayas_us_financial_analyst | 17 | 3 | Partial: further pages remain |
 | himalayas_us_business_intelligence_analyst | 51 | 3 | Partial: further pages remain |
 | Hacker News hiring announcements | 2 | 1 | Fetched available response; not a whole-internet census |
-| ashby:DeepL | 39 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:mattermost | 14 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:blackcanyonconsulting | 67 | 1 | Fetched available response; not a whole-internet census |
-| ashby:LatchBio | 16 | 1 | Fetched available response; not a whole-internet census |
-| lever:rai | 5 | 1 | Fetched available response; not a whole-internet census |
-| ashby:reframesystems | 43 | 1 | Fetched available response; not a whole-internet census |
-| ashby:Neon | 5 | 1 | Fetched available response; not a whole-internet census |
-| ashby:prior-labs | 24 | 1 | Fetched available response; not a whole-internet census |
-| ashby:checkly | 5 | 1 | Fetched available response; not a whole-internet census |
-| ashby:oscilar | 20 | 1 | Fetched available response; not a whole-internet census |
-| ashby:norm-ai | 19 | 1 | Fetched available response; not a whole-internet census |
-| ashby:colonist | 7 | 1 | Fetched available response; not a whole-internet census |
-| ashby:livekit | 33 | 1 | Fetched available response; not a whole-internet census |
-| ashby:deeter-analytics | 7 | 1 | Fetched available response; not a whole-internet census |
-| ashby:permitflow | 44 | 1 | Fetched available response; not a whole-internet census |
-| ashby:langfuse | 0 | 1 | Fetched available response; not a whole-internet census |
-| ashby:anterior | 5 | 1 | Fetched available response; not a whole-internet census |
-| lever:caseware | 53 | 1 | Fetched available response; not a whole-internet census |
-| lever:sugarcrm | 14 | 1 | Fetched available response; not a whole-internet census |
-| ashby:dualentry | 75 | 1 | Fetched available response; not a whole-internet census |
-| ashby:1password | 63 | 1 | Fetched available response; not a whole-internet census |
+| ashby:hiya | 20 | 1 | Fetched available response; not a whole-internet census |
+| ashby:artificialanalysis | 19 | 1 | Fetched available response; not a whole-internet census |
+| ashby:sentilink | 56 | 1 | Fetched available response; not a whole-internet census |
+| ashby:Mastra | 2 | 1 | Fetched available response; not a whole-internet census |
+| ashby:turquoise-health | 16 | 1 | Fetched available response; not a whole-internet census |
+| ashby:close | 7 | 1 | Fetched available response; not a whole-internet census |
+| ashby:everis | 2 | 1 | Fetched available response; not a whole-internet census |
+| lever:termgrid | 5 | 1 | Fetched available response; not a whole-internet census |
+| ashby:lingodotdev | 3 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:yipitdatajobs | 54 | 1 | Fetched available response; not a whole-internet census |
+| ashby:bio | 11 | 1 | Fetched available response; not a whole-internet census |
+| ashby:infisical | 10 | 1 | Fetched available response; not a whole-internet census |
+| ashby:fathom.video | 4 | 1 | Fetched available response; not a whole-internet census |
+| ashby:asteriAI | 5 | 1 | Fetched available response; not a whole-internet census |
+| ashby:hirehangar | 110 | 1 | Fetched available response; not a whole-internet census |
+| ashby:coperniq | 1 | 1 | Fetched available response; not a whole-internet census |
+| lever:gohighlevel | 104 | 1 | Fetched available response; not a whole-internet census |
+| lever:caseware. | 0 | 1 | HTTP Error 404: Not Found |
+| ashby:pragmatike | 85 | 1 | Fetched available response; not a whole-internet census |
+| ashby:ravenna | 7 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:particle41llc | 26 | 1 | Fetched available response; not a whole-internet census |
 | greenhouse:anthropic | 617 | 1 | Fetched available response; not a whole-internet census |
 | ashby:smarkets | 8 | 1 | Fetched available response; not a whole-internet census |
 | ashby:stream | 8 | 1 | Fetched available response; not a whole-internet census |
@@ -128,11 +128,7 @@ Public feeds have different coverage, delays and page limits. Counts include irr
 | ashby:productgenius | 1 | 1 | Fetched available response; not a whole-internet census |
 | ashby:tolmo | 0 | 1 | Fetched available response; not a whole-internet census |
 
-Earlier employer-board failures awaiting recheck (not scanned in this pass):
-
-- lever:caseware.: HTTP Error 404: Not Found (last attempt: 2026-09-21T18:26:30+00:00).
-
-Employer-link discovery: 20 pages inspected; 17 could not be fetched. Blocked pages require another public source or browser verification.
+Employer-link discovery: 20 pages inspected; 16 could not be fetched. Blocked pages require another public source or browser verification.
 
 ## Discovery sources
 
