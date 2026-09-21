@@ -1,0 +1,38 @@
+{
+  "policy_version": "us-analyst-product-v1",
+  "checked_at": "2026-09-21T22:26:00Z",
+  "workflow": {
+    "name": "Daily job collection",
+    "expected_event": "schedule",
+    "expected_after": "2026-09-21T22:00:00Z",
+    "bounded_wait_ended_at": "2026-09-21T22:25:00Z",
+    "status": "missing_or_delayed",
+    "observed_scheduled_run_url": null,
+    "last_completed_run_url": "https://github.com/pdokka/job-search-tracker/actions/runs/35643535283",
+    "last_completed_event": "push",
+    "last_completed_generated_at": "2026-09-21T19:15:09.261061+00:00",
+    "last_completed_commands": {
+      "tests": "success",
+      "refresh": "success",
+      "render": "success"
+    },
+    "last_completed_successful_primary_sources": 17,
+    "last_completed_discovery_health": {
+      "inspected": 20,
+      "errors": 17
+    },
+    "treated_as_fresh": false
+  },
+  "discovery": {
+    "required_queries": 16,
+    "executed_queries": 16,
+    "useful_current_employer_jds": 0,
+    "qualifying_reviews": 0,
+    "notes": "Search results did not surface a current original employer JD that could support every policy gate. No lead was promoted or counted."
+  },
+  "publication": {
+    "baseline_written": false,
+    "ledger_advanced": false,
+    "reason": "The authoritative scheduled collection did not start within the bounded wait; the earlier push collection was not substituted as a fresh scheduled run."
+  }
+}
