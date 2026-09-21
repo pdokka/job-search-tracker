@@ -198,6 +198,36 @@ class ReportingTests(unittest.TestCase):
             with self.assertRaises(OSError): t.publish_report(state, baseline=True)
         self.assertEqual(state['reporting']['reported_keys'], [])
 
+    def test_review_queue_ignores_legacy_engineering_hints(self):
+        legacy = fixture('Software Engineer', 'https://example.com/legacy')
+        legacy.update(queue='Needs verification', hints={'score': 999}, first_seen='2026-09-01')
+        current = fixture('Data Analyst', 'https://example.com/new')
+        current.update(queue='Needs verification', hints={'score': -999}, first_seen='2026-09-21')
+        state = {'jobs': {legacy['id']: legacy, current['id']: current}}
+        self.assertEqual([j['id'] for j in t.review_candidates(state)], [current['id']])
+
+    def test_retry_preserves_closed_rows_and_original_timestamp(self):
+        job = fixture()
+        state = self.state([job])
+        with mock.patch.object(t, 'now', return_value='2026-09-21T12:00:00Z'):
+            report = t.publish_report(state, day='2026-09-21')
+        original = report.read_text()
+        job['queue'] = 'Closed'
+        with mock.patch.object(t, 'now', return_value='2026-09-21T16:00:00Z'):
+            self.assertEqual(t.publish_report(state, day='2026-09-21').read_text(), original)
+
+    def test_baseline_retry_does_not_consume_later_matches(self):
+        first = fixture()
+        state = self.state([first])
+        baseline = t.publish_report(state, baseline=True)
+        original = baseline.read_text()
+        second = fixture(url='https://example.com/later')
+        second['queue'] = 'Ready'
+        state['jobs'][second['id']] = second
+        self.assertEqual(t.publish_report(state, baseline=True).read_text(), original)
+        daily = t.publish_report(state, day='2026-09-22')
+        self.assertIn(second['url'], daily.read_text())
+
 
 if __name__ == '__main__':
     unittest.main()
