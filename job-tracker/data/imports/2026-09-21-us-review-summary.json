@@ -1,0 +1,26 @@
+{
+  "policy_version": "us-analyst-product-v1",
+  "reviewed_at": "2026-09-21T23:57:41+00:00",
+  "collector_run_url": "https://github.com/pdokka/job-search-tracker/actions/runs/35669080015",
+  "qualifying_count": 3,
+  "ready_count": 2,
+  "caution_count": 1,
+  "job_urls": [
+    "https://jobs.ashbyhq.com/dualentry/96260064-9fce-4f55-b0c3-a00e280565b7",
+    "https://highmarkhealth.wd1.myworkdayjobs.com/en-US/highmark/job/Product-Manager---Wellness-and-Social-Health_J287162-1",
+    "https://jobs.ashbyhq.com/dualentry/962286b2-e09f-4279-84af-878df16732a5"
+  ],
+  "offline_commands": {
+    "import": "success",
+    "review": "success",
+    "render": "success",
+    "baseline_generation": "success"
+  },
+  "durable_persistence": {
+    "discoveries": "saved",
+    "reviews": "saved",
+    "generated_state_and_reporting_ledger": "not_saved",
+    "reason": "The supported GitHub connector could save the dated evidence files, but the generated state file is approximately 20 MB and could not be transferred through the available write path. The unauthenticated git push was rejected.",
+    "baseline_claimed_published": false
+  }
+}
