@@ -3,7 +3,8 @@ name: Daily job collection
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 17 * * *'
+    # Avoid the top-of-hour Actions scheduling peak; the Work task polls for 25 minutes.
+    - cron: '7 17 * * *'
       timezone: America/Chicago
   push:
     branches: [main, setup/daily-cloud-run]
