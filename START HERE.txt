@@ -1,53 +1,23 @@
-YOUR LOCAL JOB TRACKER
+JOB SEARCH TRACKER — START HERE
 
-Everything lives in /Users/dheeraj/Job Search.
-A shortcut to this folder is on your Desktop.
+Read job-tracker/MASTER-QUALIFYING.md for all current evidence-reviewed matches.
+Read job-tracker/TRACKER.md for queues, missing evidence, and source failures.
 
-OPEN RESULTS
-Double-click Open Results.command. It opens Latest Results.txt in TextEdit.
-Ready roles appear first, followed by reviewed leads and their missing evidence.
+Run checks:
+  .venv/bin/python3 run.py check --no-open
 
-REFRESH NOW
-Double-click Run Tracker.command. Leave its window open while it collects jobs.
-The latest results open when it finishes. Public sources can take a few minutes.
-Repeated runs reuse recent responses to respect source limits.
+Collect leads (collection only, not evidence review):
+  .venv/bin/python3 run.py refresh --no-open
 
-DAILY FULL REVIEW
-The existing Codex task “Daily verified job tracker” runs at 9:00am India time.
-It collects sources, searches for more jobs, checks employer evidence, and updates
-this same tracker. Leave the Mac awake with internet and Codex running.
-You can manage or run that task from Scheduled in Codex, or ask in the existing
-conversation: “Run the full job review using /Users/dheeraj/Job Search.”
+Re-render without publishing:
+  .venv/bin/python3 run.py open --no-open
 
-The double-click refresh collects leads. It does not independently run AI/web
-search or certify salaries. That evidence review is performed by the Codex task.
-No applications are submitted automatically.
+After the separate ChatGPT Work task imports current employer-JD evidence, create the
+initial baseline once with `run.py baseline --no-open`; use `run.py publish --no-open`
+for later new-only daily reports.
 
-YOUR FILTERS
-Hyderabad or verified India-eligible remote. Suitable for 1–2 years.
-Above ₹20L annual guaranteed base; ₹17–20L in the caution queue.
-Remote contracts require a documented term of at least 12 months.
-Employer posting within 30 days, or a dated recent active-hiring signal.
-Estimated salaries, US-only pay and repost dates do not count as proof.
+Target: requested analyst/product titles, explicitly US eligible, 2–5 required years,
+full-time employee, current JD within 30 days, and USD annual base reaching $100,000.
+Crossing ranges are cautions. Sponsorship silence is “Not stated / needs confirmation.”
 
-IF SOMETHING FAILS
-Double-click Check Setup.command. Run logs are in logs/.
-Source failures remain visible in the results; an incomplete fetch is not a
-successful whole-internet search. The last saved records are retained.
-Before collection/import/review changes, compressed state backups are made in
-backups/. The latest 14 are retained. An overlapping tracker run is blocked.
-
-FILES
-Latest Results.txt — readable current results (generated; do not edit).
-job-tracker/TRACKER.md — detailed tracker.
-job-tracker/data/state.json — all collected jobs and evidence.
-job-tracker/RUNBOOK.md — daily review instructions.
-job-tracker/RUN-2026-09-21.md — the latest detailed search report.
-job-tracker/WEEKLY.md — Monday's summary of the previous seven days.
-
-Python is already available on this Mac. The tracker uses its standard library;
-no paid service, extra package, API key, or IDE is needed. Keep this folder at
-its current path because the daily task and Python environment use that path.
-
-Scheduled-task requirements:
-https://learn.chatgpt.com/docs/automations?surface=app
+The tracker never applies or contacts anyone.

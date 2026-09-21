@@ -1,0 +1,21 @@
+name: Tracker checks
+on:
+  pull_request:
+  push:
+    branches: [codex/run-smoke-test-for-job-search-tracker]
+    paths:
+      - '.github/workflows/checks.yml'
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m venv .venv
+      - run: .venv/bin/python3 run.py check --no-open
+      - run: .venv/bin/python3 -m py_compile run.py job-tracker/tracker.py
