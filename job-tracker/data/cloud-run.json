@@ -1,8 +1,15 @@
 {
-  "generated_at": "2026-09-21T18:27:40+00:00",
-  "ready_ids": [
-    "cd3bfb05f0e5c3d18ecf1e44"
-  ],
+  "generated_at": "2026-09-21T18:27:41.093355+00:00",
+  "run_url": "https://github.com/pdokka/job-search-tracker/actions/runs/35638375968",
+  "code_sha": "f8576e671205bb0804156d2646d67076b7c6448b",
+  "status": "collected",
+  "scope": "Collection only; employer evidence review is a separate ChatGPT task.",
+  "commands": {
+    "TEST_RESULT": "success",
+    "REFRESH_RESULT": "success",
+    "RENDER_RESULT": "success"
+  },
+  "last_collection": "2026-09-21T18:26:30+00:00",
   "counts": {
     "Needs verification": 2895,
     "Ready": 1,
@@ -10,7 +17,8 @@
     "Below floor / negotiate": 1,
     "Closed": 2
   },
-  "health": [
+  "successful_primary_sources": 9,
+  "source_health": [
     {
       "source": "remotive",
       "checked_at": "2026-09-21T18:26:30+00:00",
@@ -379,5 +387,10 @@
       "cached_pages": 0,
       "error": null
     }
-  ]
+  ],
+  "discovery_health": {
+    "checked_at": "2026-09-21T18:26:56+00:00",
+    "inspected": 20,
+    "errors": 11
+  }
 }
