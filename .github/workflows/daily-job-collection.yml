@@ -1,0 +1,120 @@
+name: Daily job collection
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 17 * * *'
+      timezone: America/Chicago
+  push:
+    branches: [main, setup/daily-cloud-run]
+    paths: ['.github/workflows/daily-job-collection.yml']
+
+concurrency:
+  group: daily-job-collection
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore source response cache
+        uses: actions/cache@v4
+        with:
+          path: job-tracker/data/cache
+          key: job-sources-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            job-sources-${{ github.ref_name }}-
+      - name: Prepare Python
+        run: python3 -m venv .venv
+      - name: Run regression checks
+        id: tests
+        run: .venv/bin/python3 run.py check --no-open
+      - name: Collect public job sources
+        id: refresh
+        run: .venv/bin/python3 run.py refresh --no-open
+      - name: Render results
+        id: render
+        run: .venv/bin/python3 run.py open --no-open
+      - name: Record actual run status
+        if: always()
+        env:
+          TEST_RESULT: ${{ steps.tests.outcome }}
+          REFRESH_RESULT: ${{ steps.refresh.outcome }}
+          RENDER_RESULT: ${{ steps.render.outcome }}
+        run: |
+          .venv/bin/python3 - <<'PY'
+          import collections, datetime, json, os, pathlib
+          root = pathlib.Path('job-tracker')
+          state = json.loads((root/'data/state.json').read_text())
+          health = state.get('health', [])
+          outcomes = {k: os.environ[k] for k in ('TEST_RESULT','REFRESH_RESULT','RENDER_RESULT')}
+          collected = outcomes['REFRESH_RESULT'] == 'success'
+          primary = {'remotive','remoteok','arbeitnow','jobicy','himalayas','himalayas_india','himalayas_junior','wwr','Hacker News hiring announcements'}
+          live = [h for h in health if h.get('source') in primary and not h.get('error')] if collected else []
+          ok = all(v == 'success' for v in outcomes.values()) and bool(live)
+          report = {
+              'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              'run_url': f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}",
+              'code_sha': os.environ['GITHUB_SHA'],
+              'status': 'collected' if ok else 'failed',
+              'scope': 'Collection only; employer evidence review is a separate ChatGPT task.',
+              'commands': outcomes,
+              'last_collection': state.get('last_refresh'),
+              'counts': dict(collections.Counter(j.get('queue','unknown') for j in state['jobs'].values())),
+              'successful_primary_sources': len(live),
+              'source_health': health if collected else [],
+              'discovery_health': state.get('discovery_health') if collected else None,
+          }
+          (root/'data/cloud-run.json').write_text(json.dumps(report, indent=2)+'\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+              out.write(f"# Job collection: {report['status']}\n\n")
+              out.write(f"Successful primary sources: {len(live)}\n\n")
+              out.write(report['scope']+'\n')
+          PY
+      - name: Save reports as run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-collection-${{ github.run_id }}
+          retention-days: 30
+          path: |
+            Latest Results.txt
+            job-tracker/TRACKER.md
+            job-tracker/data/cloud-run.json
+            job-tracker/data/daily/
+            logs/
+      - name: Preserve collection state in pdokka's fork
+        if: always() && github.ref == 'refs/heads/main' && steps.tests.outcome == 'success' && steps.refresh.outcome == 'success' && steps.render.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add job-tracker/data/state.json job-tracker/data/daily/ job-tracker/data/cloud-run.json job-tracker/TRACKER.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update cloud job collection results"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Fail when collection could not reach any primary source
+        if: always()
+        run: |
+          .venv/bin/python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('job-tracker/data/cloud-run.json').read_text())
+          if report['status'] != 'collected':
+              raise SystemExit('Collection failed; inspect cloud-run.json and the run logs.')
+          for item in report['source_health']:
+              if item.get('error'):
+                  print(f"::warning::{item['source']}: {item['error']}")
+          PY
