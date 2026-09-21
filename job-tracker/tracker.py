@@ -6,6 +6,7 @@ Run: python3 tracker.py refresh | render | baseline | publish | queries | import
 """
 import argparse
 import concurrent.futures
+import copy
 import datetime as dt
 import email.utils
 import fcntl
@@ -525,15 +526,20 @@ def publish_report(state, baseline=False, day=None):
     key = 'baseline' if baseline else day
     directory = DATA / 'reports'
     target = directory / ('BASELINE.md' if baseline else day + '.md')
-    previous_ids = reporting.get('publications', {}).get(key, {}).get('ids', [])
-    if target.exists() and previous_ids:
-        previous = {j['id']: j for j in all_jobs if j['id'] in previous_ids}
+    publication = reporting.get('publications', {}).get(key, {})
+    if baseline and publication and target.exists():
+        return target
+    previous_ids = publication.get('ids', [])
+    if previous_ids:
+        previous = {j['id']: j for j in publication.get('jobs', [])}
+        previous.update({j['id']: j for j in all_jobs
+                         if j['id'] in previous_ids and j['id'] not in previous})
         previous.update({j['id']: j for j in jobs})
         jobs = sorted(previous.values(), key=lambda j: (posted_value(j) is None,
                       -(date(posted_value(j)).timestamp() if date(posted_value(j)) else 0),
                       j.get('company', '').casefold()))
     heading = '# Initial qualifying-job baseline' if baseline else '# New qualifying jobs — ' + day
-    lines = [heading, '', 'Published: ' + now(), '',
+    lines = [heading, '', 'Published: ' + publication.get('published_at', now()), '',
              '**Evidence-reviewed matches: ' + str(len(jobs)) + '.**', '']
     if not baseline:
         shortfall = max(0, 15 - len(jobs))
@@ -548,10 +554,21 @@ def publish_report(state, baseline=False, day=None):
     published_keys = set().union(*(report_keys(j) for j in jobs)) if jobs else set()
     reporting['reported_keys'] = sorted(reported | published_keys)
     reporting.setdefault('publications', {})[key] = {
-        'published_at': now(), 'path': str(target.relative_to(ROOT)),
+        'published_at': publication.get('published_at', now()), 'path': str(target.relative_to(ROOT)),
         'ids': [j['id'] for j in jobs], 'count': len(jobs), 'baseline': baseline,
+        'jobs': [copy.deepcopy({k: j[k] for k in ('id', 'company', 'title', 'url', 'aliases', 'review', 'queue') if k in j}) for j in jobs],
     }
     return target
+
+def review_candidates(state):
+    candidates = []
+    for job in state['jobs'].values():
+        if job.get('queue') != 'Needs verification' or not software(job.get('title', '')):
+            continue
+        job['hints'] = hints(job)
+        candidates.append(job)
+    return sorted(candidates, key=lambda j: (j['hints']['score'],
+                  j.get('first_seen', '')), reverse=True)
 
 def render(state):
     groups = {}
@@ -563,7 +580,7 @@ def render(state):
         j['queue'] = group; j['reasons'] = reasons
         groups.setdefault(group, []).append(j)
     eligible = groups.get('Ready', []) + groups.get('Caution: range crosses $100k', [])
-    lines = ['# Daily job tracker', '', 'Last collection: ' + state.get('last_refresh','Not run'), '', '**Target:** requested analyst/product titles; United States eligible; JD requires 2–5 years; full-time employee; employer-posted USD annual base range reaches at least $100,000.', '', 'A disclosed range crossing $100,000 qualifies with a prominent caution. Current employer-JD evidence and a posting date within 30 days are required. Sponsorship silence remains “Not stated / needs confirmation,” never an inferred offer.', '', f"**{len(groups.get('Ready', []))} ready · {len(groups.get('Caution: range crosses $100k', []))} crossing-range caution · {len(state['jobs'])} collected target-role leads · {len(state['boards'])} discovered employer boards.** Collected leads are not qualifying jobs.", '']
+    lines = ['# Daily job tracker', '', 'Last collection: ' + state.get('last_refresh','Not run'), '', '**Target:** requested analyst/product titles; United States eligible; JD requires 2–5 years; full-time employee; employer-posted USD annual base range reaches at least $100,000.', '', 'A disclosed range crossing $100,000 qualifies with a prominent caution. Current employer-JD evidence and a posting date within 30 days are required. Sponsorship silence remains “Not stated / needs confirmation,” never an inferred offer.', '', f"**{len(groups.get('Ready', []))} ready · {len(groups.get('Caution: range crosses $100k', []))} crossing-range caution · {len(state['jobs'])} retained leads (including legacy history) · {len(state['boards'])} discovered employer boards.** Collected leads are not qualifying jobs.", '']
     lines += ['## Application queue', '']
     if not eligible: lines += ['No role currently clears every evidence gate. See reviewed leads below; missing evidence is not filled with assumptions.', '']
     for group in QUALIFYING_QUEUES:
@@ -603,7 +620,7 @@ def render(state):
         job = state['jobs'].get(event.get('id'), {})
         changes.append(f"| {cell(event.get('at'))} | [{cell(job.get('title') or event.get('id'))}]({job.get('url', '')}) | {cell(event.get('from'))} | {cell(event.get('to'))} | {cell('; '.join(event.get('reasons', [])))} |")
     (ROOT/'CHANGES.md').write_text('\n'.join(changes) + '\n', encoding='utf-8')
-    pending = sorted((j for j in state['jobs'].values() if j['queue']=='Needs verification'), key=lambda j:(bool(j.get('review')),j['hints']['score'],j['first_seen']), reverse=True)
+    pending = review_candidates(state)
     write(DATA/'review-queue.json', [{k:v for k,v in j.items() if k != 'text'} for j in pending[:200]])
     stamp = dt.datetime.now(UTC).strftime('%Y-%m-%d')
     write(DATA/'daily'/f'{stamp}.json', {'generated_at':now(),'qualifying_ids':[j['id'] for j in eligible], 'counts':{k:len(v) for k,v in groups.items()}, 'health':state.get('health',[])})
