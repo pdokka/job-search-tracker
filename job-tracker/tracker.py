@@ -2,7 +2,7 @@
 """Personal job discovery. Public feeds collect leads; evidence reviews qualify jobs.
 
 No dependencies, private API keys, logins, applications, or outbound messages.
-Run: python3 tracker.py refresh | render | queries | import FILE | review FILE
+Run: python3 tracker.py refresh | render | baseline | publish | queries | import FILE | review FILE
 """
 import argparse
 import concurrent.futures
@@ -26,16 +26,27 @@ import xml.etree.ElementTree as ET
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / 'data'
 UTC = dt.timezone.utc
-UA = 'DheerajJobTracker/1.0 (personal job research; daily refresh)'
+UA = 'DheerajJobTracker/2.0 (personal job research; daily refresh)'
+POLICY_VERSION = 'us-analyst-product-v1'
+TARGET_TITLES = (
+    'Business Analyst', 'Data Analyst', 'Systems Analyst',
+    'Business Systems Analyst', 'Product Owner', 'Product Analyst',
+    'Associate Product Manager', 'Product Manager', 'Financial Analyst',
+    'Business Intelligence Analyst',
+)
+HIMALAYAS_US_FEEDS = {
+    'himalayas_us_' + re.sub(r'\W+', '_', title.casefold()).strip('_'):
+        'https://himalayas.app/jobs/api/search?country=US&q=' + up.quote(title) + '&sort=recent&page=1'
+    for title in TARGET_TITLES
+}
 FEEDS = {
     'remotive': 'https://remotive.com/api/remote-jobs',
     'remoteok': 'https://remoteok.com/api',
     'arbeitnow': 'https://www.arbeitnow.com/api/job-board-api',
     'jobicy': 'https://jobicy.com/api/v2/remote-jobs?count=100',
     'himalayas': 'https://himalayas.app/jobs/api?limit=20',
-    'himalayas_india': 'https://himalayas.app/jobs/api/search?country=IN&q=engineer&sort=recent&page=1',
-    'himalayas_junior': 'https://himalayas.app/jobs/api/search?country=IN&seniority=Entry-level&q=developer&page=1',
     'wwr': 'https://weworkremotely.com/remote-jobs.rss',
+    **HIMALAYAS_US_FEEDS,
 }
 
 def now():
@@ -121,7 +132,18 @@ def linked_boards(text):
     return {(kind, slug) for kind, pattern in patterns for slug in re.findall(pattern, text)}
 
 def software(title):
-    return bool(re.search(r'engineer|developer|programmer|\bsde\b|\bsre\b|devops|data scientist|quality assurance|\bqa\b', title, re.I))
+    """Return whether a title is one of the requested roles.
+
+    The historical function name is retained because saved collection code and
+    collaborators import it. Senior/lead variants are excluded. "Manager" is
+    not a generic negative because Product Manager is itself a target title.
+    """
+    normalized = re.sub(r'[^a-z0-9]+', ' ', str(title or '').casefold()).strip()
+    if re.search(r'\b(?:senior|sr|lead|principal|staff|director|head|vp|vice president)\b', normalized):
+        return False
+    targets = tuple(re.sub(r'[^a-z0-9]+', ' ', t.casefold()).strip() for t in TARGET_TITLES)
+    return any(re.search(r'(?<![a-z0-9])' + re.escape(target) + r'(?![a-z0-9])', normalized)
+               for target in targets)
 
 def hints(job):
     text = job.get('text', '')
@@ -129,17 +151,17 @@ def hints(job):
     years = re.findall(r'.{0,45}\b[0-9]+(?:\s*[-–]\s*[0-9]+)?\+?\s*(?:years|yrs).{0,80}', text, re.I)
     money = re.findall(r'.{0,45}(?:₹|\$|€|£|\bINR\b|\bUSD\b|\bLPA\b|salary|compensation|base pay).{0,150}', text, re.I)
     score = 0
-    if re.search(r'hyderabad|\bindia\b|worldwide|anywhere|global|apac', loc, re.I): score += 6
+    if re.search(r'\b(?:united states|u\.?s\.?a?|us)\b', loc, re.I): score += 6
     elif re.search(r'remote', loc, re.I): score += 1
     elif loc: score -= 8
-    if re.search(r'\b[012](?:\s*[-–]\s*\d+)?\+?\s*(years|yrs)|junior|early career|new grad', text + ' ' + job['title'], re.I): score += 4
+    if re.search(r'\b[2-5](?:\s*[-–]\s*[2-5])?\+?\s*(years|yrs)', text + ' ' + job['title'], re.I): score += 4
     advertised = job.get('advertised_pay')
     numeric_pay = bool(re.search(r'[$₹€£]\s*[\d,.]+|\b\d[\d,.]*\s*(?:LPA|lakhs?|USD|INR)', text, re.I))
     if isinstance(advertised, dict): numeric_pay |= bool(advertised.get('min') or advertised.get('max'))
     elif advertised: numeric_pay |= bool(re.search(r'\d', str(advertised)))
     if numeric_pay: score += 3
-    if re.search(r'principal|staff|director|manager', job['title'], re.I): score -= 8
-    if re.search(r'\b[5-9]\+? years', text, re.I): score -= 2
+    if re.search(r'\b(?:senior|sr|lead|principal|staff|director)\b', job['title'], re.I): score -= 8
+    if re.search(r'\b(?:6|[7-9]|\d{2,})\+? years', text, re.I): score -= 2
     return {'score': score, 'experience_clues': years[:8], 'salary_clues': money[:8]}
 
 def record(company, title, url, location='', text='', posted=None, **kw):
@@ -244,16 +266,36 @@ def merge(state, job, source, stamp):
     return key
 
 def validate_review(r):
-    required = ('url', 'checked_at', 'evidence_url', 'evidence', 'page_state', 'location_fit', 'experience_fit', 'employment', 'pay_kind', 'pay_min', 'pay_max', 'currency', 'period')
+    required = ('url', 'checked_at', 'evidence_url', 'evidence', 'page_state',
+                'policy_version', 'evidence_source', 'title_fit', 'location_fit', 'experience_fit',
+                'experience_min', 'experience_max', 'employment', 'full_time',
+                'pay_kind', 'pay_min', 'pay_max', 'currency', 'period',
+                'employer_posted', 'sponsorship_status', 'quotes')
     for k in required:
         if k not in r: raise ValueError('Review missing ' + k)
     canonical(r['url']); canonical(r['evidence_url'])
     if r['pay_min'] is not None and (r['pay_min'] < 0 or r['pay_max'] is not None and r['pay_min'] > r['pay_max']):
         raise ValueError('Invalid salary range')
-    for k in ('pay', 'location', 'experience', 'freshness', 'employment'):
+    if r['policy_version'] != POLICY_VERSION:
+        raise ValueError('Review policy_version must be ' + POLICY_VERSION)
+    if r['evidence_source'] != 'employer_jd':
+        raise ValueError('Every qualification dimension must use the current employer JD')
+    if r['sponsorship_status'] not in ('offered', 'not_stated', 'conditional', 'not_offered', 'restricted'):
+        raise ValueError('Invalid sponsorship_status')
+    if r['sponsorship_status'] == 'conditional' and not r.get('sponsorship_conditions'):
+        raise ValueError('Conditional sponsorship requires sponsorship_conditions')
+    if r['employment'] not in ('employee', 'permanent', 'contract', 'temporary', 'internship', 'part_time', 'unknown'):
+        raise ValueError('Invalid employment')
+    if r['currency'] not in ('USD', None):
+        raise ValueError('US policy reviews must use USD or null currency')
+    if r['pay_kind'] not in ('base', 'salary_unsplit', 'total_comp', 'unknown'):
+        raise ValueError('Invalid pay_kind')
+    for k in ('title', 'pay', 'location', 'experience', 'freshness', 'employment', 'sponsorship'):
         if not r['evidence'].get(k): raise ValueError('Missing evidence explanation: ' + k)
     if sum(len(x.split()) for x in r.get('quotes', {}).values()) > 25:
         raise ValueError('Use short exact excerpts (25 words maximum per posting); paraphrase evidence')
+    if not any(str(x).strip() for x in r['quotes'].values()):
+        raise ValueError('Preserve at least one short exact excerpt from the current employer JD')
 
 def classify(job, today=None):
     r = job.get('review') or {}
@@ -261,36 +303,43 @@ def classify(job, today=None):
         return 'Closed', ['Employer posting explicitly closed or removed']
     if not r: return 'Needs verification', ['Unreviewed discovery; salary, country and experience are not yet evidence']
     reasons = []
+    if r.get('policy_version') != POLICY_VERSION:
+        return 'Needs verification', ['Review predates the current US analyst/product policy; new employer-JD evidence is required']
+    if r.get('evidence_source') != 'employer_jd':
+        return 'Needs verification', ['Current employer JD evidence is required for every qualification dimension']
     if age(r.get('checked_at'), today) > 7 or r.get('needs_recheck'): reasons.append('Evidence needs a fresh check')
     if age(job.get('check', {}).get('checked_at'), today) <= 2 and job.get('check', {}).get('state') in ('blocked', 'error'):
         reasons.append('Current page could not be verified')
     if r.get('page_state') != 'open': reasons.append('Active application page unconfirmed')
-    if r.get('location_fit') is False or r.get('experience_fit') is False:
-        return 'Excluded', ['Location or required experience does not fit']
-    if r.get('location_fit') is not True: reasons.append('India eligibility or Hyderabad location unconfirmed')
-    if r.get('experience_fit') is not True: reasons.append('1–2-year eligibility unconfirmed')
+    if not software(job.get('title', '')) or r.get('title_fit') is False:
+        return 'Excluded', ['Title is outside the requested analyst/product roles or is senior/lead']
+    if r.get('title_fit') is not True: reasons.append('Requested title fit is unconfirmed')
+    if r.get('location_fit') is False:
+        return 'Excluded', ['Role is not explicitly eligible in the United States']
+    if r.get('location_fit') is not True: reasons.append('Explicit United States eligibility is unconfirmed')
+    if r.get('experience_fit') is False:
+        return 'Excluded', ['Required experience is outside the accepted 2–5 year range']
+    exp_min, exp_max = r.get('experience_min'), r.get('experience_max')
+    if (r.get('experience_fit') is not True or not isinstance(exp_min, (int, float))
+            or not 2 <= exp_min <= 5 or (exp_max is not None and exp_max > 5)):
+        reasons.append('Employer JD must establish required experience in the accepted 2–5 year range')
     fresh = 0 <= age(r.get('employer_posted'), today) <= 30
-    active = 0 <= age(r.get('active_signal_date'), today) <= 30 and bool(r.get('active_signal_url'))
-    if not (fresh or active): reasons.append('No employer posting date or dated hiring signal within 30 days')
-    if r.get('employment') == 'contract':
-        if not r.get('remote_confirmed') or (r.get('contract_months') or 0) < 12:
-            reasons.append('Remote contract of at least 12 months unconfirmed')
-    elif r.get('employment') not in ('permanent','employee'): reasons.append('Employment type unconfirmed')
-    if r.get('pay_kind') not in ('base', 'guaranteed_cash'): reasons.append('Guaranteed base/cash is not established by the posting')
-    if r.get('pay_applies_to_india') is not True: reasons.append('Published salary applicability to India unconfirmed')
-    annual = None
-    if r.get('pay_min') is not None and r.get('period') in ('year', 'month'):
-        fx = 1 if r.get('currency') == 'INR' else r.get('fx_rate')
-        if r.get('currency') != 'INR' and (not fx or age(r.get('fx_date'), today) > 7 or not r.get('fx_source')):
-            reasons.append('Fresh currency conversion missing')
-        elif fx:
-            annual = r['pay_min'] * fx * (12 if r['period'] == 'month' else 1)
-    else: reasons.append('No annual/monthly guaranteed salary floor; hourly rates are not annual base')
-    if annual is not None and annual < 1_700_000:
-        return 'Below floor / negotiate', reasons + ['Advertised minimum is below ₹17L; upper range is not an offer']
+    if not fresh: reasons.append('No employer-JD posting date within 30 days')
+    if r.get('employment') not in ('permanent', 'employee') or r.get('full_time') is not True:
+        return 'Excluded', ['Only full-time employee roles qualify; contract/temp/internship/part-time does not']
+    if r.get('sponsorship_status') in ('not_offered', 'restricted'):
+        return 'Excluded', ['Current JD excludes candidates needing current/future sponsorship or requires unrestricted status']
+    if r.get('sponsorship_status') not in ('offered', 'not_stated', 'conditional'):
+        reasons.append('Current JD sponsorship status is unconfirmed')
+    if r.get('pay_kind') != 'base': reasons.append('Annual base salary is not established by the employer JD')
+    annual_min = r.get('pay_min') if r.get('currency') == 'USD' and r.get('period') == 'year' else None
+    annual_max = r.get('pay_max') if annual_min is not None else None
+    if annual_min is None or annual_max is None:
+        reasons.append('USD annual base salary range is undisclosed or incomplete')
+    elif annual_max < 100_000:
+        return 'Below $100k base', reasons + ['Advertised maximum annual base is below $100,000']
     if reasons: return 'Needs verification', reasons
-    if annual is None: return 'Needs verification', ['Annual pay cannot be calculated']
-    return ('Ready' if annual > 2_000_000 else 'Caution ₹17–20L'), []
+    return ('Ready' if annual_min >= 100_000 else 'Caution: range crosses $100k'), []
 
 def check_job(job):
     stamp = now()
@@ -312,8 +361,8 @@ def refresh(state):
         count = 0; pages = 0; total = None; cached_count = 0; error = None
         # Latest pages every day plus a persistent backfill walk: no claim of full coverage.
         paths = [(start, 8 if name == 'himalayas' else 3 if name == 'arbeitnow' else 1)]
-        if name in ('himalayas_india','himalayas_junior'):
-            paths = [(start.replace('page=1','page='+str(n)),1) for n in range(1,6)]
+        if name.startswith('himalayas_us_'):
+            paths = [(start.replace('page=1','page='+str(n)),1) for n in range(1,4)]
         if name == 'himalayas' and state.get('himalayas_backfill'):
             paths.append((state['himalayas_backfill'], 12))
         next_url = None
@@ -359,7 +408,7 @@ def refresh(state):
     state['last_refresh'] = stamp
     state['health'] = health
     state['runs'].append({'at':stamp, 'new_jobs':len(set(state['jobs']) - before), 'new_boards':len(set(state['boards'])-discovered_before), 'sources':health})
-    print('Stored software leads:', len(state['jobs']), 'discovered boards:', len(state['boards']), flush=True)
+    print('Stored target-role leads:', len(state['jobs']), 'discovered boards:', len(state['boards']), flush=True)
 
 def community(state):
     stamp=now(); count=0
@@ -383,7 +432,7 @@ def community(state):
             count+=1
         health.update(rows=count,pages=1,thread_url='https://news.ycombinator.com/item?id='+story['objectID'])
     except Exception as e: health['error']=str(e)
-    print('HN engineering announcements:',count,'error:',health['error'],flush=True)
+    print('HN target-role announcements:',count,'error:',health['error'],flush=True)
     return health
 
 def expand(state, limit=30):
@@ -413,43 +462,118 @@ def expand(state, limit=30):
 def queries():
     day = dt.datetime.now(UTC).timetuple().tm_yday
     hosts = ['jobs.ashbyhq.com', 'job-boards.greenhouse.io', 'jobs.lever.co', 'apply.workable.com', 'teamtailor.com', 'freshteam.com', 'careers-page.com', 'wellfound.com/jobs', 'ycombinator.com/companies', 'cutshort.io/job', 'linkedin.com/jobs/view', 'indeed.com/viewjob', 'builtin.com/job', 'remoterocketship.com', 'himalayas.app', 'news.ycombinator.com']
-    role = ['software engineer', 'backend engineer', 'frontend developer', 'full stack engineer', 'integration engineer', 'AI engineer', 'QA automation engineer'][day % 7]
-    base = [f'"{role}" "remote" "India" salary', f'"{role}" "worldwide" salary', '"engineer" "Hyderabad" "salary" "2 years"', '"developer" "Hyderabad" "LPA" "1 year"', '"engineer" "work from anywhere" "compensation"', '"developer" "same pay" remote', '"engineer" "location independent" salary', '"engineer" "remote" "India" "12 months" salary']
-    for i in range(8): base.append(f'site:{hosts[(day*8+i)%len(hosts)]} "{role}" remote')
+    role = TARGET_TITLES[day % len(TARGET_TITLES)]
+    base = [f'"{title}" "United States" "base salary"' for title in TARGET_TITLES]
+    base += [f'"{role}" remote USA sponsorship', f'"{role}" hybrid USA "$100,000"']
+    for i in range(4): base.append(f'site:{hosts[(day*4+i)%len(hosts)]} "{role}" "United States"')
     return base
 
 def pay_label(job):
     r = job.get('review') or {}
     if r.get('pay_min') is None: return 'Not verified'
-    kind={'base':'base','guaranteed_cash':'fixed cash','salary_unsplit':'base split unconfirmed','ctc':'CTC','unknown':'unverified'}.get(r['pay_kind'],r['pay_kind'])
+    kind={'base':'base','salary_unsplit':'base split unconfirmed','total_comp':'total compensation','unknown':'unverified'}.get(r['pay_kind'],r['pay_kind'])
     return f"{r['currency']} {r['pay_min']:,.0f}" + (f"–{r['pay_max']:,.0f}" if r.get('pay_max') and r['pay_max'] != r['pay_min'] else '') + '/' + r['period'] + ' (' + kind + ')'
 
 def cell(value): return str(value or 'Unknown').replace('|','/').replace('\n',' ')
+
+QUALIFYING_QUEUES = ('Ready', 'Caution: range crosses $100k')
+
+def posted_value(job):
+    return (job.get('review') or {}).get('employer_posted')
+
+def qualifying_jobs(state):
+    jobs = [j for j in state['jobs'].values() if j.get('queue') in QUALIFYING_QUEUES]
+    return sorted(jobs, key=lambda j: (posted_value(j) is None,
+                                       -(date(posted_value(j)).timestamp() if date(posted_value(j)) else 0),
+                                       j.get('company', '').casefold(), j.get('title', '').casefold()))
+
+def sponsorship_label(review):
+    labels = {
+        'offered': 'Offered', 'not_stated': 'Not stated / needs confirmation',
+        'conditional': 'Conditional', 'not_offered': 'Not offered',
+        'restricted': 'Restricted authorization required',
+    }
+    label = labels.get(review.get('sponsorship_status'), 'Unknown')
+    condition = review.get('sponsorship_conditions')
+    return label + (': ' + str(condition) if condition else '')
+
+def qualifying_table(jobs):
+    lines = ['| Title / company | US location | Employer posted | Annual base salary | Required experience | Sponsorship + current JD evidence |',
+             '|---|---|---|---|---|---|']
+    for j in jobs:
+        r = j['review']
+        salary = pay_label(j)
+        if j.get('queue') == 'Caution: range crosses $100k':
+            salary += ' — **Caution: lower end below $100k**'
+        sponsor = sponsorship_label(r) + ' — ' + cell(r['evidence']['sponsorship'])
+        posted = r.get('employer_posted') or '**Unknown — does not qualify**'
+        link = r.get('evidence_url') or j['url']
+        lines.append(f"| [{cell(j['title'])} — {cell(j['company'])}]({link}) | {cell(r['evidence']['location'])} | {cell(posted)} | {salary} | {cell(r['evidence']['experience'])} | {cell(sponsor)} |")
+    return lines
+
+def report_keys(job):
+    urls = [job.get('url')] + list(job.get('aliases', []))
+    return {job['id']} | {identity(url) for url in urls if url}
+
+def publish_report(state, baseline=False, day=None):
+    """Atomically publish a baseline or new-only daily report, then advance its ledger."""
+    day = day or dt.datetime.now(UTC).strftime('%Y-%m-%d')
+    reporting = state.setdefault('reporting', {'reported_keys': [], 'publications': {}})
+    reported = set(reporting.get('reported_keys', []))
+    all_jobs = qualifying_jobs(state)
+    jobs = all_jobs if baseline else [j for j in all_jobs if report_keys(j).isdisjoint(reported)]
+    key = 'baseline' if baseline else day
+    directory = DATA / 'reports'
+    target = directory / ('BASELINE.md' if baseline else day + '.md')
+    previous_ids = reporting.get('publications', {}).get(key, {}).get('ids', [])
+    if target.exists() and previous_ids:
+        previous = {j['id']: j for j in all_jobs if j['id'] in previous_ids}
+        previous.update({j['id']: j for j in jobs})
+        jobs = sorted(previous.values(), key=lambda j: (posted_value(j) is None,
+                      -(date(posted_value(j)).timestamp() if date(posted_value(j)) else 0),
+                      j.get('company', '').casefold()))
+    heading = '# Initial qualifying-job baseline' if baseline else '# New qualifying jobs — ' + day
+    lines = [heading, '', 'Published: ' + now(), '',
+             '**Evidence-reviewed matches: ' + str(len(jobs)) + '.**', '']
+    if not baseline:
+        shortfall = max(0, 15 - len(jobs))
+        lines += [f'New-match target: 15. Honest shortfall: {shortfall}. No unsuitable or previously reported jobs were used as filler.', '']
+    lines += qualifying_table(jobs) if jobs else ['No qualifying jobs were available for this publication.', '']
+    lines += ['', 'Qualification requires a current employer JD. Sponsorship silence is labeled “Not stated / needs confirmation”; it is not treated as an offer.', '']
+    directory.mkdir(parents=True, exist_ok=True)
+    temp = target.with_suffix(target.suffix + '.tmp')
+    temp.write_text('\n'.join(lines), encoding='utf-8')
+    temp.replace(target)
+    # The ledger advances only after the publication has been atomically replaced.
+    published_keys = set().union(*(report_keys(j) for j in jobs)) if jobs else set()
+    reporting['reported_keys'] = sorted(reported | published_keys)
+    reporting.setdefault('publications', {})[key] = {
+        'published_at': now(), 'path': str(target.relative_to(ROOT)),
+        'ids': [j['id'] for j in jobs], 'count': len(jobs), 'baseline': baseline,
+    }
+    return target
 
 def render(state):
     groups = {}
     events = state.setdefault('events', [])
     for j in state['jobs'].values():
         group, reasons = classify(j)
-        if j.get('queue') != group and (j.get('queue') in ('Ready','Caution ₹17–20L') or group in ('Ready','Caution ₹17–20L','Closed')):
+        if j.get('queue') != group and (j.get('queue') in QUALIFYING_QUEUES or group in QUALIFYING_QUEUES + ('Closed',)):
             events.append({'at':now(),'id':j['id'],'from':j.get('queue'),'to':group,'reasons':reasons})
         j['queue'] = group; j['reasons'] = reasons
         groups.setdefault(group, []).append(j)
-    eligible = groups.get('Ready', []) + groups.get('Caution ₹17–20L', [])
-    lines = ['# Daily job tracker', '', 'Last collection: ' + state.get('last_refresh','Not run'), '', '**Main target:** >₹20L annual guaranteed base. **Caution:** ₹17–20L. Hyderabad or verified remote from India; 1–2 years. Remote contracts require documented duration of at least 12 months.', '', 'Fresh means an employer posting date within 30 days or a dated employer/recruiter hiring signal within 30 days. First discovery, aggregator repost dates, page edits and a working Apply button do not reset the age.', '', f"**{len(groups.get('Ready', []))} ready · {len(groups.get('Caution ₹17–20L', []))} caution · {len(state['jobs'])} collected software leads · {len(state['boards'])} discovered employer boards.** Collected leads are not qualifying jobs.", '']
+    eligible = groups.get('Ready', []) + groups.get('Caution: range crosses $100k', [])
+    lines = ['# Daily job tracker', '', 'Last collection: ' + state.get('last_refresh','Not run'), '', '**Target:** requested analyst/product titles; United States eligible; JD requires 2–5 years; full-time employee; employer-posted USD annual base range reaches at least $100,000.', '', 'A disclosed range crossing $100,000 qualifies with a prominent caution. Current employer-JD evidence and a posting date within 30 days are required. Sponsorship silence remains “Not stated / needs confirmation,” never an inferred offer.', '', f"**{len(groups.get('Ready', []))} ready · {len(groups.get('Caution: range crosses $100k', []))} crossing-range caution · {len(state['jobs'])} collected target-role leads · {len(state['boards'])} discovered employer boards.** Collected leads are not qualifying jobs.", '']
     lines += ['## Application queue', '']
     if not eligible: lines += ['No role currently clears every evidence gate. See reviewed leads below; missing evidence is not filled with assumptions.', '']
-    for group in ('Ready','Caution ₹17–20L'):
-        rows = groups.get(group, [])
+    for group in QUALIFYING_QUEUES:
+        rows = [j for j in qualifying_jobs(state) if j.get('queue') == group]
         if not rows: continue
-        lines += ['### ' + group, '', '| Job | Published pay | Experience evidence | Location | Employer posted / hiring signal |', '|---|---|---|---|---|']
-        for j in rows:
-            r=j['review']
-            lines.append(f"| [{cell(j['company'])} — {cell(j['title'])}]({j['url']}) | {pay_label(j)} | {cell(r['evidence']['experience'])} | {cell(j['location'])} | {cell(r.get('employer_posted') or r.get('active_signal_date'))} |")
+        lines += ['### ' + group, ''] + qualifying_table(rows)
         lines += ['']
     lines += ['## Previously reviewed leads', '', '| Job | Published pay | Employer posted | Status / missing evidence |', '|---|---|---|---|']
     for j in sorted(state['jobs'].values(), key=lambda j:j['company']):
-        if j.get('review') and j['queue'] not in ('Ready','Caution ₹17–20L'):
+        if j.get('review') and j['queue'] not in QUALIFYING_QUEUES:
             lines.append(f"| [{cell(j['company'])} — {cell(j['title'])}]({j['url']}) | {pay_label(j)} | {cell(j['review'].get('employer_posted'))} | {j['queue']}: {cell('; '.join(j['reasons']))} |")
     lines += ['', '## Coverage and failures', '', 'Public feeds have different coverage, delays and page limits. Counts include irrelevant geographies and seniorities. Discovery continues beyond the employers already found.', '', '| Source | Rows fetched | Pages | Outcome |', '|---|---|---|---|']
     for h in state.get('health', []):
@@ -464,18 +588,29 @@ def render(state):
             lines.append(f"- {key}: {b['error']} (last attempt: {b.get('last_checked', 'unknown')}).")
     crawl = state.get('discovery_health',{})
     lines += ['', f"Employer-link discovery: {crawl.get('inspected',0)} pages inspected; {crawl.get('errors',0)} could not be fetched. Blocked pages require another public source or browser verification."]
-    lines += ['', '## Discovery sources', '', 'Source links are retained with every lead. Feed data must be traced to the employer before qualification. [Remotive](https://remotive.com), [Remote OK](https://remoteok.com), [Arbeitnow](https://www.arbeitnow.com), [Jobicy](https://jobicy.com), [Himalayas](https://himalayas.app), [We Work Remotely](https://weworkremotely.com), and the current Hacker News hiring thread.', '', 'The scheduled review also runs the rotating discovery queries and checks original application routes. It does not submit applications or message employers.', '']
+    lines += ['', '## Discovery sources', '', 'Source links are retained with every lead. Feed data must be traced to the current employer JD before qualification. [Remotive](https://remotive.com), [Remote OK](https://remoteok.com), [Arbeitnow](https://www.arbeitnow.com), [Jobicy](https://jobicy.com), US title searches from [Himalayas](https://himalayas.app), [We Work Remotely](https://weworkremotely.com), and the current Hacker News hiring thread.', '', 'The separate scheduled evidence-review task runs the rotating discovery queries and checks original application routes. It does not submit applications or message employers.', '']
     searchlog = read(DATA/'search-log.json',[])
     lines += ['## Open-web discovery audit', '', f'{len(searchlog)} queries recorded. Last query: ' + (searchlog[-1]['checked_at'] if searchlog else 'Not yet recorded'), '', 'Queries and source failures are retained in data/search-log.json; searched does not mean exhaustive coverage.', '']
     (ROOT/'TRACKER.md').write_text('\n'.join(lines))
+    master = ['# Master qualifying jobs', '', 'All currently qualifying jobs, including sponsorship-unstated matches labeled honestly.', '']
+    master += qualifying_table(qualifying_jobs(state)) if eligible else ['No current job clears every evidence gate.', '']
+    master += ['', 'Closure and material queue changes remain in `data/state.json` events and are not mixed into new-only daily reports.', '']
+    (ROOT/'MASTER-QUALIFYING.md').write_text('\n'.join(master), encoding='utf-8')
+    changes = ['# Closure and material changes', '',
+               'Queue transitions are kept separately from baseline and new-match reports.', '',
+               '| Changed at | Job | From | To | Notes |', '|---|---|---|---|---|']
+    for event in reversed(events):
+        job = state['jobs'].get(event.get('id'), {})
+        changes.append(f"| {cell(event.get('at'))} | [{cell(job.get('title') or event.get('id'))}]({job.get('url', '')}) | {cell(event.get('from'))} | {cell(event.get('to'))} | {cell('; '.join(event.get('reasons', [])))} |")
+    (ROOT/'CHANGES.md').write_text('\n'.join(changes) + '\n', encoding='utf-8')
     pending = sorted((j for j in state['jobs'].values() if j['queue']=='Needs verification'), key=lambda j:(bool(j.get('review')),j['hints']['score'],j['first_seen']), reverse=True)
     write(DATA/'review-queue.json', [{k:v for k,v in j.items() if k != 'text'} for j in pending[:200]])
     stamp = dt.datetime.now(UTC).strftime('%Y-%m-%d')
-    write(DATA/'daily'/f'{stamp}.json', {'generated_at':now(),'ready_ids':[j['id'] for j in eligible], 'counts':{k:len(v) for k,v in groups.items()}, 'health':state.get('health',[])})
+    write(DATA/'daily'/f'{stamp}.json', {'generated_at':now(),'qualifying_ids':[j['id'] for j in eligible], 'counts':{k:len(v) for k,v in groups.items()}, 'health':state.get('health',[])})
     (ROOT/'DISCOVERY-QUERIES.md').write_text('# Today’s discovery queries\n\nRun these through web search with a 30-day preference, then open original postings. Record failures and unproductive searches too. No employer allowlist. A recency search filter is not proof of posting date.\n\n'+'\n'.join('- '+q for q in queries())+'\n')
 
 def main():
-    p = argparse.ArgumentParser(); p.add_argument('command', choices=['refresh','community','expand','render','queries','import','review']); p.add_argument('file',nargs='?'); a=p.parse_args()
+    p = argparse.ArgumentParser(); p.add_argument('command', choices=['refresh','community','expand','render','baseline','publish','queries','import','review']); p.add_argument('file',nargs='?'); a=p.parse_args()
     if a.command in ('import', 'review') and not a.file:
         p.error('This command requires a JSON file')
     if a.command == 'queries':
@@ -510,7 +645,10 @@ def execute(a):
             key = identity(r['url'])
             if key not in state['jobs']: raise ValueError('Import job before reviewing: '+r['url'])
             state['jobs'][key]['review'] = r
-    render(state); write(DATA/'state.json',state)
+    render(state)
+    if a.command == 'baseline': print('Baseline:', publish_report(state, baseline=True))
+    if a.command == 'publish': print('Daily report:', publish_report(state))
+    write(DATA/'state.json',state)
     print('Tracker:', ROOT/'TRACKER.md')
 
 if __name__ == '__main__': main()

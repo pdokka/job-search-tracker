@@ -15,20 +15,23 @@ def results():
     jobs = list(state['jobs'].values())
     reviewed = [j for j in jobs if j.get('review')]
     ready = [j for j in reviewed if j['queue'] == 'Ready']
-    caution = [j for j in reviewed if j['queue'] == 'Caution ₹17–20L']
+    caution = [j for j in reviewed if j['queue'] == 'Caution: range crosses $100k']
     last = state.get('last_refresh')
     local = dt.datetime.fromisoformat(last).astimezone().strftime('%d %B %Y, %I:%M %p %Z') if last else 'Not yet run'
     lines = ['DHEERAJ’S JOB TRACKER', '', 'Last collection: ' + local,
              f'{len(ready)} Ready | {len(caution)} Caution | {len(reviewed)} reviewed | {len(jobs)} collected leads', '',
-             'Target: Hyderabad or verified India remote; 1–2 years; base above ₹20L.',
-             'Caution floor: ₹17L. Remote contracts must be at least 12 months.', '',
+             'Target: requested analyst/product roles; US eligible; 2–5 required years; full-time employee.',
+             'Employer-posted USD annual base must reach $100,000; crossing ranges are cautions.', '',
              'A collection run finds leads. Codex verifies pay, eligibility and freshness during the daily review.',
-             'Collected leads are not qualified jobs. The daily review is scheduled for 9am India time.', '',
+             'Collected leads are not qualified jobs. Sponsorship silence is labeled, never treated as an offer.', '',
              'READY TO CONSIDER', '=================']
     if not ready:
         lines += ['No role currently clears every check. See the reviewed leads below.', '']
-    order = {'Ready': 0, 'Caution ₹17–20L': 1, 'Needs verification': 2, 'Below floor / negotiate': 3, 'Excluded': 4, 'Closed': 5}
-    ordered = sorted(reviewed, key=lambda j: (order.get(j['queue'], 6), j['company'].casefold(), j['title']))
+    order = {'Ready': 0, 'Caution: range crosses $100k': 1, 'Needs verification': 2, 'Below $100k base': 3, 'Excluded': 4, 'Closed': 5}
+    def posted(j): return (j.get('review') or {}).get('employer_posted') or ''
+    ordered = sorted(reviewed, key=lambda j: (order.get(j['queue'], 6), not bool(posted(j)),
+                     -(dt.datetime.fromisoformat(posted(j).replace('Z', '+00:00')).timestamp() if posted(j) else 0),
+                     j['company'].casefold()))
     pending_header = False
     for j in ordered:
         r = j['review']
@@ -41,8 +44,8 @@ def results():
             if r.get('pay_max') and r['pay_max'] != r['pay_min']:
                 amount += f"–{r['pay_max']:,.0f}"
             lines.append('Published pay: ' + amount + '/' + r.get('period', 'unknown'))
-        for label, key in [('Pay evidence', 'pay'), ('Location', 'location'), ('Experience', 'experience'), ('Freshness', 'freshness')]:
-            lines.append(label + ': ' + r['evidence'][key])
+        for label, key in [('Pay evidence', 'pay'), ('US location', 'location'), ('Experience', 'experience'), ('Sponsorship', 'sponsorship'), ('Freshness', 'freshness')]:
+            lines.append(label + ': ' + r.get('evidence', {}).get(key, 'Not reviewed under the current policy.'))
         if j.get('reasons'):
             lines.append('Missing / failed checks: ' + '; '.join(j['reasons']))
         if r.get('notes'):
@@ -67,7 +70,7 @@ def results():
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('action', choices=['refresh', 'open', 'check'])
+    p.add_argument('action', choices=['refresh', 'open', 'check', 'baseline', 'publish'])
     p.add_argument('--no-open', action='store_true')
     args = p.parse_args()
     (ROOT/'logs').mkdir(exist_ok=True)
@@ -76,7 +79,7 @@ def main():
     if args.action == 'check':
         command = [sys.executable, '-m', 'unittest', 'discover', '-s', str(TRACKER), '-p', 'test_*.py']
     else:
-        command = [sys.executable, str(TRACKER/'tracker.py'), 'refresh' if args.action == 'refresh' else 'render']
+        command = [sys.executable, str(TRACKER/'tracker.py'), 'render' if args.action == 'open' else args.action]
     if args.action == 'refresh':
         print('Collecting public job sources. This can take a few minutes.', flush=True)
         print('Salary and eligibility verification also runs in the scheduled Codex review.', flush=True)

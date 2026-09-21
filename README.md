@@ -1,75 +1,58 @@
 # Job search tracker
 
-A shared tracker for Dheeraj's software-engineering job search: Hyderabad or verified India-eligible remote, suitable for 1–2 years of experience, with employer-backed salary evidence.
+A private tracker for these US roles: Business Analyst, Data Analyst, Systems Analyst, Business Systems Analyst, Product Owner, Product Analyst, Associate Product Manager, Product Manager, Financial Analyst, and Business Intelligence Analyst.
 
-The repository includes the collector, eligibility checks, saved job records, evidence reviews, search audit and reports. It does not submit applications.
+A qualifying role must be explicitly US-eligible, require 2–5 years of experience, be a full-time employee position, have a current employer JD posted within 30 days, and disclose a USD annual **base** salary range whose maximum reaches at least $100,000. A range such as $90k–$130k qualifies with a lower-end caution. Senior/lead roles are excluded; “manager” is not penalized when the requested title is Product Manager.
 
-## Read the results
+## Reports
 
-- [Current tracker](job-tracker/TRACKER.md)
-- [Latest reviewed run: 21 September 2026](job-tracker/RUN-2026-09-21.md)
-- [Weekly summary](job-tracker/WEEKLY.md)
-- [Review process and evidence rules](job-tracker/RUNBOOK.md)
+- [`job-tracker/MASTER-QUALIFYING.md`](job-tracker/MASTER-QUALIFYING.md): every currently qualifying reviewed role.
+- `job-tracker/data/reports/BASELINE.md`: the explicitly published initial baseline.
+- `job-tracker/data/reports/YYYY-MM-DD.md`: subsequent new-only daily publications.
+- [`job-tracker/TRACKER.md`](job-tracker/TRACKER.md): complete queues, failures, and reviewed exclusions.
+- `Latest Results.txt`: easy-to-read local rendering.
 
-Reports are dated snapshots, not a guarantee that a job remains open. Re-rendering recalculates freshness; it does not replace reading current employer evidence. Collected leads do not count as verified matches.
+Daily reports use a durable identity/alias ledger. Re-rendering does not consume jobs; publication advances the ledger only after the report is written. Reports show an honest shortfall from the 15-new-match target and never repeat or pad unsuitable roles.
 
-## Set up a copy
+## Setup and checks
 
-Requires Python 3.9+ and Git on macOS or Linux. On Windows, use WSL because the tracker uses POSIX file locking. No third-party Python packages, IDE, API keys or paid services are required.
+Requires Python 3.9+ and Git on macOS or Linux (use WSL on Windows). No third-party Python packages or credentials are required.
 
 ```sh
-git clone https://github.com/DheerajDV/job-search-tracker.git
+git clone https://github.com/pdokka/job-search-tracker.git
 cd job-search-tracker
 python3 -m venv .venv
 .venv/bin/python3 run.py check --no-open
 .venv/bin/python3 run.py open --no-open
 ```
 
-Private repository access is required before cloning. The last command produces `Latest Results.txt` in your checkout.
-
-On macOS, after creating the environment, the included launchers work by double-click:
-
-- `Open Results.command`: update and open saved results in TextEdit.
-- `Run Tracker.command`: collect listings and open the results.
-- `Check Setup.command`: run the existing regression checks.
-
-On Linux/WSL, use the commands below with `--no-open`.
-
-## Collect and review
+## Collection, review, and publication
 
 ```sh
-# Collect public sources; this may take several minutes.
+# Collection only: leads are not qualified by this command.
 .venv/bin/python3 run.py refresh --no-open
 
-# Print today's discovery queries for a human or connected agent to execute.
+# Show today's rotating searches for the separate evidence-review task.
 .venv/bin/python3 job-tracker/tracker.py queries
 
-# After reviewing employer evidence, import dated discoveries and reviews.
-.venv/bin/python3 job-tracker/tracker.py import path/to/discoveries.json
-.venv/bin/python3 job-tracker/tracker.py review path/to/reviews.json
+# Persist dated discoveries and current-employer-JD reviews.
+.venv/bin/python3 job-tracker/tracker.py import job-tracker/data/imports/YYYY-MM-DD-topic.json
+.venv/bin/python3 job-tracker/tracker.py review job-tracker/data/reviews/YYYY-MM-DD-topic.json
 
-# Rebuild readable results after evidence changes.
+# Re-render without affecting the publication ledger.
 .venv/bin/python3 run.py open --no-open
+
+# Run exactly once after the new policy has enough reviewed matches.
+.venv/bin/python3 run.py baseline --no-open
+
+# On later review days, publish every newly qualifying identity (no limit of 15).
+.venv/bin/python3 run.py publish --no-open
 ```
 
-The Python collector gathers leads from public feeds, hiring announcements and discovered employer boards. Open-web searches and evidence verification are performed separately by a human or connected agent, following the runbook. A collection run is not a full verification run.
+The separate ChatGPT Work task performs open-web discovery and current-JD evidence review, then commits its dated import/review file, dated report, and updated durable state to this fork. The GitHub Actions collector remains collection-only and preserves `cloud-run.json`; it cannot invent evidence or qualify jobs.
 
-## Qualification rules
+## Sponsorship handling
 
-- **Ready:** annual guaranteed base above ₹20 lakh.
-- **Caution:** ₹17–20 lakh; the lower bound of the advertised range decides.
-- Hyderabad employment or remote work explicitly available from India.
-- Experience requirements compatible with 1–2 years; a two-year minimum requires two completed years.
-- Employer salary evidence, not estimates, company averages, CTC or equity.
-- Employer posting within 30 days, or a recent dated hiring signal.
-- Remote contracts require a documented guaranteed term of at least 12 months. Hourly/task rates are not annualized into guaranteed income.
+Current JD language controls. An explicit offer is labeled **Offered**; conditional language is **Conditional** with its conditions; silence is **Not stated / needs confirmation** and may remain in the qualifying report. Language denying current/future sponsorship or requiring citizenship, permanent residence, or unrestricted authorization excludes the role. Historical sponsor searches and generic EEO/immigration boilerplate are not used as proof.
 
-Unknown facts remain in Needs verification. There is no promise of exhaustive internet coverage or application acceptance.
-
-## Collaborate
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). Use branches and pull requests for changes. Add discoveries and evidence as dated JSON files; coordinate before changing the shared state snapshot.
-
-`job-tracker/data/state.json` contains the saved jobs, provenance, reviews and history. It is included so a collaborator can continue from the current project. Local response caches, recovery backups, logs, credentials and machine setup are excluded.
-
-The existing daily 9am India-time Codex review belongs to Dheeraj's local installation. Cloning this repository does not install that schedule or connect another machine to his task. Local refreshes also do not automatically commit or push to GitHub; repository results update when the owner pushes a new snapshot.
+See [`job-tracker/RUNBOOK.md`](job-tracker/RUNBOOK.md) for the exact evidence contract. The tracker never applies, contacts anyone, creates accounts, or buys services.

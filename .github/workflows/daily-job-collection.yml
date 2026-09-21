@@ -59,8 +59,8 @@ jobs:
           health = state.get('health', [])
           outcomes = {k: os.environ[k] for k in ('TEST_RESULT','REFRESH_RESULT','RENDER_RESULT')}
           collected = outcomes['REFRESH_RESULT'] == 'success'
-          primary = {'remotive','remoteok','arbeitnow','jobicy','himalayas','himalayas_india','himalayas_junior','wwr','Hacker News hiring announcements'}
-          live = [h for h in health if h.get('source') in primary and not h.get('error')] if collected else []
+          primary = {'remotive','remoteok','arbeitnow','jobicy','himalayas','wwr','Hacker News hiring announcements'}
+          live = [h for h in health if (h.get('source') in primary or h.get('source', '').startswith('himalayas_us_')) and not h.get('error')] if collected else []
           ok = all(v == 'success' for v in outcomes.values()) and bool(live)
           report = {
               'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -90,15 +90,18 @@ jobs:
           path: |
             Latest Results.txt
             job-tracker/TRACKER.md
+            job-tracker/MASTER-QUALIFYING.md
+            job-tracker/CHANGES.md
             job-tracker/data/cloud-run.json
             job-tracker/data/daily/
+            job-tracker/data/reports/
             logs/
       - name: Preserve collection state in pdokka's fork
         if: always() && github.ref == 'refs/heads/main' && steps.tests.outcome == 'success' && steps.refresh.outcome == 'success' && steps.render.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add job-tracker/data/state.json job-tracker/data/daily/ job-tracker/data/cloud-run.json job-tracker/TRACKER.md
+          git add job-tracker/data/state.json job-tracker/data/daily/ job-tracker/data/cloud-run.json job-tracker/TRACKER.md job-tracker/MASTER-QUALIFYING.md job-tracker/CHANGES.md
           if ! git diff --cached --quiet; then
             git commit -m "Update cloud job collection results"
             git fetch origin main

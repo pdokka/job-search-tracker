@@ -1,32 +1,15 @@
-# Dheeraj’s daily job tracker
+# Action plan
 
-## What you receive
+## Daily collection
 
-Open [the tracker](TRACKER.md) for application-ready roles and a separate ₹17–20L caution queue. Each qualifying row has the direct posting, employer-stated pay, experience evidence, location and original posting date or recent hiring signal. New qualifying roles trigger a message in this task. Applications remain your decision.
+The GitHub Actions workflow runs once at 17:00 America/Chicago. It collects public feeds, ten US title searches, Hacker News announcements, and discovered employer boards. Its `cloud-run.json` output reports collection health only; collection does not qualify or publish jobs.
 
-## Every day at 9:00 a.m. India time
+## Separate evidence review
 
-1. Collect new listings from six public job feeds and the current Hacker News hiring thread. Search India remote, worldwide remote and Hyderabad. Capture employers and application destinations discovered in those feeds, even when the employer was not in the previous company list.
-2. Refresh discovered employer boards directly. Keep the employer registry growing as new links emerge. Use rotating open-web searches for platforms and company sites that the feeds miss.
-3. Verify the original job: India eligibility, 1–2-year suitability, guaranteed pay, employment type, original date, active application route and any recent hiring announcement. A salary estimate or foreign-only salary cannot qualify.
-4. Add only evidence-backed roles to Ready (>₹20L) or Caution (₹17–20L). Keep promising but incomplete leads in Needs verification. Remote contracts need a stated minimum 12-month term. Unknown salary/duration is not quietly passed.
-5. Recheck previous qualifying roles, detect changes and closures, and preserve history. On Mondays, summarise the preceding week without replacing the daily queue.
+The ChatGPT Work task executes the 16 rotating queries, inspects current original employer JDs, and imports dated discovery/review artifacts. It verifies requested title, explicit US eligibility, required 2–5 years, full-time employee status, USD annual base reaching $100,000, employer-posted freshness within 30 days, and current-JD sponsorship language or silence.
 
-## How this avoids the previous mistakes
+After review it renders the full master report. The first current-policy run uses `run.py baseline --no-open`; subsequent runs use `run.py publish --no-open`. Daily publication includes every new qualifying identity, states any shortfall from 15, and never repeats or pads results.
 
-- No hardcoded company allowlist. Public feeds and full hiring threads provide discovery independently of search rankings; employer boards expand from observed links.
-- Original posting dates are separate from first seen, feed publication and page modification. An old listing needs a dated recent hiring signal; an open page alone is insufficient.
-- Wellfound/YC are discovery routes when useful. The review follows the employer's actual application destination and records it; it does not assume any platform will generate a response.
-- Posted salary must apply to the Indian candidate. Uniform global pay, regional pay and unspecified policies remain distinct. A USD hourly rate is not a guaranteed annual salary.
-- Requisition URLs/IDs and verified aliases are used for deduplication. Reposts do not reset the first-seen date.
-- Coverage reports show page limits, blocked sources and fetch failures. Unverified leads are never counted as 50 qualifying jobs.
+## Safety
 
-## What is built and what depends on the daily run
-
-The local Python collector, persistent records, evidence filters, candidate review queue, date checks, employer-board discovery, source-failure reporting and regression tests are implemented. The scheduled Codex run executes the open-web queries and reviews descriptions that require judgment or a browser; Python alone does not perform that part.
-
-The schedule runs in this task using local files, so keep this computer on and the app running at the scheduled time. [Official scheduled-task documentation](https://learn.chatgpt.com/docs/automations?surface=app).
-
-No source covers every employer. The operating goal is to expand measurable coverage and deliver fresh verified matches daily. It is not to inflate a list to 50 or to promise an offer.
-
-Technical operation and evidence schema: [runbook](RUNBOOK.md). The current source and query audit is included in [the tracker](TRACKER.md).
+Do not apply, contact anyone, create accounts, buy services, infer missing evidence, or treat EEO boilerplate as a sponsorship offer. Preserve aliases, the reporting ledger, application status, source failures, and historical reviews.
