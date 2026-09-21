@@ -1,0 +1,404 @@
+[
+  {
+    "company": "Everis",
+    "title": "Mobile Software Engineer, Growth & Experimentation",
+    "url": "https://himalayas.app/companies/everis/jobs/mobile-software-engineer-growth-experimentation",
+    "location": "Australia, Egypt, India, Pakistan, Philippines, Turkey, Ukraine",
+    "text": "Everis has a different standard for talent. We do not use years of experience, titles, or pedigree as substitutes for ability. We look for exceptional work, sound judgment, fast learning, ownership, and evidence of impact. It is not a lower bar. It is a sharper one. We’re looking for an accomplished software engineer who has built real mobile applications and already has practical exposure to growth, experimentation, conversion optimization, or broader product work. This role requires both engineering depth and evidence that you can think beyond implementation. Join Everis at a defining stage of growth. Help shape the product, influence the company we become, and grow with us. Work 100% remotely from anywhere, benefit from unlimited leave, and connect with colleagues at company-sponsored international retreats in some of the world’s most inspiring cities. About Everis Everis is a growing, remote-first software company founded by proven technology entrepreneurs Rob Rawson and Liam Martin, who previously built Time Doctor into an eight-figure global SaaS business. We acquire promising mobile apps and SaaS companies, invest in their future, and improve their products, technology, and customer experience. Our ambition is to make Everis the best long-term home for exceptional software products—and a company where exceptional people can take real ownership, do consequential work, and grow with us. About the Product Pebble is Everis ’s growing, speaking-first language-learning app for iOS and Android. It helps people learn English, Spanish, and French through practical lessons, pronunciation practice, and guided conversations that get them speaking from day one. The product is live and evolving quickly, with major opportunities across onboarding, habit formation, activation, retention, conversion, and new markets. Your engineering and product decisions will directly influence how well people learn and how quickly Pebble grows. What makes this role different Most engineering roles begin after the problem, solution, and ticket have already been defined. Here, you join the work earlier. You will remain a software engineer first, but you will also identify product problems, decide what to test, build the solution, measure the outcome, and use the evidence to determine what happens next. This is not a marketing role for someone who codes; it is an engineering role with responsibility for product outcomes. What you’ll work on Build, ship, and improve Pebble’s mobile applications. Find friction across onboarding, activation, engagement, retention, conversion, and monetization. Turn product questions into improvements, prototypes, A/B tests, and other useful experiments. Use product and user data to understand behavior and decide what should be built next. Define success measures, analyze results, and act on what you learn. Work directly with our founders and product and business leadership. Balance strong engineering with the speed required to test ideas and learn. What you need to bring This is a mobile engineering job first. You need to have built, shipped, and supported a production mobile app. We mean a real product used by real people - not just a demo or code sample. We also need proof you've thought beyond implementation. Show us at least one of these: Breadth beyond implementation. Direct mobile-growth or conversion work You must show meaningful evidence of at least one of the following: growth experimentation, A/B or split testing, conversion optimization, product ownership, building and operating your own software product. Conversion optimization. You improved a real flow: onboarding, activation, a paywall, trial-to-paid, checkout, or another point where users dropped. Core Stack. Strong engineering fundamentals and sound judgment about reliability, maintainability, quality, and speed. Flutter/Dart, TypeScript/NestJS, MongoDB, or close equivalents; and App Store or Google Play subscriptions, paywalls, payments, or trial-to-paid journeys. Production mobile engineering. Demonstrated success building and shipping production mobile applications using iOS, Android, cross-platform, or another credible mobile environment. Product development or ownership. You helped decide what to build and why. You didn't just receive a finished specification. You can independently take production software from problem through implementation, release, and iteration. Product-management-type work. You framed the problem, made trade-offs, defined success, or used evidence to choose the next move. A product of your own. You built it, launched it, watched real people use it, and changed it based on what you learned. What good looks like Your fundamentals are solid. APIs, data modelling, testing, debugging, release practices, and production monitoring aren't someone else's job. You can tell the whole story. What was wrong, what you personally built, what happened, and what you did next. You cross boundaries when the problem demands it. Mobile, backend, web, data, analytics - you don't stop at the edge of your code. You'd rather find out than argue from theory. You form a view, test it, and change your mind when the evidence says you should. What we offer Compensation: $80,000–$120,000 USD annually, depending on experience. Consequential ownership: your decisions will directly affect Pebble and Everis . Direct founder access: work closely with experienced entrepreneurs on important product and company decisions. Exceptional colleagues: work with capable, curious, high-ownership people held to the same demanding standard. Room to grow: take on larger problems and greater responsibility as Everis expands. 100% remote: work from anywhere. Unlimited leave: take meaningful time away when you need it. Paid international company trips: come together with the team in some of the world’s most inspiring cities—to collaborate, build lasting relationships, and experience somewhere new. Our recruiting process We keep our process structured and transparent: Initial review: Application → Written Assessment Skills and reasoning: Recorded Scenario Assessment → Reasoning Intelligence Test → Recorded Role-Specific Assessment Interviews: Technical Interview → Final Interview with a Co-Founder Final evaluation: Paid Work Trial If you are an exceptional mobile engineer who wants to help decide what gets built, prove whether it works, and shape a growing product, we want to hear from you. Compensation Range: $80K - $120K Originally posted on Himalayas",
+    "source_posted": 1789443456,
+    "attribution_url": "https://himalayas.app/companies/everis/jobs/mobile-software-engineer-growth-experimentation",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": 80000,
+      "max": 120000,
+      "currency": "USD",
+      "period": "annual"
+    },
+    "id": "59ad8e2a0ef21339476b7f32",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-18T03:59:04+00:00",
+    "sources": {
+      "himalayas_india": {
+        "last_seen": "2026-09-18T03:59:04+00:00",
+        "url": "https://himalayas.app/companies/everis/jobs/mobile-software-engineer-growth-experimentation",
+        "posted": 1789443456
+      }
+    },
+    "text_hash": "edcdbcb1dad949f48818443308d7166accff6a71113186c9fc60742cd0619aae",
+    "review": null,
+    "hints": {
+      "score": 9,
+      "experience_clues": [],
+      "salary_clues": [
+        " the evidence says you should. What we offer Compensation: $80,000–$120,000 USD annually, depending on experience. Consequential ownership: your decisions will directly affect Pebble and Everis . Direct foun",
+        "a growing product, we want to hear from you. Compensation Range: $80K - $120K Originally posted on Himalayas"
+      ]
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "Termgrid Inc.",
+    "title": "Backend Developer - Remote",
+    "url": "https://himalayas.app/companies/termgrid-inc/jobs/backend-developer-remote",
+    "location": "India",
+    "text": "Termgrid is rewriting the rules of private capital markets. We built the category-defining operating system for deal professionals — the platform where the world's most sophisticated private equity sponsors , lenders , and advisors manage every stage of their financing workflows. Founded in 2019 by Dipish Rai ( Harvard MBA, IIT , Columbia ; ex- Providence Equity ) and Vishal Singh (Columbia MS CS; ex- CTO Link3D, acquired by Nasdaq: MTLS), Termgrid has achieved what few fintech companies dream of: 4 of the top 5 global private equity firms trust us as their core technology partner. 1600+ institutions. 30,000+ professionals. We've been named New Solution Provider of the Year at the PE Wire US Awards 2024 , Secure Workflow Management Provider of the Year at the PE Wire US Awards 2025 , and shortlisted for the PE Wire EU Awards 2026 and The Drawdown Awards 2025 . This isn't a company finding its footing — this is a rocket that has already cleared the launchpad . The $1.7 trillion private credit market is growing at breakneck speed . Every billion-dollar deal , every GP-LP relationship , every leveraged buyout in the pipeline is moving through workflows that were built for a different era. Termgrid is the platform that changes all of that — and we're just getting started . What You’ll Do Design, develop, and own microservice-based backend applications using Java and Spring Boot. Build APIs and platforms that serve multiple financial workflows and transaction types, ensuring scalability and flexibility. Implement event-driven architectures for systems like deal lifecycle management, document generation, and notification pipelines. Integrate intelligent capabilities such as automated term sheet parsing, deal analytics, and workflow recommendations. Collaborate closely with product, frontend, DevOps, and data teams to bridge real-time and asynchronous system interactions. Design efficient database schemas (MySQL), optimize data flows, and maintain consistency across distributed services. Monitor, optimize, and scale backend services for performance, reliability, and high availability. Participate in code reviews, architectural discussions, and innovation sprints to continuously raise the engineering bar. What We’re Looking For 2–5 years of backend development experience using Java and Spring Boot. Strong understanding of microservices architecture and REST API design principles. Proficiency in MySQL — schema design, complex queries, indexing, and performance optimization. Experience with event-driven systems and message brokers (Kafka or similar). Familiarity with caching strategies (Redis, Memcached) and scalable system design. Solid foundation in object-oriented programming, design patterns, and clean code principles. Experience with Git, CI/CD pipelines, and cloud deployments (AWS or GCP). Strong problem-solving skills with the ability to own features end-to-end. Originally posted on Himalayas",
+    "source_posted": 1789485576,
+    "attribution_url": "https://himalayas.app/companies/termgrid-inc/jobs/backend-developer-remote",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "period": "annual"
+    },
+    "id": "cd94bff9fe47e24f147997d2",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-18T03:59:04+00:00",
+    "sources": {
+      "himalayas_india": {
+        "last_seen": "2026-09-18T03:59:04+00:00",
+        "url": "https://himalayas.app/companies/termgrid-inc/jobs/backend-developer-remote",
+        "posted": 1789485576
+      }
+    },
+    "text_hash": "81a54a86093452913b34e2c5e0efe9f18e4f0c68e6527176007413f18adde8d3",
+    "review": null,
+    "hints": {
+      "score": 11,
+      "experience_clues": [
+        " the engineering bar. What We’re Looking For 2–5 years of backend development experience using Java and Spring Boot. Strong understand"
+      ],
+      "salary_clues": [
+        "that has already cleared the launchpad . The $1.7 trillion private credit market is growing at breakneck speed . Every billion-dollar deal , every GP-LP relationship , every leveraged buyout in th"
+      ]
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "BuildBear Labs",
+    "title": "Junior Frontend Web Developer",
+    "url": "https://himalayas.app/companies/buildbear-labs/jobs/junior-frontend-web-developer",
+    "location": "India",
+    "text": "Job brief We are seeking a Junior Web Development Engineer who has worked with ReactJS, NextJS, RemixJS in our Frontend Web Development Team. Expectations and Responsibilities ﻿ ﻿TypescriptProficiency in Typescript. ﻿Willingness to adhere to code guidelines and grow in writing maintainable code. ﻿Keeping up with the latest Node.js APIs and Typescript updates. ﻿ ﻿NextJS ﻿Familiarity with NextJS, and an eagerness to further develop skills in this area. ﻿Exposure to RemixJS is a plus. ﻿ ﻿CSS / Styling ﻿Basic experience in CSS and styling techniques. ﻿Willingness to learn and apply commonly used CSS libraries such as Bootstrap, Tailwind CSS, or Bulma. ﻿ ﻿UI / UX Matters ﻿Basic understanding of UI/UX principles. ﻿Eagerness to contribute to the delivery of user-centric frontend solutions. ﻿ ﻿Scaling ﻿Awareness of scaling frontend microservices. ﻿Exposure to AWS services is a bonus. ﻿ ﻿Team Collaboration ﻿Ability to work collaboratively in a team environment. ﻿Eagerness to learn from experienced team members and contribute to team goals. ﻿ ﻿Startup Exposure ﻿A desire to work in an early-stage startup environment. ﻿Readiness to adapt to a fast-paced, dynamic startup culture.﻿ ﻿ ﻿ Are you a detail detective with a knack for making things awesome? Do you get giddy when interfaces are smooth and intuitive? If you're a quick learner with a curious mind and a passion for teamwork, then BuildBear wants you! Requirements Must Have: ﻿At least 2 years of work experience in developing web applications, specifically developing in frontend technologies. Good to Have: ﻿Bachelors degree in Software Engineering, Information Technology or related field. ﻿About us BuildBear is creating the first seamless CI/CD infrastructure for Smart Contracts and Web3 Applications. BuildBear aims to make it easy for Web3 Application owners, Web3 Application Developers and Core Smart Contract Developers to interact with their Smart Contracts, Frontend and Backend in a production grade setting, to build and ship Web3 Applications faster. BuildBear is founded by Dipesh, who previously built Zapper.fi and has been developing web3 applications since 2017 and Emmanuel, one of the designers of Async Rust {Rust Language Org} and the creator of Valerie {React in Rust}. The project began in 2022 and has been funded by marquee investors, including senior members of Kyber, Typechain, and Ethereum Enterprise Alliance. BuildBear is a distributed / remote team of engineers and builders across Singapore, India and US. We are extremely passionate and obsessed about shipping powerful infrastructure to test of Web3 Applications at Scale. ﻿Why work for BuildBear ﻿Joining BuildBear is not just a job it's an opportunity to be part of a dynamic and innovative team that is reshaping the future. At BuildBear, we're not just building a product; we're crafting a vision and pushing boundaries. Here, you'll have the chance to contribute ideas, make a real impact, and see your efforts shape the direction of our company. ﻿ We will be recognizing and rewarding the commitment of our team, which is why early joiners will be eligible for stock options, aligning your success with the success of the company. ﻿ ﻿Join us at BuildBear and be a key player in our growth story while enjoying the benefits of being an early and integral part of our innovative team. Originally posted on Himalayas",
+    "source_posted": 1789158841,
+    "attribution_url": "https://himalayas.app/companies/buildbear-labs/jobs/junior-frontend-web-developer",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "period": "annual"
+    },
+    "id": "3e8ae4c4c82a404b4d085355",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-20T15:52:33+00:00",
+    "sources": {
+      "himalayas_junior": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/buildbear-labs/jobs/junior-frontend-web-developer",
+        "posted": 1789158841
+      }
+    },
+    "text_hash": "0a99325a9c26ede348b606b63cdad7ebdc795c0a0c9bbad4ae8d605dfe4fe1d9",
+    "review": null,
+    "hints": {
+      "score": 10,
+      "experience_clues": [
+        "wants you! Requirements Must Have: ﻿At least 2 years of work experience in developing web applications, specifically developing in f"
+      ],
+      "salary_clues": []
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "Giant Swarm",
+    "title": "Forward Deployed Engineer (100% Remote)",
+    "url": "https://himalayas.app/companies/giant-swarm/jobs/forward-deployed-engineer-100-remote",
+    "location": "Worldwide (feed claim)",
+    "text": "the basics We are looking for a Forward Deployed Engineer (m/f/d) to join us as the embedded technical expert who takes our customers from \"interested in AI\" to running real agentic workflows in production. This is a hands-on, code-shipping role, not an advisory one. You'll work directly inside a customer's environment - understanding their domain, their data, and the business outcomes that matter to them - and build the agentic use cases (using MCPs, skills, and our agent platform) that make those outcomes real. You'll also bring a working understanding of Kubernetes, since our platform is built and operated on it, but that's the foundation you stand on, not the focus of the role. Giant Swarm is a fast-growing open-source infrastructure management platform used by modern enterprises. Our vision is to empower developers around the world to ship great products - this role is core to how we do that with our agent platform. your job You partner directly with a customer as their embedded expert - not just advising, but designing, building, and shipping working agentic solutions in their environment. You get up to speed on a new customer's domain quickly (e.g. smart manufacturing, financial services, whatever it is) and identify the business outcomes AI/agentic workflows can realistically deliver for them. You design and build proof-of-concepts and production-track agentic workflows using MCPs, skills, and our agent platform, tailored to that customer's data and systems. You act as the customer-side expert on what our agent platform can do - translating platform capability into something their engineers can actually use and extend. You work closely with customer engineering teams - some devrel-style enablement, workshops, and pairing so they can own what you build after you move on. You feed the patterns and gaps you find back to the product team, shaping what we build next. You may support pre-sales conversations - helping scope what AI use cases would deliver value for a prospect, and building examples that help make the case for choosing Giant Swarm . requirements You have practical, hands-on experience in a customer-facing technical role (Solutions Architect, Forward Deployed Engineer, or similar). You have real, hands-on experience building with agentic AI - MCPs, agent frameworks, tool-using LLMs, or similar. This is non-negotiable. You can get productive in an unfamiliar business domain fast, and turn what you learn into concrete technical solutions. You have at least a solid working understanding of Kubernetes and cloud-native operations. You communicate clearly and confidently with both customer stakeholders and engineers - this role lives at that interface. Experience with developer relations, workshops, or technical enablement is a strong plus, as is prior Solutions Architect experience. You're comfortable with ambiguity - this is our first hire fully dedicated to agentic customer work, so a lot of the \"how\" is still being defined as you go. You are able to comfortably align parts of your workday with Europe (UTC +/- 2 hours). salary information We’re a fully remote company and use a formula-based salary calculator to determine starting salaries, factoring in location, experience, and responsibility. This approach helps us avoid pay gaps (e.g., gender pay gap) by basing compensation on objective criteria rather than negotiation. Because we apply a location factor, the actual figure for hires outside Cologne will differ from the reference range above, and the total package may include components beyond base salary (e.g., equity, benefits). We’re publishing this range to comply with the EU Pay Transparency Directive. Your recruiter will walk you through how the calculator applies to your location and level. Salary Range: €60,000 - €90,000 Originally posted on Himalayas",
+    "source_posted": 1789612964,
+    "attribution_url": "https://himalayas.app/companies/giant-swarm/jobs/forward-deployed-engineer-100-remote",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": 60000,
+      "max": 90000,
+      "currency": "EUR",
+      "period": "annual"
+    },
+    "id": "12f218d0f7e43613c1d150e5",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-18T03:59:04+00:00",
+    "sources": {
+      "himalayas_india": {
+        "last_seen": "2026-09-18T03:59:04+00:00",
+        "url": "https://himalayas.app/companies/giant-swarm/jobs/forward-deployed-engineer-100-remote",
+        "posted": 1789612964
+      }
+    },
+    "text_hash": "5cb9fecaa81e6ce2b260c649b8f95d5651028ed53ba89e4dda1341568d7f5571",
+    "review": null,
+    "hints": {
+      "score": 9,
+      "experience_clues": [],
+      "salary_clues": [
+        " your workday with Europe (UTC +/- 2 hours). salary information We’re a fully remote company and use a formula-based salary calculator to determine starting salaries, factoring in location, experience,",
+        "id pay gaps (e.g., gender pay gap) by basing compensation on objective criteria rather than negotiation. Because we apply a location factor, the actual figure for hires outside Cologne will differ from the r",
+        "l package may include components beyond base salary (e.g., equity, benefits). We’re publishing this range to comply with the EU Pay Transparency Directive. Your recruiter will walk you through how the ",
+        "lculator applies to your location and level. Salary Range: €60,000 - €90,000 Originally posted on Himalayas"
+      ]
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "Lingo.dev",
+    "title": "Senior Content Engineer",
+    "url": "https://himalayas.app/companies/lingo-dev/jobs/senior-content-engineer",
+    "location": "Worldwide (feed claim)",
+    "text": "is the localization engineering platform. Teams measure translation quality, translate with LLMs, and proofread with native speakers. We are a small YC-backed team, fully remote, with paying customers. This is our first marketing hire. You own content end to end: creation, publishing, distribution, measurement, and automation. Apply through our careers page, not through this listing: What you own Blog posts, research articles, essays, changelogs, the newsletter. Distribution on LinkedIn, dev.to, Hacker News and Reddit. Interviewing our engineers and customers, then writing for both technical and non-technical readers. Weekly publishing, with volume growing through Claude workflows and templated distribution. SEO, GEO and AI search visibility, measured in Ahrefs, Search Console and the ad accounts. The outcomes: signups, citations, rankings, backlinks. What we look for Distribution results you can point at. A site you grew, a page that outranked an incumbent, a property that gets cited by AI assistants at volume. You write plainly, with no superlatives and no sentences that carry nothing. You code enough to automate your own workflow and distribution. You interview well and get people on the record saying something quotable. You use Claude daily as a production method and have opinions about prompting and output quality. You understand what Hacker News, the LinkedIn algorithm and AI systems reward. You work from Ahrefs and Search Console data. Do not apply if You do not use Claude daily. You plan work from keyword spreadsheets. Your job ends at publishing. You need a weekly brief. You call yourself non-technical. Your portfolio is generic. You want to manage a team right away. What you get Original engineering research to write about. The whole pipeline, from draft to measured impact. Claude Code and Claude Cowork budget for volume production. Small team, direct founder access. Conference and learning budget, flexible hours, health insurance. Hiring process Screening call with Max, our CEO. Trial project plus an interview. Offer. Four-week probation period. You hear back within a few days at every step. How to apply Apply on our careers page: The form there asks a few opinion questions instead of a CV. That form is the only application we review. Originally posted on Himalayas",
+    "source_posted": 1789539355,
+    "attribution_url": "https://himalayas.app/companies/lingo-dev/jobs/senior-content-engineer",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": 60000,
+      "max": 90000,
+      "currency": "USD",
+      "period": "annual"
+    },
+    "id": "10d06b839069144488b9ddd8",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-20T15:52:33+00:00",
+    "sources": {
+      "himalayas_india": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/lingo-dev/jobs/senior-content-engineer",
+        "posted": 1789539355
+      }
+    },
+    "text_hash": "cfbfe447ed5e5b07e89fa74c06964966da1c37bbc90f0d1e1c56e0ebf30bbd0b",
+    "review": null,
+    "hints": {
+      "score": 9,
+      "experience_clues": [],
+      "salary_clues": []
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "YipitData",
+    "title": "Data QA Specialist",
+    "url": "https://himalayas.app/companies/yipitdata/jobs/data-qa-specialist-327547019",
+    "location": "India",
+    "text": "About Us: YipitData is the leading market research and analytics firm for the disruptive economy and most recently raised $475M from The Carlyle Group at a valuation of over $1B. Every day, our proprietary technology analyzes billions of alternative data points to uncover actionable insights across sectors like software, AI, cloud, e-commerce, ridesharing, and payments. Our data and research teams transform raw data into strategic intelligence, delivering accurate, timely, and deeply contextualized analysis that our customers—ranging from the world’s top investment funds to Fortune 500 companies—depend on to drive high-stakes decisions. From sourcing and licensing novel datasets to rigorous analysis and expert narrative framing, our teams ensure clients get not just data, but clarity and confidence. We operate globally with offices in the US (NYC, Austin, Miami, Mountain View) APAC (Hong Kong, Shanghai, Beijing, Guangzhou, Singapore), and India. Our award-winning, people-centric culture—recognized by Inc. as a Best Workplace for three consecutive years—emphasizes transparency, ownership, and continuous mastery. What It’s Like to Work at YipitData : YipitData isn’t a place for coasting—it’s a launchpad for ambitious, impact-driven professionals. From day one, you’ll take the lead on meaningful work, accelerate your growth, and gain exposure that shapes careers. Why Top Talent Chooses YipitData : Ownership That Matters : You’ll lead high-impact projects with real business outcomes Rapid Growth : We compress years of learning into months Merit Over Titles : Trust and responsibility are earned through execution, not tenure Velocity with Purpose: We move fast, support each other, and aim high—always with purpose and intention Who Thrives Here? We hire sprinters, not coasters—people who: Choose growth over comfort Lead through challenges Are energized by high expectations It’s not for everyone, and that’s intentional. If your ambition is matched by your work ethic—and you're hungry for a place where growth, impact, and ownership are the norm— YipitData might be the opportunity you’ve been waiting for. About The Role: Our product offers insights on E-commerce companies and is growing rapidly. We are seeking a Data QA Associate to join our team in India to manage a large portion of the data cleaning and quality assurance processes for this product. As a Data QA Associate, you will be responsible for transforming the receipt data into accurate business expense insights. You will work with a top notch engineering team and data team from the U.S team and China team. You'll complete your work primarily using data in our proprietary software. This position offers the opportunity to meaningfully contribute to the growth of our company. Exceptional employees may have the opportunity to be promoted and manage a team of other Data QA Specialists. This is a fully remote role based in India. Working hours: 8 am - 5 pm IST In general, we expect some overlap with Chinese or U.S. work hours. More details on work-hour expectations will be shared during the recruiting process. We expect hires to start in the position as soon as possible, and no later than June, 2025 As our Data QA associate, you will: Perform accurate and efficient data extraction, labeling, and cleaning from email panel or AI-generated dataset to ensure high-quality data. Monitor and analyze data trends for various merchants and vendors, including email categorization and trend identification. Maintain the stability of merchant and vendor data, investigating anomalies such as sudden drops or spikes in data volume. Collaborate with teams in both China and the U.S. to ensure data consistency and quality. Provide timely responses to analysts and clients' demands and inquiries. Ensure compliance with company data security and confidentiality policies. You Are Likely To Succeed If you have: Bachelor's degree or above. Majors in Computer Science, Statistics, Business Analytics, or a related field are preferred; 0 - 2 years of experience as a data or quality assurance analyst; Experience in data tagging, cleaning or Regex Experience managing multiple processes in parallel Basic data analysis skills and familiarity with Excel, SQL, or Python are a plus. Familiar with accounting standards, able to distinguish the company's accounting categories, and understand the company's accounting records, preferably with experience using mainstream ERP systems such as NetSuite, Ramp, or QBO. Exceptional attention to detail, problem-solving and critical thinking abilities Ability to work independently while coordinating with a remote team. Excellent written and verbal communication skills in English, with the ability to interact effectively with vendors and internal teams across time zones and cultures What We Offer: Our compensation package includes comprehensive benefits, perks, and a competitive salary: We care about your personal life, and we mean it. We offer flexible work hours, flexible vacation, a generous 401K match, parental leave, team events, wellness budget, learning reimbursement, and more! Your growth at YipitData is determined by the impact that you are making, not by tenure, unnecessary facetime, or office politics. Everyone at YipitData is empowered to learn, self-improve, and master their skills in an environment focused on ownership, respect, and trust. See more on our high-impact, high-opportunity work environment above! The final offer may be determined by a number of factors, including, but not limited to, the applicant's experience, knowledge, skills, abilities, as well as internal team benchmarks. Job Applicant Privacy Notice Originally posted on Himalayas",
+    "source_posted": 1788771974,
+    "attribution_url": "https://himalayas.app/companies/yipitdata/jobs/data-qa-specialist-327547019",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "period": "annual"
+    },
+    "id": "bf0f2080af9efdd86e806781",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-20T15:52:33+00:00",
+    "sources": {
+      "himalayas_junior": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/yipitdata/jobs/data-qa-specialist-327547019",
+        "posted": 1788771974
+      }
+    },
+    "text_hash": "37a6bcbda3ed54335ebf80b382080259c06d50aeac87d902061ad4f61d624e69",
+    "review": null,
+    "hints": {
+      "score": 13,
+      "experience_clues": [
+        "Analytics, or a related field are preferred; 0 - 2 years of experience as a data or quality assurance analyst; Experience in data taggin"
+      ],
+      "salary_clues": [
+        " disruptive economy and most recently raised $475M from The Carlyle Group at a valuation of over $1B. Every day, our proprietary technology analyzes billions of alternative data points to uncover ",
+        "s time zones and cultures What We Offer: Our compensation package includes comprehensive benefits, perks, and a competitive salary: We care about your personal life, and we mean it. We offer flexible work ho"
+      ]
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "Clarity AI",
+    "title": "Junior Software Engineer - Consumer Team",
+    "url": "https://himalayas.app/companies/clarity-ai/jobs/junior-software-engineer-consumer-team",
+    "location": "Australia, Canada, France, Germany, India, Netherlands, United Kingdom, United States",
+    "text": "About Clarity AI 🪴 Clarity AI is a global tech company founded in 2017 with a unique mission: bringing societal impact to markets. We leverage AI and machine learning technologies to provide top international investors, governments, companies, and consumers with the right data, methodologies, and tools to make more informed decisions. We are now a team of more than 300 highly passionate and curious individuals from all over the world, with offices in New York, Madrid, London, Paris, and Abu Dhabi. Together, we have established Clarity AI as a leading sustainability tech AI company backed by investors and strategic partners such as BlackRock, SoftBank, and Deutsche Börse , who believe in us and share our goals. We are dedicated to cultivating an exceptional workplace environment, and we take pride in our culture, defined by our commitment to being fact-based, diverse, transparent, meritocratic, and flexible. We have plans to continue growing our teams globally, so if you would like to join us on this rocket ship, keep reading! Your work will shape and guide the sustainable decisions of investors, companies and consumers worldwide. About The Role 💻 We are looking for a motivated and driven Junior Software Engineer to join our Consumer Team, working at the intersection of banking and sustainability. In this role, you will have the opportunity to develop scalable software that helps customers worldwide realize the power of their spending habits to change the world. You will join a high-performing team with a solid technical foundation, focusing on delivering high-quality features while continuously growing your development skills. You will work across a modern architecture composed of both microservices and a modulith, contributing to the entire software development lifecycle. If you enjoy solving complex problems with code and have a growth mindset, we encourage you to apply! For more insight into the technologies used by the consumer team at Clarity AI , please explore our Tech Stack What You’ll Be Doing 🚀 End-to-End Development: Take responsibility for the full software development lifecycle, from refining requirements and creating concepts to implementing, testing, and maintaining software in the long term. Backend Excellence: Develop and ship well-defined features and API endpoints using Kotlin and Spring Boot . Frontend Maintenance: Handle smaller maintenance tasks and develop new frontend features using TypeScript and React to support our web applications. AI-Powered Workflow: Deeply integrate AI coding agents into your daily workflow to accelerate development, improve code quality, and solve complex logic tasks. Quality & Testing: Implement clear, concise, and well-tested code, ensuring high test coverage and adhering to clean code principles. Collaboration: Pair effectively with other engineers on features, infrastructure code, and production incidents, while participating in design discussions for features and bug fixes. Agile Participation: Identify and communicate problems with product teams and processes, and actively participate in team meetings and retrospectives. Location 🌍 The role is based in a GMT+2 compatible timezone. We have offices in Berlin, Madrid, London, and Paris. This position can be set up as either a Remote or Hybrid role. If you choose the remote option, you will work 100% from home within our supported regions. What You’ll Need 👀 Education: A degree in Computer Science (or a related field) or equivalent professional work experience. Backend Skills: At least a solid foundation in developing Java or Kotlin microservices with Spring Boot . Data & APIs: Hands-on experience with RESTful APIs and working with databases like PostgreSQL . AI Fluency: Experience using AI tools (such as coding agents) to assist in development, with the ability to explain how you prompt, review, and validate AI-generated output. Software Craftsmanship: A strong commitment to creating high-quality, well-tested code and an understanding of the challenges of running software in production (reliability, scalability, and performance). Communication: Strong communication skills in English , with the ability to collaborate effectively with peers and seek support when needed. Soft Skills: High empathy towards colleagues and an eagerness to receive and provide constructive feedback. Nice To Have ✨ Experience working in a product-based company. Frontend experience with TypeScript and React . Familiarity with gRPC , OAuth 2.0 , or Gradle . Experience with GitLab CI or GitHub Actions . Understanding of cloud infrastructure and containerization tools like Kubernetes or Docker . What We Offer 🥁 Competitive compensation, both in terms of base salary as well as equity plans that enable to you to share in our success Flexibility in ways of working both in terms of your schedule as well as your location, whether you prefer to work from home, the office, or abroad with access to a global network of co-working spaces Generous paid time off schemes , including vacation, sabbatical, religious observance and compensation days Meaningful benefits including private healthcare coverage, fitness and wellness programs covered through Wellhub, working-from-home allowances to help you set up your home office and cover monthly expenses Professional development with annual training budget for conferences, courses, certifications and access to top market e-learning platforms Collaborative environment with multiple offices around the globe, regular team activities and events as well as employee-led resource groups More About Clarity AI ⭐ Clarity AI ’s Founder and CEO, Rebeca Minguela , is a successful entrepreneur who has been recognised by prestigious institutions like the World Economic Forum as one of the most distinguished leaders under 40. The leadership team has an international presence and is composed of professionals from leading tech, consulting, and banking firms, entrepreneurs, PhDs from top research institutions, and MBA graduates from top business schools. Clarity AI has received several awards: The Forrester New Wave - ESG Ratings, Data, and Analytics - Leaders for 2022-2024 Investment Week - Best Sustainable Investment Research & Ratings Provider 2023 Fast Company - Most Innovative Companies 2023 European Commission | EU Seal of Excellence 2020 World Economic Forum - Technology Pioneer 2020 World Economic Forum, Young Global Leader - Rebeca Minguela Clarity AI believes diversity, inclusion, and belonging are essential for creating an innovative and successful workplace. By actively promoting and engaging in sustainability efforts, we can help create a more equitable and resilient future for our planet and all its inhabitants. Originally posted on Himalayas",
+    "source_posted": 1785160288,
+    "attribution_url": "https://himalayas.app/companies/clarity-ai/jobs/junior-software-engineer-consumer-team",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "period": "annual"
+    },
+    "id": "01648bfee33973c6cac341b9",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-20T15:52:33+00:00",
+    "sources": {
+      "himalayas_junior": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/clarity-ai/jobs/junior-software-engineer-consumer-team",
+        "posted": 1785160288
+      }
+    },
+    "text_hash": "b1bde9050492127cdf2f9e351fbe836f0fc631158655cecfa30bf04702a0cb0f",
+    "review": null,
+    "hints": {
+      "score": 10,
+      "experience_clues": [],
+      "salary_clues": [
+        "etes or Docker . What We Offer 🥁 Competitive compensation, both in terms of base salary as well as equity plans that enable to you to share in our success Flexibility in ways of working both in terms of your",
+        "cation, sabbatical, religious observance and compensation days Meaningful benefits including private healthcare coverage, fitness and wellness programs covered through Wellhub, working-from-home allowances t"
+      ]
+    },
+    "discovery_checked": "2026-09-18T03:59:22+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "Mixrank",
+    "title": "Junior Software Engineer - Remote (Global), Full-Time",
+    "url": "https://himalayas.app/companies/mixrank/jobs/junior-software-engineer-remote-global-full-time",
+    "location": "Australia, Brazil, Canada, China, France, Germany, India, Japan, United Kingdom, United States",
+    "text": "Who we are MixRank processes petabytes of data every month from web crawling. We have hundreds of customers using our data products including Google, Amazon, Facebook, Intel, and Adobe, across industries Sales, Marketing, Finance, and Security. Our team is 50+ full-time, full-remote from 20+ countries. We're growing, profitable, employee-owned, no dependence on outside funding. Applicants from all geographies and backgrounds are welcome. We are looking for passionate individuals for whom programming is not just a job but it’s something they love to do. We're obsessed with computers, programming, big data, databases, compilers, hardware, math, data science, and the internet. Does this sound like you? Please apply to join our team. Our code base is very friendly to new contributors. You'll have a fully-functional development environment within hours (fully automated) and be pushing commits on your first day. Deployments to production happen multiple times per day and finish in less than 2 minutes. Effectively all of our codebase is written in Python, Rust, SQL, Javascript/TypeScript, and Nix. The core technologies you'll need familiarity with to be productive are Python, PostgreSQL, Linux, and Git. We operate at a larger scale than typical startups. We operate two datacenters with high performance servers we've built that are capable of dealing with the volumes of data we process. We've implemented our own distributed file system. We do full-scale web crawls. We download and perform static analysis on the entire universe of Android APKs and iOS IPAs that are published. Unlike a typical startup where you'll spend half of your time in meetings, and the other half fixing bugs from Jira tickets— at MixRank you'll get to challenge yourself with difficult technical problems that will help you to grow as an individual. Who we’re looking for We're looking for remote junior engineers that have 0-3 years of professional experience in software, and 5+ years of curiosity exploring computers, programming, and technical hobby projects. This is an open-ended entry role with mentorship and diverse opportunities to work on all areas of our product: databases, distributed systems, infrastructure and tooling, data analysis, machine learning, frontend/backend web development, APIs, data mining, data modeling, and more. To stand out, please highlight what makes you unique: passion for computing, curiosity and side projects, work ethic, niche research, etc. Ideally you've already graduated, but if you still have one or more years left of school, please feel free to apply anyway, and if you're the right fit for the team we'll figure out a way to accommodate your schedule. Beneficial (but optional!) experience includes PostgreSQL, Python, Rust, Linux, TypeScript, Nix, frontend/backend web development, and data mining. We'll reply from a @ an email address. Check your spam folder if you don't see a timely reply. Originally posted on Himalayas",
+    "source_posted": 1785166650,
+    "attribution_url": "https://himalayas.app/companies/mixrank/jobs/junior-software-engineer-remote-global-full-time",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": null,
+      "max": null,
+      "currency": "USD",
+      "period": "annual"
+    },
+    "id": "12e8e079260b26910ff4bceb",
+    "first_seen": "2026-09-18T03:59:04+00:00",
+    "last_seen": "2026-09-20T15:52:33+00:00",
+    "sources": {
+      "himalayas_junior": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/mixrank/jobs/junior-software-engineer-remote-global-full-time",
+        "posted": 1785166650
+      }
+    },
+    "text_hash": "131f25d5e04b5fccccda263bfaed3c502fa7b808d78e61f908dc6d7b0f22f685",
+    "review": null,
+    "hints": {
+      "score": 8,
+      "experience_clues": [
+        "ooking for remote junior engineers that have 0-3 years of professional experience in software, and 5+ years of curiosity exploring com"
+      ],
+      "salary_clues": []
+    },
+    "discovery_checked": "2026-09-18T03:59:23+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  },
+  {
+    "company": "HighLevel",
+    "title": "Software Development Engineer II - Conversations",
+    "url": "https://himalayas.app/companies/highlevel/jobs/software-development-engineer-ii-conversations",
+    "location": "India",
+    "text": "About HighLevel : HighLevel is an AI-powered business operating system that gives agencies, entrepreneurs and SMBs the infrastructure to build, automate and scale. Today, HighLevel supports SMBs across 150+ countries, fueling community-driven growth rooted in real customer outcomes. To date, businesses operating on HighLevel have generated over $7 billion in ecosystem value, demonstrating the impact of shared infrastructure at scale. By centralizing conversations, automation and intelligence into one system, we help businesses move faster, reduce complexity and execute efficiently. Behind the platform, HighLevel powers more than 4 billion API hits and 2.5 billion message events daily. With 250 terabytes of distributed data, 250+ microservices and over 1 million domain names supported, our architecture is built for performance, resilience and long-term scalability. Our people With over 2,000 team members across 10+ countries, HighLevel operates as a global, remote-first organization built for speed and ownership. We value initiative, clarity and execution, creating space for ambitious people to build systems that support millions of businesses worldwide. Here, innovation thrives, ideas are celebrated and people come first, no matter where they call home. Our impact Every month, HighLevel enables more than 1.5 billion messages, 200 million leads and 20 million conversations for the more than 1 million businesses we support. Behind those numbers are real people building independence, expanding opportunity and creating measurable impact. We’re proud to be a part of that. Learn more about us on our YouTube Channel or Blog Posts What are we hiring for? The systems that run millions of businesses. Every month, 2.6 billion messages flow through our platform. Our automation engine enrolls 3.1 billion contacts and executes 21.5 billion workflow actions in the same window - with API traffic peaking at 28,000+ requests per second. If these systems lag, businesses lose leads. If they go down, people lose income. You haven't built at this scale yet. That's fine - almost nobody has. What we're hiring for is the engineer who reads those numbers and feels pulled toward them. Who wants to know what a queue looks like when it's absorbing a 10x burst, what an index does at 1.5 TB, what \"eventually consistent\" actually means when a customer is staring at the screen. You'll work on real production paths from week one — with senior engineers around you who've broken and fixed these systems before. You'll build. You'll break things. You'll learn faster here than anywhere else. Team & System Overview: The Conversations organization powers multi-channel communication across SMS, Email, WhatsApp, and DMs — handling over 2B messages each month. The Threads & Composer team owns the inbox and composer surfaces, and the backend services that deliver and store those interactions.You’ll work across Node.js microservices, GCP-based infra (GKE, Pub/Sub, Cloud Tasks), and MongoDB/Firestore storage layers, ensuring every message and UI state stays consistent, fast, and recoverable. Responsibilities: Build and ship features in Node.js / Go services that sit on real production paths — your code handles live traffic, not toy problems Own well-scoped services and components end to end: code, tests, rollout, and monitoring Work with SQL and NoSQL data stores — writing queries, adding indexes, and learning why the schema looks the way it does Get hands-on with queues, caches, and rate limiters — the building blocks of every system here Ship Vue 3 UIs that consume your own APIs — clean components, sane state management, and realtime updates that don't flicker or drift Write design docs for your features and defend them in review — clear thinking, honest trade-offs Join the on-call rotation with backup from senior engineers — incidents are where the deepest learning happens Ask questions relentlessly, absorb feedback from code reviews, and level up fast Requirements: 2+ years of backend engineering experience with strong fundamentals in Node.js, Go, or a comparable language — and the drive to go deep in ours Working knowledge of queues or async processing — you've used Pub/Sub, Kafka, RabbitMQ, or similar, and want to master delivery semantics, ordering, and backpressure Genuine interest in distributed systems — you understand the basics (idempotency, retries, consistency trade-offs) and are hungry to learn the rest by building Hands-on with Redis or another cache/in-memory store , even at small scale Comfortable with SQL or NoSQL databases — you can model data, write efficient queries, and reason about indexes Proficient in Vue 3 or a similar modern frontend framework — solid component design and real experience with state management (Pinia, Vuex, or equivalent) You write tests as a habit and can put your design thinking into a clear doc AI-native builder — you code with agents daily and are pushing to get accurate, production-quality output from them Technical Environment: Languages : Node.js (TypeScript), Go Frontend : Vue 3, TypeScript, Pinia, Vite, Tailwind Storage : MongoDB, Firestore, Redis, ElasticSearch, ClickHouse Infra : GCP — GKE, Pub/Sub, Cloud Tasks CI/CD : GitHub Actions, Docker, Kubernetes Why This Role Most engineers spend years at companies where \"scale\" means a few hundred requests per second — and never find out what they're capable of. Here, the systems are the teacher. Every design decision has a visible consequence at billions of events a month. Every incident is a masterclass. You'll sit in architecture reviews with staff engineers debating storage engines and consistency models — and within a year, you'll be contributing to those debates, not just watching them. If you optimize your career for learning velocity, there is no faster track than this. On AI We're past the debate. AI is part of how we build - and we expect you to be hungry for it . You already code with agents daily. You're learning what they're good at, where they hallucinate, and how to get accurate, tested, slop-free code out of them fast. You treat AI as a multiplier on your learning speed, not a substitute for understanding. If you're still copy-pasting from a chat window and hoping, this isn't the seat for you. What you're built for You're deeply curious — you don't stop at \"it works,\" you need to know why it works You read post-mortems and system-design write-ups for fun , not because someone assigned them You've built things beyond your job description — side projects, internal tools, that one system you rewrote because the old one bothered you You take feedback like a gift: code review comments make your next PR better, every time When something breaks, your first instinct is curiosity, not panic What Success looks like You own a service or component that the team trusts you on completely You're a dependable on-call engineer — you've debugged real incidents and shipped the fixes Your design docs have gone from \"reviewed heavily\" to \"approved with nits\" Senior engineers pull you into harder problems — because you've earned it You're visibly on the path to SDE-3, and everyone around you knows it Bonus Points Familiarity with our stack: GCP, MongoDB, Firestore, ClickHouse, ElasticSearch You've contributed to a messaging, automation, or event-driven system — at any scale Side projects or open-source work that shows you build because you can't not build EEO Statement: The company is an Equal Opportunity Employer. As an employer subject to affirmative action regulations, we invite you to voluntarily provide the following demographic information. This information is used solely for compliance with government recordkeeping, reporting, and other legal requirements. Providing this information is voluntary and refusal to do so will not affect your application status. This data will be kept separate from your application and will not be used in the hiring decision. We encourage you to review our Privacy Policy before submitting your application Originally posted on Himalayas",
+    "source_posted": 1789816536,
+    "attribution_url": "https://himalayas.app/companies/highlevel/jobs/software-development-engineer-ii-conversations",
+    "employment_type": "Full Time",
+    "advertised_pay": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "period": "annual"
+    },
+    "id": "ea60c51eaeaf4fcacf48ad33",
+    "first_seen": "2026-09-20T15:52:33+00:00",
+    "last_seen": "2026-09-20T15:52:33+00:00",
+    "sources": {
+      "himalayas": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/highlevel/jobs/software-development-engineer-ii-conversations",
+        "posted": 1789816536
+      },
+      "himalayas_india": {
+        "last_seen": "2026-09-20T15:52:33+00:00",
+        "url": "https://himalayas.app/companies/highlevel/jobs/software-development-engineer-ii-conversations",
+        "posted": 1789816536
+      }
+    },
+    "text_hash": "1ab487aec040f028aa37b98885091cea0dae2edd94475c5984cff2a8f851f31e",
+    "review": null,
+    "hints": {
+      "score": 13,
+      "experience_clues": [
+        "ode reviews, and level up fast Requirements: 2+ years of backend engineering experience with strong fundamentals in Node.js, Go, or a"
+      ],
+      "salary_clues": [
+        "s operating on HighLevel have generated over $7 billion in ecosystem value, demonstrating the impact of shared infrastructure at scale. By centralizing conversations, automation and intelligence i"
+      ]
+    },
+    "discovery_checked": "2026-09-20T15:52:54+00:00",
+    "employer_link_candidates": [],
+    "discovery_error": "HTTP Error 403: Forbidden",
+    "queue": "Needs verification",
+    "reasons": [
+      "Unreviewed discovery; salary, country and experience are not yet evidence"
+    ],
+    "source": "feed:alias-reconciliation"
+  }
+]

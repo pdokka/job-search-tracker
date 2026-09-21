@@ -1,0 +1,50 @@
+[
+  {
+    "company": "Bubblehouse",
+    "title": "Integration Engineer",
+    "url": "https://jobs.bubblehouse.com/integration-engineer/",
+    "location": "Remote; India eligibility unconfirmed",
+    "text": "Employer states USD 70,000–110,000 per year, all cash. Fixed-base breakdown not separately defined. Fully remote; existing team US/Europe. Requires overlap 9am–noon New York. India hiring not explicit. Employer explicitly seeks roughly 5–10 years, above the requested range. No dated employer publication or recent hiring signal established; search found a June hiring thread. A full-time hiring announcement was indexed, but current page does not independently clarify employment terms.",
+    "source": "employer:web-review",
+    "aliases": [],
+    "application_url": "https://jobs.bubblehouse.com/integration-engineer/",
+    "employer_posted": null
+  },
+  {
+    "company": "DualEntry",
+    "title": "Hardcore Engineer (All Levels)",
+    "url": "https://jobs.ashbyhq.com/dualentry/f43f3646-8342-497c-b364-b14b3d6f382f",
+    "location": "India remote (historical posting)",
+    "text": "Historical indexed employer content showed USD 120,000–300,000 plus equity; no current open posting supports an offer. Historical employer posting specified India remote. Historical employer description said experience level was unrestricted. Job absent from current employer board; matching employer LinkedIn listing redirects as expired and its indexed version explicitly says applications are closed. Historical employer listing described full-time employment.",
+    "source": "employer:web-review",
+    "aliases": [],
+    "application_url": "https://jobs.ashbyhq.com/dualentry/f43f3646-8342-497c-b364-b14b3d6f382f",
+    "employer_posted": null
+  },
+  {
+    "company": "WebEngage",
+    "title": "Data Engineer",
+    "url": "https://webengage.hire.trakstar.com/jobs/fk0zs8y/",
+    "location": "Mumbai; partially remote",
+    "text": "No numerical employer salary published. Employer labels the job Mumbai and partially remote. Does not satisfy staying in Hyderabad. Employer requires 1–3 years of data/analytics engineering or backend pipeline experience. Original publication date and a dated recent hiring signal are not established. Full-time employment stated by employer.",
+    "source": "employer:web-review",
+    "aliases": [
+      "https://himalayas.app/companies/webengage/jobs/data-engineer"
+    ],
+    "application_url": "https://webengage.hire.trakstar.com/jobs/fk0zs8y/",
+    "employer_posted": null
+  },
+  {
+    "company": "Sanctuary Computer",
+    "title": "Senior Shopify Developer",
+    "url": "https://wellfound.com/jobs/4735188-senior-shopify-developer",
+    "location": "Remote; geography conflicts",
+    "text": "Employer Wellfound structured baseSalary is USD 80,000–160,000 per year. Contract duration and guaranteed annual earnings remain unconfirmed. Visible page says worldwide, but structured applicantLocationRequirements says United States. India eligibility unconfirmed; Eastern-time collaboration. Description and structured metadata require eight-plus years of frontend development. Employer Wellfound datePosted is 18 September 2026. Contractor role; guaranteed term of at least twelve months is not published.",
+    "source": "employer:web-review",
+    "aliases": [
+      "https://remoteok.com/remote-jobs/remote-senior-shopify-developer-sanctuary-computer-1137405"
+    ],
+    "application_url": "https://wellfound.com/jobs/4735188-senior-shopify-developer",
+    "employer_posted": "2026-09-18T12:51:16Z"
+  }
+]

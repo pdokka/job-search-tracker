@@ -1,0 +1,29 @@
+# Local Python installation and temporary files
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.tmp
+
+# Credentials and machine-specific setup (never needed by a collaborator)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/setup.json
+/job-tracker/data/schedule.json
+
+# Rebuildable responses, logs, locks and local recovery copies
+/backups/
+/logs/
+/job-tracker/data/cache/
+/job-tracker/data/.run.lock
+/job-tracker/data/imports/*-raw-*.json
+/job-tracker/data/imports/*-page-*.json
+/job-tracker/data/review-queue.json
+/Latest Results.txt
+
+# Editor preferences
+.idea/
+.vscode/

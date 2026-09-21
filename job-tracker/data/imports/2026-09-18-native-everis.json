@@ -1,0 +1,102 @@
+[
+  {
+    "company": "everis",
+    "title": "Deal Origination Analyst — Broker & Owner Sourcing",
+    "url": "https://jobs.ashbyhq.com/everis/e2d50171-6baa-4ba8-9b95-21b8e1e50d4f",
+    "location": "Remote — United States",
+    "text": "Job title: Deal Origination Analyst — Broker & Owner Sourcing Location: 100% remote; candidates must be based in the United States, Canada, or the United Kingdom and available during North American business hours Employment: Full-time Salary: US$70,000–$85,000 base salary, plus an annual performance bonus of up to US$15,000, depending on ability and experience. Everis is hiring an early-career analyst to build the pipeline of businesses we may acquire. You will research markets and companies, build relationships with brokers, contact owners, qualify opportunities, do initial analysis, and hand the strongest deals to our acquisition team with clear notes. This is a sourcing and relationship role, not a traditional investment-banking role. Your main responsibility is high-quality deal flow. You will see evaluation, diligence, and transactions, but the deal team owns complex modelling, diligence, negotiation, and execution. WHY JOIN EVERIS - Work directly on acquisition strategy and see how a lead becomes a serious opportunity. - Speak with brokers, advisers, founders, and owners while learning what makes a business attractive and why owners sell. - Research varied industries, use modern AI and sourcing tools, take ownership quickly, and grow into broader acquisition responsibilities. ABOUT EVERIS Everis is a software holding company with $27 million in annual recurring revenue. We buy B2B SaaS companies from the founders who built them and keep them permanently. We invest our own capital and operate without the pressure of a fund exit timeline. Our remote team strengthens engineering and product, pricing, go-to-market, retention, revenue operations, and back-office systems across the portfolio. WHAT YOU’LL WORK ON BROKER AND INTERMEDIARY RELATIONSHIPS - Find and build relationships with relevant brokers, advisers, marketplaces, and other deal sources. - Stay in regular contact, understand what they have coming to market, and follow up consistently. - Screen brokered and marketplace opportunities against Everis’s criteria and surface the strongest ones quickly. OWNER SOURCING AND OUTREACH - Build targeted lists of businesses and owners that may fit our criteria. - Find and verify decision-maker contacts, then run thoughtful outreach by phone, email, LinkedIn, referrals, and other relevant channels. - Hold initial conversations, understand each owner’s goals, and follow up professionally over what may be a long cycle. RESEARCH AND QUALIFICATION - Understand what each business does, how it makes money, who its customers are, and what makes it defensible. - Gather high-level information on revenue, profit, growth, recurring revenue, customer concentration, owner involvement, asking price, sale motivation, and timing. - Assess fit, prepare short opportunity briefs and notes, and coordinate a clean handoff to the deal team. PIPELINE OWNERSHIP AND IMPROVEMENT - Keep the acquisition CRM accurate, including contacts, source, stage, notes, next action, financial snippets, risks, and follow-up dates. - Track outreach, responses, meetings, qualified opportunities, handoffs, and funnel progression. Provide concise weekly reporting. - Use evidence and AI tools to improve research, outreach, recordkeeping, and the sourcing methods that produce the best opportunities. WHAT WE’RE LOOKING FOR - Evidence of exceptional ability through one specific, verifiable accomplishment with unusual difficulty, selectivity, or impact—and a clear explanation of what you personally contributed. - Alternatively, direct acquisition experience that includes all three: analysing small or mid-sized SaaS or mobile-app businesses, judging their attractiveness as acquisition targets, and engaging owners or founders about acquisition fit or motivations. - Strong research and commercial judgment, with the ability to understand unfamiliar businesses and communicate credibly with brokers, advisers, owners, and founders. You are smart, curious, and able to learn quickly. - Excellent spoken and written communication. You are comfortable making cold calls, sending outbound messages, hearing no, and following up consistently without relying on finance jargon. - Highly organized, reliable, proactive, and resilient. You maintain accurate notes, follow through on commitments, handle confidential information with integrity, and work effectively without constant supervision. - Comfortable using spreadsheets, CRM systems, research databases, and AI tools, with basic financial and commercial literacy or the ability to learn quickly. This role is designed for candidates with zero to three years of professional experience. Prior acquisition or sales experience is not required when a candidate demonstrates exceptional ability. Generic sales results, outreach volume, list building, financial modelling, credentials, or employer prestige do not establish a strong match on their own. WHAT WE OFFER - US$70,000–$85,000 base salary plus an annual performance bonus of up to US$15,000. - 100% remote work from the United States, Canada, or the United Kingdom. - Direct exposure to founders, brokers, owners, and real acquisition opportunities. - Meaningful responsibility early, with a path into senior deal origination, acquisitions, or broader operating work. If you want to learn how great businesses are found and directly help build Everis’s acquisition pipeline, we’d like to hear from you.",
+    "source_posted": "2026-09-07T05:55:16.940+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$70K – $85K • $5K – $15K Bonus",
+      "scrapeableCompensationSalarySummary": "$70K - $85K",
+      "compensationTiers": [
+        {
+          "id": "700f0636-9243-47a2-aed1-963c802de6c6",
+          "tierSummary": "$70K – $85K • $5K – $15K Bonus",
+          "title": null,
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "90742692-1aeb-4ddc-8891-d73cccbd5189",
+              "summary": "$70K – $85K",
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 70000,
+              "maxValue": 85000
+            },
+            {
+              "id": "1773fe08-0661-432c-9ae6-96b388a254b5",
+              "summary": "$5K – $15K Bonus",
+              "compensationType": "Bonus",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 5000,
+              "maxValue": 15000
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "compensationType": "Salary",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": 70000,
+          "maxValue": 85000
+        },
+        {
+          "compensationType": "Bonus",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": 5000,
+          "maxValue": 15000
+        }
+      ]
+    },
+    "employer_posted": "2026-09-07T05:55:16.940+00:00",
+    "source": "employer:ashby:everis"
+  },
+  {
+    "company": "everis",
+    "title": "Mobile Software Engineer, Growth & Experimentation",
+    "url": "https://jobs.ashbyhq.com/everis/d4e0e96c-1882-4852-8f2b-76c66a64f3df",
+    "location": "Remote",
+    "text": "Everis has a different standard for talent. We do not use years of experience, titles, or pedigree as substitutes for ability. We look for exceptional work, sound judgment, fast learning, ownership, and evidence of impact. It is not a lower bar. It is a sharper one. We’re looking for an accomplished software engineer who has built real mobile applications and already has practical exposure to growth, experimentation, conversion optimization, or broader product work. This role requires both engineering depth and evidence that you can think beyond implementation. Join Everis at a defining stage of growth. Help shape the product, influence the company we become, and grow with us. Work 100% remotely from anywhere, benefit from unlimited leave, and connect with colleagues at company-sponsored international retreats in some of the world’s most inspiring cities. ABOUT EVERIS Everis is a growing, remote-first software company founded by proven technology entrepreneurs Rob Rawson and Liam Martin, who previously built Time Doctor into an eight-figure global SaaS business. We acquire promising mobile apps and SaaS companies, invest in their future, and improve their products, technology, and customer experience. Our ambition is to make Everis the best long-term home for exceptional software products—and a company where exceptional people can take real ownership, do consequential work, and grow with us. ABOUT THE PRODUCT Pebble is Everis’s growing, speaking-first language-learning app for iOS and Android. It helps people learn English, Spanish, and French through practical lessons, pronunciation practice, and guided conversations that get them speaking from day one. The product is live and evolving quickly, with major opportunities across onboarding, habit formation, activation, retention, conversion, and new markets. Your engineering and product decisions will directly influence how well people learn and how quickly Pebble grows. WHAT MAKES THIS ROLE DIFFERENT Most engineering roles begin after the problem, solution, and ticket have already been defined. Here, you join the work earlier. You will remain a software engineer first, but you will also identify product problems, decide what to test, build the solution, measure the outcome, and use the evidence to determine what happens next. This is not a marketing role for someone who codes; it is an engineering role with responsibility for product outcomes. WHAT YOU’LL WORK ON - Build, ship, and improve Pebble’s mobile applications. - Find friction across onboarding, activation, engagement, retention, conversion, and monetization. - Turn product questions into improvements, prototypes, A/B tests, and other useful experiments. - Use product and user data to understand behavior and decide what should be built next. - Define success measures, analyze results, and act on what you learn. - Work directly with our founders and product and business leadership. - Balance strong engineering with the speed required to test ideas and learn. WHAT YOU NEED TO BRING This is a mobile engineering job first. You need to have built, shipped, and supported a production mobile app. We mean a real product used by real people - not just a demo or code sample. We also need proof you've thought beyond implementation. Show us at least one of these: - Breadth beyond implementation. Direct mobile-growth or conversion work You must show meaningful evidence of at least one of the following: growth experimentation, A/B or split testing, conversion optimization, product ownership, building and operating your own software product. - Conversion optimization. You improved a real flow: onboarding, activation, a paywall, trial-to-paid, checkout, or another point where users dropped. - Core Stack. Strong engineering fundamentals and sound judgment about reliability, maintainability, quality, and speed. Flutter/Dart, TypeScript/NestJS, MongoDB, or close equivalents; and App Store or Google Play subscriptions, paywalls, payments, or trial-to-paid journeys. - Production mobile engineering. Demonstrated success building and shipping production mobile applications using iOS, Android, cross-platform, or another credible mobile environment. - Product development or ownership. You helped decide what to build and why. You didn't just receive a finished specification. You can independently take production software from problem through implementation, release, and iteration. - Product-management-type work. You framed the problem, made trade-offs, defined success, or used evidence to choose the next move. - A product of your own. You built it, launched it, watched real people use it, and changed it based on what you learned. WHAT GOOD LOOKS LIKE - Your fundamentals are solid. APIs, data modelling, testing, debugging, release practices, and production monitoring aren't someone else's job. - You can tell the whole story. What was wrong, what you personally built, what happened, and what you did next. - You cross boundaries when the problem demands it. Mobile, backend, web, data, analytics - you don't stop at the edge of your code. - You'd rather find out than argue from theory. You form a view, test it, and change your mind when the evidence says you should. WHAT WE OFFER - Compensation: $80,000–$120,000 USD annually, depending on experience. - Consequential ownership: your decisions will directly affect Pebble and Everis. - Direct founder access: work closely with experienced entrepreneurs on important product and company decisions. - Exceptional colleagues: work with capable, curious, high-ownership people held to the same demanding standard. - Room to grow: take on larger problems and greater responsibility as Everis expands. - 100% remote: work from anywhere. - Unlimited leave: take meaningful time away when you need it. - Paid international company trips: come together with the team in some of the world’s most inspiring cities—to collaborate, build lasting relationships, and experience somewhere new. OUR RECRUITING PROCESS We keep our process structured and transparent: - Initial review: Application → Written Assessment - Skills and reasoning: Recorded Scenario Assessment → Reasoning Intelligence Test → Recorded Role-Specific Assessment - Interviews: Technical Interview → Final Interview with a Co-Founder - Final evaluation: Paid Work Trial If you are an exceptional mobile engineer who wants to help decide what gets built, prove whether it works, and shape a growing product, we want to hear from you.",
+    "source_posted": "2026-09-05T06:04:28.927+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$80K – $120K",
+      "scrapeableCompensationSalarySummary": "$80K - $120K",
+      "compensationTiers": [
+        {
+          "id": "4b10810c-963a-406a-9a2b-51dea031e5cc",
+          "tierSummary": "$80K – $120K",
+          "title": null,
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "6cebb190-fcc9-474f-8c7d-8157313dbc5f",
+              "summary": "$80K – $120K",
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 80000,
+              "maxValue": 120000
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "compensationType": "Salary",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": 80000,
+          "maxValue": 120000
+        }
+      ]
+    },
+    "employer_posted": "2026-09-05T06:04:28.927+00:00",
+    "source": "employer:ashby:everis"
+  }
+]

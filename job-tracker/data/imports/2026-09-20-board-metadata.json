@@ -1,0 +1,1209 @@
+[
+  {
+    "board": "asteriAI",
+    "checked_at": "2026-09-20T15:47:31+00:00",
+    "cached": true,
+    "url": "https://api.ashbyhq.com/posting-api/job-board/asteriAI?includeCompensation=true",
+    "jobs": [
+      {
+        "title": "Full Stack Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/asteriAI/23cde279-d945-46d3-8c5d-8559d12a541e",
+        "applyUrl": "https://jobs.ashbyhq.com/asteriAI/23cde279-d945-46d3-8c5d-8559d12a541e/application",
+        "employmentType": "FullTime",
+        "location": "Remote",
+        "secondaryLocations": [],
+        "address": {
+          "postalAddress": {
+            "addressCountry": "United States"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2026-01-07T04:55:15.581+00:00",
+        "compensation": {
+          "compensationTierSummary": null,
+          "scrapeableCompensationSalarySummary": null,
+          "compensationTiers": [],
+          "summaryComponents": []
+        }
+      }
+    ]
+  },
+  {
+    "board": "bio",
+    "checked_at": "2026-09-20T15:47:31+00:00",
+    "cached": true,
+    "url": "https://api.ashbyhq.com/posting-api/job-board/bio?includeCompensation=true",
+    "jobs": [
+      {
+        "title": "Full-stack Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/bio/515cd00c-c691-4082-8036-606ec1a47a2c",
+        "applyUrl": "https://jobs.ashbyhq.com/bio/515cd00c-c691-4082-8036-606ec1a47a2c/application",
+        "employmentType": "FullTime",
+        "location": "Remote",
+        "secondaryLocations": [],
+        "address": null,
+        "isRemote": null,
+        "publishedAt": "2026-01-22T19:59:27.787+00:00",
+        "compensation": {
+          "compensationTierSummary": null,
+          "scrapeableCompensationSalarySummary": null,
+          "compensationTiers": [],
+          "summaryComponents": []
+        }
+      }
+    ]
+  },
+  {
+    "board": "coperniq",
+    "checked_at": "2026-09-20T15:47:31+00:00",
+    "cached": true,
+    "url": "https://api.ashbyhq.com/posting-api/job-board/coperniq?includeCompensation=true",
+    "jobs": [
+      {
+        "title": "Senior Full-Stack Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/coperniq/2791caa3-e47a-44a6-a01a-c8d069c28c64",
+        "applyUrl": "https://jobs.ashbyhq.com/coperniq/2791caa3-e47a-44a6-a01a-c8d069c28c64/application",
+        "employmentType": "FullTime",
+        "location": "Remote",
+        "secondaryLocations": [],
+        "address": {
+          "postalAddress": {
+            "addressCountry": "United States"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2024-12-19T21:06:21.216+00:00",
+        "compensation": {
+          "compensationTierSummary": null,
+          "scrapeableCompensationSalarySummary": null,
+          "compensationTiers": [],
+          "summaryComponents": []
+        }
+      }
+    ]
+  },
+  {
+    "board": "fathom.video",
+    "checked_at": "2026-09-20T15:47:31+00:00",
+    "cached": true,
+    "url": "https://api.ashbyhq.com/posting-api/job-board/fathom.video?includeCompensation=true",
+    "jobs": [
+      {
+        "title": "Full Stack Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/fathom.video/01619869-e031-464c-b3b3-7674f10a77f6",
+        "applyUrl": "https://jobs.ashbyhq.com/fathom.video/01619869-e031-464c-b3b3-7674f10a77f6/application",
+        "employmentType": "FullTime",
+        "location": "Remote",
+        "secondaryLocations": [],
+        "address": {
+          "postalAddress": {
+            "addressCountry": "United States"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2024-10-11T17:40:02.977+00:00",
+        "compensation": {
+          "compensationTierSummary": "$180K – $230K • Offers Equity",
+          "scrapeableCompensationSalarySummary": "$180K - $230K",
+          "compensationTiers": [
+            {
+              "id": "91781831-97e5-456a-ad73-55fb18cc0cf4",
+              "tierSummary": "$180K – $230K • Offers Equity",
+              "title": null,
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "89e569a1-9da9-4fbb-9a09-b9d8d3e5f458",
+                  "summary": "$180K – $230K",
+                  "compensationType": "Salary",
+                  "interval": "1 YEAR",
+                  "currencyCode": "USD",
+                  "minValue": 180000,
+                  "maxValue": 230000
+                },
+                {
+                  "id": "b5bfdc99-f436-4110-b2db-4dae66e120e6",
+                  "summary": "Offers Equity",
+                  "compensationType": "EquityPercentage",
+                  "interval": "NONE",
+                  "currencyCode": null,
+                  "minValue": null,
+                  "maxValue": null
+                }
+              ]
+            }
+          ],
+          "summaryComponents": [
+            {
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 180000,
+              "maxValue": 230000
+            },
+            {
+              "compensationType": "EquityPercentage",
+              "interval": "NONE",
+              "currencyCode": null,
+              "minValue": null,
+              "maxValue": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "board": "hirehangar",
+    "checked_at": "2026-09-20T15:47:31+00:00",
+    "cached": true,
+    "url": "https://api.ashbyhq.com/posting-api/job-board/hirehangar?includeCompensation=true",
+    "jobs": [
+      {
+        "title": "Senior Full Stack Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/hirehangar/dc75b9eb-d486-47a8-97c0-2c00c8c85b19",
+        "applyUrl": "https://jobs.ashbyhq.com/hirehangar/dc75b9eb-d486-47a8-97c0-2c00c8c85b19/application",
+        "employmentType": "Contract",
+        "location": "Mexico - Monterrey",
+        "secondaryLocations": [
+          {
+            "location": "Parugauy - Asuncion",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Parugauy",
+                "addressCountry": "Paraguay",
+                "addressLocality": "Asuncion"
+              }
+            }
+          },
+          {
+            "location": "Ecuador - Guayaquil",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Ecuador",
+                "addressCountry": "Ecuador",
+                "addressLocality": "Guayaquil"
+              }
+            }
+          },
+          {
+            "location": "Ukraine - Kharkiv",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Kharkiv",
+                "addressCountry": "Ukraine",
+                "addressLocality": "Kharkiv"
+              }
+            }
+          },
+          {
+            "location": "Egypt - Cairo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Egypt",
+                "addressCountry": "Egypt",
+                "addressLocality": "Cairo"
+              }
+            }
+          },
+          {
+            "location": "South Africa - Johannesburg",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "South Africa",
+                "addressCountry": "South Africa",
+                "addressLocality": "Johannesburg"
+              }
+            }
+          },
+          {
+            "location": "Columbia - Bogotá",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Columbia",
+                "addressCountry": "Colombia",
+                "addressLocality": "Bogotá"
+              }
+            }
+          },
+          {
+            "location": "Columbia - Medellín",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Columbia",
+                "addressCountry": "Colombia",
+                "addressLocality": "Medellín"
+              }
+            }
+          },
+          {
+            "location": "Chile - Santiago",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Santiago",
+                "addressCountry": "Chile",
+                "addressLocality": "Santiago"
+              }
+            }
+          },
+          {
+            "location": "Uruguay - Montevideo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Montevideo",
+                "addressCountry": "Uruguay",
+                "addressLocality": "Montevideo"
+              }
+            }
+          },
+          {
+            "location": "Peru - Lima",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Peru",
+                "addressCountry": "Peru",
+                "addressLocality": "Lima"
+              }
+            }
+          },
+          {
+            "location": "Inida - New Delhi",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "New Delhi",
+                "addressCountry": "India",
+                "addressLocality": "New Delhi"
+              }
+            }
+          },
+          {
+            "location": "Dominican Republic - Santo Domingo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Dominican Republic",
+                "addressCountry": "Dominican Republic",
+                "addressLocality": "Santo Domingo"
+              }
+            }
+          },
+          {
+            "location": "Nicaragua - Managua",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Nicaragua",
+                "addressCountry": "Nicaragua",
+                "addressLocality": "Managua"
+              }
+            }
+          },
+          {
+            "location": "Jamaica - Kingston",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Surrey",
+                "addressCountry": "Jamaica",
+                "addressLocality": "Kingston"
+              }
+            }
+          },
+          {
+            "location": "Argentina - Buenos Aires",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Argentina",
+                "addressCountry": "Argentina",
+                "addressLocality": "Buenos Aires"
+              }
+            }
+          },
+          {
+            "location": "Panama - Panama City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Panama",
+                "addressCountry": "Panama",
+                "addressLocality": "Panama City"
+              }
+            }
+          },
+          {
+            "location": "Honduras - Tegucigalpa",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Honduras",
+                "addressCountry": "Honduras",
+                "addressLocality": "Tegucigalpa"
+              }
+            }
+          },
+          {
+            "location": "South Africa - Cape Town",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "South Africa",
+                "addressCountry": "South Africa",
+                "addressLocality": "Cape Town"
+              }
+            }
+          },
+          {
+            "location": "Poland - Warsaw",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Warsaw",
+                "addressCountry": "Poland",
+                "addressLocality": "Warsaw"
+              }
+            }
+          },
+          {
+            "location": "Mexico - Mexico City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Mexico",
+                "addressCountry": "Mexico",
+                "addressLocality": "Mexico City"
+              }
+            }
+          }
+        ],
+        "address": {
+          "postalAddress": {
+            "addressRegion": "Mexico",
+            "addressCountry": "Mexico",
+            "addressLocality": "Monterrey"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2026-09-05T01:48:11.004+00:00",
+        "compensation": {
+          "compensationTierSummary": "$2.5K – $7K per month • Multiple Ranges",
+          "scrapeableCompensationSalarySummary": null,
+          "compensationTiers": [
+            {
+              "id": "b2da3a42-fdaf-4a2d-9431-3b75e9a1a71c",
+              "tierSummary": "$2.5K – $3K per month",
+              "title": "Tier 1",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "64959e0d-5c3a-4263-80b2-1fbe661a61eb",
+                  "summary": "$2.5K – $3K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 2500,
+                  "maxValue": 3000
+                }
+              ]
+            },
+            {
+              "id": "73b3c925-9b37-40a2-bc63-48f6eb5e9f05",
+              "tierSummary": "$3K – $4K per month",
+              "title": "Tier 2",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "a7a90fb7-a688-4ce7-879e-c27f6b2bbf1d",
+                  "summary": "$3K – $4K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 3000,
+                  "maxValue": 4000
+                }
+              ]
+            },
+            {
+              "id": "d28d8395-c9d7-4d4a-92d5-eb8046f6577a",
+              "tierSummary": "$5K – $7K per month",
+              "title": "Tier 3",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "c55245e2-bd1d-4e41-84da-1935dd175231",
+                  "summary": "$5K – $7K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 5000,
+                  "maxValue": 7000
+                }
+              ]
+            }
+          ],
+          "summaryComponents": [
+            {
+              "minValue": 2500,
+              "maxValue": 7000,
+              "currencyCode": "USD",
+              "interval": "1 MONTH",
+              "compensationType": "Salary"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Full Stack Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/hirehangar/5cab9b8f-c9d0-4e97-9f29-1ce42565b896",
+        "applyUrl": "https://jobs.ashbyhq.com/hirehangar/5cab9b8f-c9d0-4e97-9f29-1ce42565b896/application",
+        "employmentType": "Contract",
+        "location": "South Africa - Cape Town",
+        "secondaryLocations": [
+          {
+            "location": "Parugauy - Asuncion",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Parugauy",
+                "addressCountry": "Paraguay",
+                "addressLocality": "Asuncion"
+              }
+            }
+          },
+          {
+            "location": "Ecuador - Guayaquil",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Ecuador",
+                "addressCountry": "Ecuador",
+                "addressLocality": "Guayaquil"
+              }
+            }
+          },
+          {
+            "location": "Bolivia - Santa Cruz de la Sierra",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Bolivia",
+                "addressCountry": "Bolivia",
+                "addressLocality": "Santa Cruz de la Sierra"
+              }
+            }
+          },
+          {
+            "location": "Manila",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Luzon",
+                "addressCountry": "Philippines",
+                "addressLocality": "Manila"
+              }
+            }
+          },
+          {
+            "location": "Mexico - Monterrey",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Mexico",
+                "addressCountry": "Mexico",
+                "addressLocality": "Monterrey"
+              }
+            }
+          },
+          {
+            "location": "Egypt - Cairo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Egypt",
+                "addressCountry": "Egypt",
+                "addressLocality": "Cairo"
+              }
+            }
+          },
+          {
+            "location": "South Africa - Johannesburg",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "South Africa",
+                "addressCountry": "South Africa",
+                "addressLocality": "Johannesburg"
+              }
+            }
+          },
+          {
+            "location": "Columbia - Bogotá",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Columbia",
+                "addressCountry": "Colombia",
+                "addressLocality": "Bogotá"
+              }
+            }
+          },
+          {
+            "location": "Belize - Belize City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "BElize",
+                "addressCountry": "Belize",
+                "addressLocality": "Belize City"
+              }
+            }
+          },
+          {
+            "location": "Columbia - Medellín",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Columbia",
+                "addressCountry": "Colombia",
+                "addressLocality": "Medellín"
+              }
+            }
+          },
+          {
+            "location": "Chile - Santiago",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Santiago",
+                "addressCountry": "Chile",
+                "addressLocality": "Santiago"
+              }
+            }
+          },
+          {
+            "location": "Uruguay - Montevideo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Montevideo",
+                "addressCountry": "Uruguay",
+                "addressLocality": "Montevideo"
+              }
+            }
+          },
+          {
+            "location": "Peru - Lima",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Peru",
+                "addressCountry": "Peru",
+                "addressLocality": "Lima"
+              }
+            }
+          },
+          {
+            "location": "Dominican Republic - Santo Domingo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Dominican Republic",
+                "addressCountry": "Dominican Republic",
+                "addressLocality": "Santo Domingo"
+              }
+            }
+          },
+          {
+            "location": "Nicaragua - Managua",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Nicaragua",
+                "addressCountry": "Nicaragua",
+                "addressLocality": "Managua"
+              }
+            }
+          },
+          {
+            "location": "Jamaica - Kingston",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Surrey",
+                "addressCountry": "Jamaica",
+                "addressLocality": "Kingston"
+              }
+            }
+          },
+          {
+            "location": "Argentina - Buenos Aires",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Argentina",
+                "addressCountry": "Argentina",
+                "addressLocality": "Buenos Aires"
+              }
+            }
+          },
+          {
+            "location": "Panama - Panama City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Panama",
+                "addressCountry": "Panama",
+                "addressLocality": "Panama City"
+              }
+            }
+          },
+          {
+            "location": "Honduras - Tegucigalpa",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Honduras",
+                "addressCountry": "Honduras",
+                "addressLocality": "Tegucigalpa"
+              }
+            }
+          },
+          {
+            "location": "Mexico - Mexico City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Mexico",
+                "addressCountry": "Mexico",
+                "addressLocality": "Mexico City"
+              }
+            }
+          }
+        ],
+        "address": {
+          "postalAddress": {
+            "addressRegion": "South Africa",
+            "addressCountry": "South Africa",
+            "addressLocality": "Cape Town"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2026-09-05T01:48:25.048+00:00",
+        "compensation": {
+          "compensationTierSummary": "$2.5K – $7K per month • Multiple Ranges",
+          "scrapeableCompensationSalarySummary": null,
+          "compensationTiers": [
+            {
+              "id": "b2da3a42-fdaf-4a2d-9431-3b75e9a1a71c",
+              "tierSummary": "$2.5K – $3K per month",
+              "title": "Tier 1",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "64959e0d-5c3a-4263-80b2-1fbe661a61eb",
+                  "summary": "$2.5K – $3K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 2500,
+                  "maxValue": 3000
+                }
+              ]
+            },
+            {
+              "id": "73b3c925-9b37-40a2-bc63-48f6eb5e9f05",
+              "tierSummary": "$3K – $4K per month",
+              "title": "Tier 2",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "a7a90fb7-a688-4ce7-879e-c27f6b2bbf1d",
+                  "summary": "$3K – $4K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 3000,
+                  "maxValue": 4000
+                }
+              ]
+            },
+            {
+              "id": "d28d8395-c9d7-4d4a-92d5-eb8046f6577a",
+              "tierSummary": "$5K – $7K per month",
+              "title": "Tier 3",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "c55245e2-bd1d-4e41-84da-1935dd175231",
+                  "summary": "$5K – $7K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 5000,
+                  "maxValue": 7000
+                }
+              ]
+            }
+          ],
+          "summaryComponents": [
+            {
+              "minValue": 2500,
+              "maxValue": 7000,
+              "currencyCode": "USD",
+              "interval": "1 MONTH",
+              "compensationType": "Salary"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Full-Stack AI Engineer",
+        "jobUrl": "https://jobs.ashbyhq.com/hirehangar/b26e2d5f-daba-4d1f-854a-ed81ebc22bdc",
+        "applyUrl": "https://jobs.ashbyhq.com/hirehangar/b26e2d5f-daba-4d1f-854a-ed81ebc22bdc/application",
+        "employmentType": "Contract",
+        "location": "South Africa - Cape Town",
+        "secondaryLocations": [
+          {
+            "location": "Parugauy - Asuncion",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Parugauy",
+                "addressCountry": "Paraguay",
+                "addressLocality": "Asuncion"
+              }
+            }
+          },
+          {
+            "location": "Ecuador - Guayaquil",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Ecuador",
+                "addressCountry": "Ecuador",
+                "addressLocality": "Guayaquil"
+              }
+            }
+          },
+          {
+            "location": "Bolivia - Santa Cruz de la Sierra",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Bolivia",
+                "addressCountry": "Bolivia",
+                "addressLocality": "Santa Cruz de la Sierra"
+              }
+            }
+          },
+          {
+            "location": "Manila",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Luzon",
+                "addressCountry": "Philippines",
+                "addressLocality": "Manila"
+              }
+            }
+          },
+          {
+            "location": "Egypt - Cairo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Egypt",
+                "addressCountry": "Egypt",
+                "addressLocality": "Cairo"
+              }
+            }
+          },
+          {
+            "location": "Philippines - Davao City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Philippines",
+                "addressCountry": "Philippines",
+                "addressLocality": "Davao City"
+              }
+            }
+          },
+          {
+            "location": "South Africa - Johannesburg",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "South Africa",
+                "addressCountry": "South Africa",
+                "addressLocality": "Johannesburg"
+              }
+            }
+          },
+          {
+            "location": "Columbia - Bogotá",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Columbia",
+                "addressCountry": "Colombia",
+                "addressLocality": "Bogotá"
+              }
+            }
+          },
+          {
+            "location": "Columbia - Medellín",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Columbia",
+                "addressCountry": "Colombia",
+                "addressLocality": "Medellín"
+              }
+            }
+          },
+          {
+            "location": "Chile - Santiago",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Santiago",
+                "addressCountry": "Chile",
+                "addressLocality": "Santiago"
+              }
+            }
+          },
+          {
+            "location": "Uruguay - Montevideo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Montevideo",
+                "addressCountry": "Uruguay",
+                "addressLocality": "Montevideo"
+              }
+            }
+          },
+          {
+            "location": "Peru - Lima",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Peru",
+                "addressCountry": "Peru",
+                "addressLocality": "Lima"
+              }
+            }
+          },
+          {
+            "location": "Dominican Republic - Santo Domingo",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Dominican Republic",
+                "addressCountry": "Dominican Republic",
+                "addressLocality": "Santo Domingo"
+              }
+            }
+          },
+          {
+            "location": "Nicaragua - Managua",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Nicaragua",
+                "addressCountry": "Nicaragua",
+                "addressLocality": "Managua"
+              }
+            }
+          },
+          {
+            "location": "Jamaica - Kingston",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Surrey",
+                "addressCountry": "Jamaica",
+                "addressLocality": "Kingston"
+              }
+            }
+          },
+          {
+            "location": "Argentina - Buenos Aires",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Argentina",
+                "addressCountry": "Argentina",
+                "addressLocality": "Buenos Aires"
+              }
+            }
+          },
+          {
+            "location": "Panama - Panama City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Panama",
+                "addressCountry": "Panama",
+                "addressLocality": "Panama City"
+              }
+            }
+          },
+          {
+            "location": "Honduras - Tegucigalpa",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Honduras",
+                "addressCountry": "Honduras",
+                "addressLocality": "Tegucigalpa"
+              }
+            }
+          },
+          {
+            "location": "Poland - Kraków",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Kraków",
+                "addressCountry": "Poland",
+                "addressLocality": "Kraków"
+              }
+            }
+          },
+          {
+            "location": "Poland - Warsaw",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Warsaw",
+                "addressCountry": "Poland",
+                "addressLocality": "Warsaw"
+              }
+            }
+          },
+          {
+            "location": "Mexico - Mexico City",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "Mexico",
+                "addressCountry": "Mexico",
+                "addressLocality": "Mexico City"
+              }
+            }
+          }
+        ],
+        "address": {
+          "postalAddress": {
+            "addressRegion": "South Africa",
+            "addressCountry": "South Africa",
+            "addressLocality": "Cape Town"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2026-09-05T01:24:38.470+00:00",
+        "compensation": {
+          "compensationTierSummary": "$2.5K – $4K per month • Multiple Ranges",
+          "scrapeableCompensationSalarySummary": null,
+          "compensationTiers": [
+            {
+              "id": "62f8ce7d-d445-4542-aca8-1f9bbbd58259",
+              "tierSummary": "$2.5K – $3K per month",
+              "title": "Tier 1",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "3fb49214-2401-427e-9c6d-29acfe45836f",
+                  "summary": "$2.5K – $3K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 2500,
+                  "maxValue": 3000
+                }
+              ]
+            },
+            {
+              "id": "e73a7825-73bb-4389-afa3-0d43c417d6c4",
+              "tierSummary": "$3K – $4K per month",
+              "title": "Tier 2",
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "15386175-e2cc-4479-9a7d-70a34494698f",
+                  "summary": "$3K – $4K per month",
+                  "compensationType": "Salary",
+                  "interval": "1 MONTH",
+                  "currencyCode": "USD",
+                  "minValue": 3000,
+                  "maxValue": 4000
+                }
+              ]
+            }
+          ],
+          "summaryComponents": [
+            {
+              "minValue": 2500,
+              "maxValue": 4000,
+              "currencyCode": "USD",
+              "interval": "1 MONTH",
+              "compensationType": "Salary"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "board": "infisical",
+    "checked_at": "2026-09-20T15:47:31+00:00",
+    "cached": true,
+    "url": "https://api.ashbyhq.com/posting-api/job-board/infisical?includeCompensation=true",
+    "jobs": [
+      {
+        "title": "Full Stack Engineer ",
+        "jobUrl": "https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628",
+        "applyUrl": "https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628/application",
+        "employmentType": "FullTime",
+        "location": "United States & Canada",
+        "secondaryLocations": [
+          {
+            "location": "India",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "India"
+              }
+            }
+          },
+          {
+            "location": "United Kingdom",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "United Kingdom"
+              }
+            }
+          },
+          {
+            "location": "Brazil",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "Brazil"
+              }
+            }
+          },
+          {
+            "location": "European Union",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "France"
+              }
+            }
+          }
+        ],
+        "address": {
+          "postalAddress": {
+            "addressCountry": "United States"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2025-06-24T17:10:18.046+00:00",
+        "compensation": {
+          "compensationTierSummary": "$100K – $180K • Offers Equity",
+          "scrapeableCompensationSalarySummary": "$100K - $180K",
+          "compensationTiers": [
+            {
+              "id": "57438899-b16a-4928-8bb4-395102d3dd20",
+              "tierSummary": "$100K – $180K • Offers Equity",
+              "title": null,
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "14820aad-913c-4921-b17b-02775bf7fd3e",
+                  "summary": "$100K – $180K",
+                  "compensationType": "Salary",
+                  "interval": "1 YEAR",
+                  "currencyCode": "USD",
+                  "minValue": 100000,
+                  "maxValue": 180000
+                },
+                {
+                  "id": "1181cad0-2015-4766-b264-8372f1a68b35",
+                  "summary": "Offers Equity",
+                  "compensationType": "EquityCashValue",
+                  "interval": "1 YEAR",
+                  "currencyCode": "USD",
+                  "minValue": null,
+                  "maxValue": null
+                }
+              ]
+            }
+          ],
+          "summaryComponents": [
+            {
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 100000,
+              "maxValue": 180000
+            },
+            {
+              "compensationType": "EquityCashValue",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": null,
+              "maxValue": null
+            }
+          ]
+        }
+      },
+      {
+        "title": "Senior Full Stack Engineer ",
+        "jobUrl": "https://jobs.ashbyhq.com/infisical/3b1dd1a3-e5e7-46e5-b1d2-862f672d8878",
+        "applyUrl": "https://jobs.ashbyhq.com/infisical/3b1dd1a3-e5e7-46e5-b1d2-862f672d8878/application",
+        "employmentType": "FullTime",
+        "location": "United States & Canada",
+        "secondaryLocations": [
+          {
+            "location": "India",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "India"
+              }
+            }
+          },
+          {
+            "location": "United Kingdom",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "United Kingdom"
+              }
+            }
+          },
+          {
+            "location": "Brazil",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "Brazil"
+              }
+            }
+          },
+          {
+            "location": "European Union",
+            "address": {
+              "postalAddress": {
+                "addressCountry": "France"
+              }
+            }
+          }
+        ],
+        "address": {
+          "postalAddress": {
+            "addressCountry": "United States"
+          }
+        },
+        "isRemote": true,
+        "publishedAt": "2026-06-09T00:39:39.914+00:00",
+        "compensation": {
+          "compensationTierSummary": "$180K – $250K • Offers Equity",
+          "scrapeableCompensationSalarySummary": "$180K - $250K",
+          "compensationTiers": [
+            {
+              "id": "4c56a4a6-def6-461b-97f2-f7d90ebc4f62",
+              "tierSummary": "$180K – $250K • Offers Equity",
+              "title": null,
+              "additionalInformation": null,
+              "components": [
+                {
+                  "id": "988ce180-eba0-4e6d-95ac-4a03ec13d29b",
+                  "summary": "$180K – $250K",
+                  "compensationType": "Salary",
+                  "interval": "1 YEAR",
+                  "currencyCode": "USD",
+                  "minValue": 180000,
+                  "maxValue": 250000
+                },
+                {
+                  "id": "807341f5-6bbc-479b-943d-d36edc22705d",
+                  "summary": "Offers Equity",
+                  "compensationType": "EquityCashValue",
+                  "interval": "1 YEAR",
+                  "currencyCode": "USD",
+                  "minValue": null,
+                  "maxValue": null
+                }
+              ]
+            }
+          ],
+          "summaryComponents": [
+            {
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 180000,
+              "maxValue": 250000
+            },
+            {
+              "compensationType": "EquityCashValue",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": null,
+              "maxValue": null
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

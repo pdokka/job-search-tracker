@@ -1,0 +1,32 @@
+[
+  {
+    "board": "bio",
+    "error": null,
+    "selected": 1
+  },
+  {
+    "board": "infisical",
+    "error": null,
+    "selected": 2
+  },
+  {
+    "board": "fathom.video",
+    "error": null,
+    "selected": 1
+  },
+  {
+    "board": "asteriAI",
+    "error": null,
+    "selected": 1
+  },
+  {
+    "board": "hirehangar",
+    "error": null,
+    "selected": 3
+  },
+  {
+    "board": "coperniq",
+    "error": null,
+    "selected": 1
+  }
+]

@@ -1,0 +1,383 @@
+{
+  "generated_at": "2026-09-20T15:59:16+00:00",
+  "ready_ids": [
+    "cd3bfb05f0e5c3d18ecf1e44"
+  ],
+  "counts": {
+    "Needs verification": 2211,
+    "Ready": 1,
+    "Excluded": 9,
+    "Below floor / negotiate": 1,
+    "Closed": 2
+  },
+  "health": [
+    {
+      "source": "remotive",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 1,
+      "rows": 17,
+      "reported_total": 17,
+      "more_pages": false,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "remoteok",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 1,
+      "rows": 99,
+      "reported_total": null,
+      "more_pages": false,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "arbeitnow",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 3,
+      "rows": 600,
+      "reported_total": null,
+      "more_pages": true,
+      "cached_pages": 3,
+      "error": null
+    },
+    {
+      "source": "jobicy",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 1,
+      "rows": 100,
+      "reported_total": null,
+      "more_pages": false,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "himalayas",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 20,
+      "rows": 400,
+      "reported_total": 105438,
+      "more_pages": true,
+      "cached_pages": 8,
+      "error": null
+    },
+    {
+      "source": "himalayas_india",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 5,
+      "rows": 100,
+      "reported_total": 2313,
+      "more_pages": true,
+      "cached_pages": 5,
+      "error": null
+    },
+    {
+      "source": "himalayas_junior",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 5,
+      "rows": 49,
+      "reported_total": 49,
+      "more_pages": false,
+      "cached_pages": 5,
+      "error": null
+    },
+    {
+      "source": "wwr",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "pages": 1,
+      "rows": 84,
+      "reported_total": null,
+      "more_pages": false,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "Hacker News hiring announcements",
+      "checked_at": "2026-09-20T15:52:53+00:00",
+      "rows": 240,
+      "pages": 1,
+      "error": null,
+      "thread_url": "https://news.ycombinator.com/item?id=49522897"
+    },
+    {
+      "source": "ashby:bio",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 11,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:infisical",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 10,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:fathom.video",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 4,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:asteriAI",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 5,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:hirehangar",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 110,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:coperniq",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 1,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "lever:gohighlevel",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 98,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:sentilink",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 56,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:Mastra",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 2,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:turquoise-health",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 16,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:close",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 7,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:everis",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 2,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "lever:termgrid",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 5,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:lingodotdev",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 3,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "greenhouse:yipitdatajobs",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 54,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "greenhouse:anthropic",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 611,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "ashby:smarkets",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 8,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:stream",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 8,
+      "cached_pages": 0,
+      "error": null
+    },
+    {
+      "source": "lever:findigs",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 4,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:wikimedia",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 15,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:category-labs",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 3,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:comity",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 5,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:runway-ml",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 40,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:middesk",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 17,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:oklo",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 83,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:chariotclaims",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 5,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:novacredit",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 8,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:discord",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 47,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:duck-duck-go",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 10,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:odyssey",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 6,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "lever:loftorbital",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 57,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:relativity",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 334,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:productgenius",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 1,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:tolmo",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 0,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:DeepL",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 41,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:mattermost",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 14,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "greenhouse:blackcanyonconsulting",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 67,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:LatchBio",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 16,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:hiya",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 21,
+      "cached_pages": 1,
+      "error": null
+    },
+    {
+      "source": "ashby:artificialanalysis",
+      "checked_at": "2026-09-20T15:52:33+00:00",
+      "rows": 19,
+      "cached_pages": 1,
+      "error": null
+    }
+  ]
+}

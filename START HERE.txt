@@ -1,0 +1,53 @@
+YOUR LOCAL JOB TRACKER
+
+Everything lives in /Users/dheeraj/Job Search.
+A shortcut to this folder is on your Desktop.
+
+OPEN RESULTS
+Double-click Open Results.command. It opens Latest Results.txt in TextEdit.
+Ready roles appear first, followed by reviewed leads and their missing evidence.
+
+REFRESH NOW
+Double-click Run Tracker.command. Leave its window open while it collects jobs.
+The latest results open when it finishes. Public sources can take a few minutes.
+Repeated runs reuse recent responses to respect source limits.
+
+DAILY FULL REVIEW
+The existing Codex task “Daily verified job tracker” runs at 9:00am India time.
+It collects sources, searches for more jobs, checks employer evidence, and updates
+this same tracker. Leave the Mac awake with internet and Codex running.
+You can manage or run that task from Scheduled in Codex, or ask in the existing
+conversation: “Run the full job review using /Users/dheeraj/Job Search.”
+
+The double-click refresh collects leads. It does not independently run AI/web
+search or certify salaries. That evidence review is performed by the Codex task.
+No applications are submitted automatically.
+
+YOUR FILTERS
+Hyderabad or verified India-eligible remote. Suitable for 1–2 years.
+Above ₹20L annual guaranteed base; ₹17–20L in the caution queue.
+Remote contracts require a documented term of at least 12 months.
+Employer posting within 30 days, or a dated recent active-hiring signal.
+Estimated salaries, US-only pay and repost dates do not count as proof.
+
+IF SOMETHING FAILS
+Double-click Check Setup.command. Run logs are in logs/.
+Source failures remain visible in the results; an incomplete fetch is not a
+successful whole-internet search. The last saved records are retained.
+Before collection/import/review changes, compressed state backups are made in
+backups/. The latest 14 are retained. An overlapping tracker run is blocked.
+
+FILES
+Latest Results.txt — readable current results (generated; do not edit).
+job-tracker/TRACKER.md — detailed tracker.
+job-tracker/data/state.json — all collected jobs and evidence.
+job-tracker/RUNBOOK.md — daily review instructions.
+job-tracker/RUN-2026-09-21.md — the latest detailed search report.
+job-tracker/WEEKLY.md — Monday's summary of the previous seven days.
+
+Python is already available on this Mac. The tracker uses its standard library;
+no paid service, extra package, API key, or IDE is needed. Keep this folder at
+its current path because the daily task and Python environment use that path.
+
+Scheduled-task requirements:
+https://learn.chatgpt.com/docs/automations?surface=app

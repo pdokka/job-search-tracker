@@ -1,0 +1,65 @@
+[
+  {
+    "company": "Indeed",
+    "title": "Software Engineer I",
+    "url": "https://careers-indeed.icims.com/jobs/47811/software-engineer-i/job",
+    "location": "India remote",
+    "text": "Early-career Engineer I; no numeric years minimum. Relevant degree and modern programming language required. India salary is stated separately from quarterly bonus and RSUs. 1–2-year suitability is an early-career inference; no numeric minimum is stated. Employee compensation and benefits advertised; employmentType structured field says OTHER. Confirm employment terms at screening.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": "2026-09-10"
+  },
+  {
+    "company": "Frank Darling",
+    "title": "Software Engineer — Business Systems & Integrations",
+    "url": "https://careers.frankdarling.com/jobs/669856-software-engineer-business-systems-integrations-remote",
+    "location": "India / Sri Lanka remote",
+    "text": "At least two years of production Python development; APIs and AWS integrations. India/Sri Lanka posting advertises fixed monthly compensation of USD 2,000. Employment type and any guaranteed contract duration are unconfirmed. The Canadian salary is a different posting.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": "2026-07-24"
+  },
+  {
+    "company": "Zer0Paper",
+    "title": "Frontend UI/UX Engineer",
+    "url": "https://zer0paper.freshteam.com/jobs/R0iMsEteb4w8/frontend-ui-ux-engineer",
+    "location": "Worldwide remote",
+    "text": "One year production React; technical degree OR at least two years development. Employer page states annual salary USD 30,000–45,000; fixed/variable breakdown not stated. Fixed-term contract. Duration not published; cannot pass the 12-month rule.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": "2026-03-05"
+  },
+  {
+    "company": "ProdE AI",
+    "title": "Software Engineer — AI Agents",
+    "url": "https://wellfound.com/jobs/4365598-software-engineer-ai-agents",
+    "location": "India remote; Gurugram preferred",
+    "text": "Description requires two-plus professional development years despite one-year metadata. Employer posting advertises ₹25–40L and separately lists equity; fixed/variable split unstated. Python/AI agents; occasional in-person collaboration. Check that travel fits staying in Hyderabad.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": "2026-06-19"
+  },
+  {
+    "company": "Writesonic",
+    "title": "Senior Software Engineer — Frontend",
+    "url": "https://wellfound.com/jobs/4692041-senior-software-engineer-frontend",
+    "location": "India remote",
+    "text": "Description requires at least two years. React, Next.js and TypeScript. Employer posting advertises ₹30–50L, but guaranteed fixed base split is not explicit. Strong preference for tier-one college or YC-startup experience. Employer careers page links Workable. Do not count additional overtime compensation.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": "2026-09-09"
+  },
+  {
+    "company": "Coinbase",
+    "title": "Machine Learning Engineer",
+    "url": "https://www.coinbase.com/careers/positions/7985187?gh_jid=7985187",
+    "location": "India remote; gatherings required",
+    "text": "Two-plus relevant years of ML/software engineering; production ML and LLM experience. Employer requisition explicitly states annual base of INR 4,408,400. Retained from prior evidence review. Specialist experience is required; confirm original freshness.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": null
+  },
+  {
+    "company": "Coinbase",
+    "title": "Software Engineer — EAA Integrations",
+    "url": "https://www.coinbase.com/careers/positions/7558051?gh_jid=7558051",
+    "location": "India remote; gatherings required",
+    "text": "Two-plus years in integrations; Workato recipes/connectors are a material requirement. Employer requisition explicitly states annual base of INR 3,584,400. Retained from prior evidence review. Check Workato fit and application limits.",
+    "source": "prior-research-with-new-date-audit",
+    "employer_posted": null
+  }
+]

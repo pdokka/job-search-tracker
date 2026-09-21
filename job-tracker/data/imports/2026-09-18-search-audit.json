@@ -1,0 +1,56 @@
+[
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"Sun King\" \"SDE I\" \"Backend\" careers",
+    "urls": [
+      "https://builtin.com/job/sde-i-backend/11071858"
+    ],
+    "outcome": "Only discovery sources located; original pay not verified."
+  },
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"YipitData\" \"Data QA Specialist\" jobs",
+    "urls": [
+      "https://job-boards.greenhouse.io/yipitdatajobs?error=true",
+      "https://job-boards.greenhouse.io/yipitdatajobs/jobs/7026086"
+    ],
+    "outcome": "Located employer board and checked public API; no pay, stale June 2025 start requirement."
+  },
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"Giant Swarm\" \"Forward Deployed Engineer\" jobs",
+    "urls": [
+      "https://giant-swarm.jobs.personio.de/job/2774421"
+    ],
+    "outcome": "Employer confirms salary reference is location adjusted; no Indian floor."
+  },
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"Beyondsoft\" \"Full Stack Developer (Junior)\" site:icims.com",
+    "urls": [],
+    "outcome": "No usable direct iCIMS requisition returned in batch."
+  },
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"MixRank\" \"Junior Software Engineer\" salary remote",
+    "urls": [
+      "https://www.ycombinator.com/companies/mixrank/jobs/Fnwsojk-junior-software-engineer-remote-global-full-time"
+    ],
+    "outcome": "Employer salary floor below minimum; ignored third-party estimated salary."
+  },
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"Clarity AI\" \"Junior Software Engineer\" \"Consumer\" salary",
+    "urls": [
+      "https://job-boards.greenhouse.io/clarityai",
+      "https://job-boards.eu.greenhouse.io/clarityai/jobs/4847799101"
+    ],
+    "outcome": "Original Greenhouse checked; pay absent and India eligibility unconfirmed."
+  },
+  {
+    "checked_at": "2026-09-18T03:51:32.174Z",
+    "query": "\"Sun King\" \"SDE I - Backend\" \"pinpointhq\"",
+    "urls": [],
+    "outcome": "No usable original requisition returned in batch."
+  }
+]

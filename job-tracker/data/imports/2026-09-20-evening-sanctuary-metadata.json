@@ -1,0 +1,71 @@
+[
+  {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Senior Shopify Developer",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "Sanctuary Computer",
+      "value": "4735188"
+    },
+    "employmentType": "CONTRACTOR",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Sanctuary Computer",
+      "sameAs": "http://sanctuary.computer",
+      "logo": "https://photos.wellfound.com/startups/i/980285-be3947e7c348bb8c9fd1a9d03d45015a-medium_jpg.jpg?buster=1481322082",
+      "location": [
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New York",
+            "addressRegion": "New York",
+            "addressCountry": "United States"
+          },
+          "latitude": 40.7128,
+          "longitude": -74.0059
+        }
+      ]
+    },
+    "image": "https://photos.wellfound.com/startups/i/980285-be3947e7c348bb8c9fd1a9d03d45015a-medium_jpg.jpg?buster=1481322082",
+    "industry": "Web Design, Apps, Technology, Internet of Things, Web Development, Ecommerce, and Mobile Application",
+    "directApply": true,
+    "datePosted": "2026-09-18T12:51:16Z",
+    "jobLocation": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "New York",
+          "addressRegion": "New York",
+          "addressCountry": "United States"
+        },
+        "latitude": 40.7128,
+        "longitude": -74.0059
+      }
+    ],
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+      {
+        "@type": "Country",
+        "name": "United States"
+      }
+    ],
+    "experienceRequirements": {
+      "@type": "OccupationalExperienceRequirements",
+      "monthsOfExperience": 96
+    },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "unitText": "YEAR",
+        "minValue": 80000.0,
+        "maxValue": 160000.0
+      }
+    },
+    "jobBenefits": "Remote friendly - "
+  }
+]

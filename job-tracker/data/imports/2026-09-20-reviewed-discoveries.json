@@ -1,0 +1,568 @@
+[
+  {
+    "company": "bio",
+    "title": "Full-stack Engineer",
+    "url": "https://jobs.ashbyhq.com/bio/515cd00c-c691-4082-8036-606ec1a47a2c",
+    "location": "Remote",
+    "text": "Bio is a decentralized science protocol that helps launch and grow AI-driven biotech research. It enables scientists to raise funds, create value from their work, and distribute that value directly to their communities. Since 2023, Bio has directed over $50m to global researchers, offering an alternative to traditional pharma funding. Backed by investors like Binance Labs, Northpond Ventures, and Animoca Brands, Bio accelerates real-world therapeutics across longevity, brain health, fertility, psychedelic science, and more. THE ROLE We're looking for a full-stack engineer to help build products that connect researchers, funders, and the broader scientific community. You'll work across the entire stack - from crafting intuitive user interfaces to designing robust backend systems and smart contracts. WHAT YOU'LL DO • Build and maintain web applications that serve researchers and the science community • Design and implement APIs, databases, and backend services • Collaborate with designers and product to ship features users love • Contribute to web3 infrastructure and smart contract development • Help shape technical direction and engineering culture as we grow WHAT WE'RE LOOKING FOR • Experience building web applications (any stack - we value adaptability over specific tools) • Comfort working across frontend and backend • Strong problem-solving skills and a pragmatic approach to shipping • Clear communication - we're remote-first and async-friendly • Curiosity about web3, biotech, or open science (experience not required) NICE TO HAVE • Experience with blockchain development or smart contracts • Background in science, research, or working with scientific data • Contributions to open source projects WHY BIO • Fully remote - work from anywhere • Meaningful work at the frontier of science and technology • Small team, big impact - your work matters here • Competitive compensation with token/equity component",
+    "source_posted": "2026-01-22T19:59:27.787+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": null,
+      "scrapeableCompensationSalarySummary": null,
+      "compensationTiers": [],
+      "summaryComponents": []
+    },
+    "employer_posted": "2026-01-22T19:59:27.787+00:00",
+    "source": "employer:ashby:bio",
+    "application_url": "https://jobs.ashbyhq.com/bio/515cd00c-c691-4082-8036-606ec1a47a2c/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/bio?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "infisical",
+    "title": "Full Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628",
+    "location": "United States & Canada",
+    "text": "Infisical is the open source security infrastructure platform that engineers use for secrets management, certificates, and privileged access management. We help developers and organizations securely manage billions of secrets every month including application configuration, database credentials, certificates, and more. We’ve raised $19M from Y Combinator, Google, and Elad Gil, and our customers include Hugging Face, OpenRouter, LG, and NVIDIA. Join us on a mission to make security easier for all developers — starting with secrets management. We’re looking to hire exceptional talent to join us in building the open source security infrastructure stack for the AI era. About the role We’re looking for an exceptional Full Stack Engineer to help us build, optimize, and expand the foundation of the platform. We’ve kept our hiring standards exceptionally high since we expect engineers to tackle a broad range of challenges on a day-to-day basis. Examples of past engineering initiatives include developing strategies for secret rotation and dynamic secrets, a gateway to provide secure access to private resources, protocols like EST https://infisical.com/docs/documentation/platform/pki/est and KMIP https://infisical.com/docs/documentation/platform/kms/kmip#kmip-integration, integrations for syncing secrets across cloud providers, and entire new product lines such as Infisical PKI and Infisical PAM. You’ll be working closely with our CTO and the rest of the engineering team to: - Develop and maintain features whilst communicating directly with enterprise customers. - Expand our newer Infisical PKI https://infisical.com/docs/documentation/platform/pki/overview, Infisical PAM https://infisical.com/docs/documentation/platform/ssh, and Infisical KMS https://infisical.com/docs/documentation/platform/kms/overview product lines. - Experiment with novel approaches for applying AI to secrets management and more broadly security infrastructure. Requirements - Deep technical mastery of the JavaScript ecosystem, particularly React.js, Node.js, and TypeScript. - Exceptional attention to detail and eager to learn. - A bias toward action—able to make decisions with incomplete information, iterate quickly, and take calculated risks. - Based in the Americas (US or Canada), Brazil, India, UK, or EU. Must work US hours. Nice to have - Expertise in Go. - Has some understanding of devops/developer tools. - Previous founder or startup experience. - Previous experience building in open source or developer tools in either a professional or personal setting. - Excellent written and oral communication skills to interact with customers directly. Team, values & benefits Our team brings experience from companies like Databricks, AWS, Red Hat, and more. We operate primarily as a remote team, but maintain a strong presence in San Francisco, where we have an office. We also get together in person throughout the year for off-sites, conferences, and team gatherings. At Infisical, we offer competitive compensation, including both salary and equity options. Additional benefits, such as a lunch stipend and a work setup budget, are available with more details to be found on our careers page https://infisical.com/careers.",
+    "source_posted": "2025-06-24T17:10:18.046+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$100K – $180K • Offers Equity",
+      "scrapeableCompensationSalarySummary": "$100K - $180K",
+      "compensationTiers": [
+        {
+          "id": "57438899-b16a-4928-8bb4-395102d3dd20",
+          "tierSummary": "$100K – $180K • Offers Equity",
+          "title": null,
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "14820aad-913c-4921-b17b-02775bf7fd3e",
+              "summary": "$100K – $180K",
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 100000,
+              "maxValue": 180000
+            },
+            {
+              "id": "1181cad0-2015-4766-b264-8372f1a68b35",
+              "summary": "Offers Equity",
+              "compensationType": "EquityCashValue",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": null,
+              "maxValue": null
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "compensationType": "Salary",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": 100000,
+          "maxValue": 180000
+        },
+        {
+          "compensationType": "EquityCashValue",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": null,
+          "maxValue": null
+        }
+      ]
+    },
+    "employer_posted": "2025-06-24T17:10:18.046+00:00",
+    "source": "employer:ashby:infisical",
+    "application_url": "https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/infisical?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "infisical",
+    "title": "Senior Full Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/infisical/3b1dd1a3-e5e7-46e5-b1d2-862f672d8878",
+    "location": "United States & Canada",
+    "text": "Infisical is the open source security infrastructure platform that engineers use for secrets management, certificates, and privileged access management. We help developers and organizations securely manage billions of secrets every month including application configuration, database credentials, certificates, and more. We’ve raised $19M from Y Combinator, Google, and Elad Gil, and our customers include Hugging Face, OpenRouter, LG, and NVIDIA. Join us on a mission to make security easier for all developers — starting with secrets management. We’re looking to hire exceptional talent to join us in building the open source security infrastructure stack for the AI era. About the role We’re looking for an exceptional Senior Full Stack Engineer to help us build, optimize, and expand the foundation of the platform. We’ve kept our hiring standards exceptionally high since we expect engineers to tackle a broad range of challenges on a day-to-day basis. Examples of past engineering initiatives include developing strategies for secret rotation and dynamic secrets, a gateway to provide secure access to private resources, protocols like EST https://infisical.com/docs/documentation/platform/pki/est and KMIP https://infisical.com/docs/documentation/platform/kms/kmip#kmip-integration, integrations for syncing secrets across cloud providers, and entire new product lines such as Infisical PKI and Infisical PAM. You’ll be working closely with our CTO and the rest of the engineering team to: - Develop and maintain features whilst communicating directly with enterprise customers. - Expand our newer Infisical PKI https://infisical.com/docs/documentation/platform/pki/overview, Infisical PAM https://infisical.com/docs/documentation/platform/pam/overview, and Infisical KMS https://infisical.com/docs/documentation/platform/kms/overview product lines. - Experiment with novel approaches for applying AI to secrets management and more broadly security infrastructure. Requirements - Deep technical mastery of the JavaScript ecosystem, particularly React.js, Node.js, and TypeScript (3+). - Exceptional attention to detail and eager to learn. - A bias toward action—able to make decisions with incomplete information, iterate quickly, and take calculated risks. - Based in the Americas (US or Canada), Brazil, India, UK, or EU. Must work US hours. Nice to have - Expertise in Go. - Has some understanding of devops/developer tools. - Previous founder or startup experience. - Previous experience building in open source or developer tools in either a professional or personal setting. - Excellent written and oral communication skills to interact with customers directly. Team, values & benefits Our team brings experience from companies like Databricks, AWS, Red Hat, and more. We operate primarily as a remote team, but maintain a strong presence in San Francisco, where we have an office. We also get together in person throughout the year for off-sites, conferences, and team gatherings. At Infisical, we offer competitive compensation, including both salary and equity options. Additional benefits, such as a lunch stipend and a work setup budget, are available with more details to be found on our careers page https://infisical.com/careers.",
+    "source_posted": "2026-06-09T00:39:39.914+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$180K – $250K • Offers Equity",
+      "scrapeableCompensationSalarySummary": "$180K - $250K",
+      "compensationTiers": [
+        {
+          "id": "4c56a4a6-def6-461b-97f2-f7d90ebc4f62",
+          "tierSummary": "$180K – $250K • Offers Equity",
+          "title": null,
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "988ce180-eba0-4e6d-95ac-4a03ec13d29b",
+              "summary": "$180K – $250K",
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 180000,
+              "maxValue": 250000
+            },
+            {
+              "id": "807341f5-6bbc-479b-943d-d36edc22705d",
+              "summary": "Offers Equity",
+              "compensationType": "EquityCashValue",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": null,
+              "maxValue": null
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "compensationType": "Salary",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": 180000,
+          "maxValue": 250000
+        },
+        {
+          "compensationType": "EquityCashValue",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": null,
+          "maxValue": null
+        }
+      ]
+    },
+    "employer_posted": "2026-06-09T00:39:39.914+00:00",
+    "source": "employer:ashby:infisical",
+    "application_url": "https://jobs.ashbyhq.com/infisical/3b1dd1a3-e5e7-46e5-b1d2-862f672d8878/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/infisical?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "fathom.video",
+    "title": "Full Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/fathom.video/01619869-e031-464c-b3b3-7674f10a77f6",
+    "location": "Remote",
+    "text": "ABOUT FATHOM We created Fathom to eliminate the needless overhead of meetings. Our AI assistant captures, summarizes, and organizes the key moments of your calls, so you and your team can stay fully present without sacrificing context or clarity. From instant, searchable call summaries to seamless CRM updates and team-wide sharing, Fathom transforms meetings from a source of friction into a place for alignment and momentum. We’re a small company that creates magical experiences through the hard work of focused builders. We try to live our values - Care Deeply, Seek Leverage, Share Ownership, Sustain Urgency, and Be Tenacious - in everything we do, every day. We started Fathom to rid us all of the tyranny of note-taking, and people seem to really love what we've built so far: 🥇 #1 Most Used App of the Year on HubSpot for 2025 https://www.linkedin.com/feed/update/urn:li:activity:7432475997863559168/ 🔥 #1 Rated on G2 with 4,500+ reviews and a perfect 5/5 rating https://www.g2.com/products/fathom-2021-09-22/reviews 🥇 #1 Product of the Day and #2 AI Product of the Year https://www.producthunt.com/posts/fathom-2 🚀 Most installed AI meeting assistant on both the Zoom https://marketplace.zoom.us/apps/JgSwuY4ZSGim6_OPRZV0Ig and HubSpot https://app.hubspot.com/ecosystem/20372723/marketplace/apps/sales/sales-enablement/ai-notetaker-by-fathom marketplaces 📈 We’re hitting revenue and usage records every week https://drive.google.com/file/d/1tLW4Wd7ZNC7WHTAaw__OYlU8WGaQAx2E/view?usp=drive_link We think you’ll be pretty excited about Fathom too if you give it a try. Sign up today http://fathom.ai (it’s free)! ROLE OVERVIEW We are looking for product-minded full-stack engineers to build impactful, customer-facing features at Fathom. Our application team owns nearly every part of the product beyond our core infrastructure and recording pipeline. That includes our web app, Electron desktop app, Chrome extension, AI pipelines, search and chat experiences, third-party integrations, public API, and MCP server. As part of our team, you’ll help identify and deliver the product improvements that matter most to customers. You’ll work closely with fellow application engineers and our AI, platform, SRE, and customer support teams to deliver an unmatched customer experience. HOW YOU’LL HELP US WIN Contribute to our collection of highly-scalable services (some stateless, some stateful). Our services run in multiple regions, are engineered to support spiky but predictable workloads, and are deployed via multi-stage rollouts to build confidence in the correctness and efficiency of changes. REQUIREMENTS Hard Skills - Familiarity with our tech stack or equivalents: Ruby/Rails/Sidekiq, Typescript/TSX, MySQL, Redis, Pusher, Electron, GCP/GKE - Experience in a SaaS or PaaS environment at our scale (currently 100s of millions of async jobs per week) Soft Skills - Curiosity-driven and pragmatic with a focus on delivering results - A generalist mindset with the ability to dive deep into a wide range of challenges - Resilience, attention to detail, and an ability to grind through complex problems - Openness to disagreement and commitment to decisions once made - Strong collaborative skills, with the ability to explain complex insights in an accessible manner to both technical and non-technical audiences - Independence in managing one’s workload and priorities WHAT'S IN IT FOR YOU - The opportunity to shape the foundational software services of a growing company - A role that balances innovation and incremental improvement - A dynamic and collaborative engineering team - Competitive compensation and benefits - A supportive environment that encourages innovation and personal growth WHY YOU SHOULD JOIN US - Opportunity for impact. We’re established enough to ship instead of fighting fires and early enough that your work will have a real impact. - Startup experience. You’ll work closely with our CEO, a 2X Founder/CEO with a background in computer science and product design. - We embrace being fully remote. We schedule meetings sparingly and instead heavily use async comms (Slack, Notion, Loom) ABOUT THE INTERVIEW - No live coding. We have no idea who thought writing code on whiteboards was a good idea but we hate it. We’re much more interested in what you’ve done and learned. - You’ll meet the entire team. We think it’s important that you get to meet everyone you’ll be working with. - No bullshit. Ask us anything you like. We’ve never understood why companies pretend they’re something that they’re not in the hiring process - you’re going to find out eventually so we’d rather you know who we are up front so we can both make sure this is a good fit for all involved. - Quick turnaround time. We know you have lots of options so we move fast usually in less than a week from start to finish.",
+    "source_posted": "2024-10-11T17:40:02.977+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$180K – $230K • Offers Equity",
+      "scrapeableCompensationSalarySummary": "$180K - $230K",
+      "compensationTiers": [
+        {
+          "id": "91781831-97e5-456a-ad73-55fb18cc0cf4",
+          "tierSummary": "$180K – $230K • Offers Equity",
+          "title": null,
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "89e569a1-9da9-4fbb-9a09-b9d8d3e5f458",
+              "summary": "$180K – $230K",
+              "compensationType": "Salary",
+              "interval": "1 YEAR",
+              "currencyCode": "USD",
+              "minValue": 180000,
+              "maxValue": 230000
+            },
+            {
+              "id": "b5bfdc99-f436-4110-b2db-4dae66e120e6",
+              "summary": "Offers Equity",
+              "compensationType": "EquityPercentage",
+              "interval": "NONE",
+              "currencyCode": null,
+              "minValue": null,
+              "maxValue": null
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "compensationType": "Salary",
+          "interval": "1 YEAR",
+          "currencyCode": "USD",
+          "minValue": 180000,
+          "maxValue": 230000
+        },
+        {
+          "compensationType": "EquityPercentage",
+          "interval": "NONE",
+          "currencyCode": null,
+          "minValue": null,
+          "maxValue": null
+        }
+      ]
+    },
+    "employer_posted": "2024-10-11T17:40:02.977+00:00",
+    "source": "employer:ashby:fathom.video",
+    "application_url": "https://jobs.ashbyhq.com/fathom.video/01619869-e031-464c-b3b3-7674f10a77f6/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/fathom.video?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "asteriAI",
+    "title": "Full Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/asteriAI/23cde279-d945-46d3-8c5d-8559d12a541e",
+    "location": "Remote",
+    "text": "ABOUT US Asteri is an AI-native Work Intelligence and Orchestration Platform that gives large enterprises the intelligence to understand how work is performed today and how it should be performed in the era of AI, eliminating inefficiencies and identifying high-impact opportunities for AI augmentation. Our platform orchestrates AI and human work with enterprise-grade governance, auditability, and measurement built for production environments at scale. THE ROLE As a Full Stack Engineer at Asteri, you will design, build, and scale core product capabilities across backend services and frontend interfaces that power our AI-native enterprise platform. You will work on systems at the intersection of enterprise workflows, AI agents, and human-in-the-loop processes, with a strong focus on reliability, clarity, and usability. This is a hands-on role with meaningful ownership over production systems used by large enterprise customers. WHAT YOU’LL DO - Design and deliver scalable full-stack systems, including backend services, APIs, and interactive web applications - Build and evolve backend services with clean, well-documented APIs and strong observability, reliability, and performance - Develop intuitive frontend experiences that provide visibility into workflows, orchestration state, permissions, and operational insights - Implement workflow and orchestration logic that coordinates tasks between humans and AI systems, including policies, retries, SLAs, and auditability - Integrate internal and external systems (e.g., enterprise tools, data sources, third-party APIs) to support end-to-end workflows - Ensure production readiness through strong testing practices, CI/CD pipelines, monitoring, and operational best practices - Collaborate closely with product, AI, platform, and enterprise customers to translate requirements into robust, maintainable solutions - Contribute to architectural decisions and continuously improve system scalability, maintainability, and developer experience WHAT WILL MAKE YOU SUCCESSFUL MUST-HAVES - 7+ years of experience as a software engineer building and operating production web applications - Experience developing secure enterprise applications, with preference for regulated industries - Strong backend development experience (e.g., Python with FastAPI or Django, or Node.js with TypeScript) - Solid experience building modern frontend applications (e.g., React with TypeScript) - Experience designing and consuming APIs and working with relational databases (e.g., Postgres) - Strong engineering fundamentals, including automated testing, code reviews, debugging, and performance optimization - Experience deploying and operating applications in cloud environments (AWS, Azure, or GCP) - Ability to take ownership of projects end-to-end in a fast-moving startup environment NICE-TO-HAVES - Experience working with AI-enabled products or ML-powered systems - Familiarity with workflow orchestration, state machines, or event-driven architectures - Experience with containerization and infrastructure tooling (Docker, Kubernetes, Terraform) - Exposure to enterprise requirements such as SSO, RBAC, audit logging, or compliance - Experience working in regulated or security-conscious environments - Interest in building developer tools, productivity platforms, or enterprise software WHY JOIN US Build the core product of an AI-native work orchestration platform used by global enterprises. Work with a senior leadership team with high autonomy and real ownership. Competitive compensation with remote-friendly culture, and a pragmatic, safety-first approach to building AI systems that work in production.",
+    "source_posted": "2026-01-07T04:55:15.581+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": null,
+      "scrapeableCompensationSalarySummary": null,
+      "compensationTiers": [],
+      "summaryComponents": []
+    },
+    "employer_posted": "2026-01-07T04:55:15.581+00:00",
+    "source": "employer:ashby:asteriAI",
+    "application_url": "https://jobs.ashbyhq.com/asteriAI/23cde279-d945-46d3-8c5d-8559d12a541e/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/asteriAI?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "hirehangar",
+    "title": "Senior Full Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/hirehangar/dc75b9eb-d486-47a8-97c0-2c00c8c85b19",
+    "location": "Mexico - Monterrey",
+    "text": "Join Hire Hangar and work with fast-growing global companies while building a long-term career. Job Title Senior Full Stack Engineer Location Remote Time Zone US Time Zones (PST - EST) Role Overview This is a high-ownership role for an engineer who is equally comfortable architecting backend automation pipelines and crafting polished, data-rich interfaces. You will work across the full stack, collaborating closely with AI/ML engineers, product managers, and UX designers to ship automation capabilities that are powerful, reliable, and intuitive to use. Key Responsibilities - Architect and develop RPA agent pipelines integrated into our core SaaS platform - Build responsive, data-rich frontend interfaces that surface automation insights to end users - Design semantic context layers that give RPA agents the knowledge they need to make intelligent decisions - Collaborate with AI/ML engineers to integrate language models and decision engines into automation workflows - Contribute to the data platform layer — ingestion, transformation, and exposure via APIs and UI - Participate in design reviews, code reviews, and technical roadmap planning - Mentor mid-level engineers and help define engineering best practices Required Qualifications - Senior-level full stack development experience (Node.js or Python backend; React or Vue frontend) - Proven experience building or integrating RPA solutions (UiPath, Automation Anywhere, Power Automate, or custom agent frameworks) - Familiarity with LLM integration patterns including RAG, tool-calling, and prompt engineering - Experience with semantic or knowledge graph layers, ontology-based systems, or structured context stores - Strong grasp of RESTful and event-driven API design - Exposure to cloud-native infrastructure (AWS, Azure, or GCP) - Must have prior remote work experience and be fluent with remote collaboration tools (Slack, Zoom, Google Workspace, or similar) Preferred Qualifications - Experience with vector databases such as Pinecone, Weaviate, or pgvector - Background in agentic AI frameworks such as LangChain, AutoGen, or CrewAI - Familiarity with data pipeline tooling including dbt, Airflow, or Spark - Experience working in a B2B SaaS product environment Tools & Technology - Python / Node.js - React / TypeScript - RPA platforms (UiPath, Power Automate, or similar) - Cloud platforms (AWS, Azure, or GCP) - Vector or graph databases - Slack, Zoom, Google Workspace Please Note It is crucial that you complete the application form in full. As part of the application process, you will be required to complete a short technical assessment. If your application is successful, you will receive an email confirming next steps. Applications that are not completed in full will not be considered for any open roles. We connect top talent with vetted employers, competitive pay, and real growth opportunities.",
+    "source_posted": "2026-09-05T01:48:11.004+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$2.5K – $7K per month • Multiple Ranges",
+      "scrapeableCompensationSalarySummary": null,
+      "compensationTiers": [
+        {
+          "id": "b2da3a42-fdaf-4a2d-9431-3b75e9a1a71c",
+          "tierSummary": "$2.5K – $3K per month",
+          "title": "Tier 1",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "64959e0d-5c3a-4263-80b2-1fbe661a61eb",
+              "summary": "$2.5K – $3K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 2500,
+              "maxValue": 3000
+            }
+          ]
+        },
+        {
+          "id": "73b3c925-9b37-40a2-bc63-48f6eb5e9f05",
+          "tierSummary": "$3K – $4K per month",
+          "title": "Tier 2",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "a7a90fb7-a688-4ce7-879e-c27f6b2bbf1d",
+              "summary": "$3K – $4K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 3000,
+              "maxValue": 4000
+            }
+          ]
+        },
+        {
+          "id": "d28d8395-c9d7-4d4a-92d5-eb8046f6577a",
+          "tierSummary": "$5K – $7K per month",
+          "title": "Tier 3",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "c55245e2-bd1d-4e41-84da-1935dd175231",
+              "summary": "$5K – $7K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 5000,
+              "maxValue": 7000
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "minValue": 2500,
+          "maxValue": 7000,
+          "currencyCode": "USD",
+          "interval": "1 MONTH",
+          "compensationType": "Salary"
+        }
+      ]
+    },
+    "employer_posted": "2026-09-05T01:48:11.004+00:00",
+    "source": "employer:ashby:hirehangar",
+    "application_url": "https://jobs.ashbyhq.com/hirehangar/dc75b9eb-d486-47a8-97c0-2c00c8c85b19/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/hirehangar?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "hirehangar",
+    "title": "Full Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/hirehangar/5cab9b8f-c9d0-4e97-9f29-1ce42565b896",
+    "location": "South Africa - Cape Town",
+    "text": "Join Hire Hangar and work with fast-growing global companies while building a long-term career. Job Title: Full Stack Engineer Location: Remote Time Zone: US Time Zone (PST - EST) Role Overview We are seeking an AI-Assisted Full Stack Engineer to support the development of SaaS products in different industries. This role is ideal for an engineer who combines strong product thinking with modern AI-assisted development workflows using tools such as Claude. Key Responsibilities • Build and maintain full stack applications using Node.js and JavaScript • Use AI-assisted coding tools such as Claude to generate and improve code • Collaborate with Product and Engineering teams to deliver SaaS features • Translate logistics and trucking workflows into technical solutions • Maintain clean, scalable, and well-documented code • Work effectively in a remote, distributed environment Required Qualifications • Experience building SaaS products in a Full Stack Engineering role • Strong proficiency in Node.js and JavaScript across front and back end • Logistics or trucking software industry background is mandatory • Experience using AI coding tools such as Claude for code generation • Strong product mindset and understanding of customer workflows • Ability to work with 4–5 hours overlap with US PST • Prior remote work experience required Preferred Qualifications • Experience with modern front-end frameworks and APIs • Strong communication and collaboration skills Tools & Technology • Languages: Node.js, JavaScript • AI Tools: Claude or similar • Collaboration: Slack, Zoom, Google Workspace Please Note It is crucial that you complete the application form in full. As part of the application process, you will be required to complete a short technical assessment. If your application is successful, you will receive an email confirming next steps. Applications that are not completed in full will not be considered for any open roles. We connect top talent with vetted employers, competitive pay, and real growth opportunities.",
+    "source_posted": "2026-09-05T01:48:25.048+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$2.5K – $7K per month • Multiple Ranges",
+      "scrapeableCompensationSalarySummary": null,
+      "compensationTiers": [
+        {
+          "id": "b2da3a42-fdaf-4a2d-9431-3b75e9a1a71c",
+          "tierSummary": "$2.5K – $3K per month",
+          "title": "Tier 1",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "64959e0d-5c3a-4263-80b2-1fbe661a61eb",
+              "summary": "$2.5K – $3K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 2500,
+              "maxValue": 3000
+            }
+          ]
+        },
+        {
+          "id": "73b3c925-9b37-40a2-bc63-48f6eb5e9f05",
+          "tierSummary": "$3K – $4K per month",
+          "title": "Tier 2",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "a7a90fb7-a688-4ce7-879e-c27f6b2bbf1d",
+              "summary": "$3K – $4K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 3000,
+              "maxValue": 4000
+            }
+          ]
+        },
+        {
+          "id": "d28d8395-c9d7-4d4a-92d5-eb8046f6577a",
+          "tierSummary": "$5K – $7K per month",
+          "title": "Tier 3",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "c55245e2-bd1d-4e41-84da-1935dd175231",
+              "summary": "$5K – $7K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 5000,
+              "maxValue": 7000
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "minValue": 2500,
+          "maxValue": 7000,
+          "currencyCode": "USD",
+          "interval": "1 MONTH",
+          "compensationType": "Salary"
+        }
+      ]
+    },
+    "employer_posted": "2026-09-05T01:48:25.048+00:00",
+    "source": "employer:ashby:hirehangar",
+    "application_url": "https://jobs.ashbyhq.com/hirehangar/5cab9b8f-c9d0-4e97-9f29-1ce42565b896/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/hirehangar?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "hirehangar",
+    "title": "Full-Stack AI Engineer",
+    "url": "https://jobs.ashbyhq.com/hirehangar/b26e2d5f-daba-4d1f-854a-ed81ebc22bdc",
+    "location": "South Africa - Cape Town",
+    "text": "Join Hire Hangar and work with fast-growing global companies while building a long-term career. Job Title Full-Stack AI Engineer Location Remote Time Zone US Time Zones (EST–PST) Role Overview We are seeking a senior Full-Stack AI Engineer to join our platform team and own the end-to-end build of a data ingestion and intelligence layer for enterprise customers in the media vertical. This is a high-impact, high-ownership role at the intersection of AI, data engineering, and product. You will architect and ship pipelines that transform unstructured creative assets and ad performance data into a semantic, vector-based layer — and expose it through AI agents and a polished React frontend. We move fast, ship to production, and hold a high bar for craft and reliability. What You'll Build - A dual-mode data ingestion engine handling creative components (CTAs, headers, body copy, images, video, and metadata) and ad performance data (channel-level signals tied to those components) - Multi-modal embedding generation and storage — vector plus structured — optimised for retrieval quality and cost - AI agent tooling that enables natural language search, comparison, and reasoning across the creative and performance data layer - A React frontend that lets users explore the creative library, query performance data in plain English, and surface actionable optimisation insights - Audit-logged decisioning and governance infrastructure to meet enterprise-grade requirements Key Responsibilities - Design and build durable, idempotent ingestion pipelines for creative and performance data at scale (queues, retries, backpressure, dedup, schema evolution) - Generate and manage embeddings for multi-modal creative assets; select and operate the right vector store for the workload - Build and maintain retrieval pipelines that serve AI agent tools with accurate, low-latency responses - Ship agent-style systems with tool use, state management, and multi-step reasoning workflows - Develop and maintain the React frontend for the creative intelligence library and query interface - Own the full lifecycle of your systems: design, build, deploy, monitor, and iterate - Contribute to stack decisions with clear reasoning grounded in production experience - Collaborate closely with product and enterprise partners to translate requirements into reliable, scalable systems Required Qualifications - Strong TypeScript — you use types as a design tool, not a formality - Production experience with serverless or edge runtimes (Cloudflare Workers, Vercel, Lambda, Deno Deploy, or equivalent) - Demonstrated experience building durable, idempotent ingestion pipelines with queuing, retry logic, backpressure handling, deduplication, and schema evolution - Practical, production-level understanding of embeddings, chunking strategies, and retrieval quality tuning - At least one agent-style system shipped to production: tool use, stateful multi-step workflows — framework matters less than the experience - React fluency with modern patterns and component architecture - Comfort operating across two cloud environments; able to reason clearly about when to use edge compute vs. managed data/AI services, and how to bridge them - Must have prior remote work experience, be fluent with remote collaboration tools and platforms (such as Slack, Zoom, Google Workspace, Linear, or similar), and have ideally worked with US or UK-based companies. Applications without this experience will not be considered. Preferred Qualifications - Experience building or operating RAG systems in production - Familiarity with current embedding models and the tradeoffs across dimension, quality, and cost - Background in ETL design, observability for data pipelines, or evaluation frameworks for retrieval quality - Adtech, performance marketing, or marketing analytics background — understanding what channels, attribution, and creative testing look like in a live production context - Opinions on vector databases (Cloudflare Vectorize, Vertex AI Vector Search, Turbopuffer, or similar) backed by hands-on experience Tools & Technology - TypeScript (primary language across the stack) - Cloudflare Workers, Queues, and Agents SDK (or equivalent edge runtime) - GCP — Vertex AI for embeddings and related data/AI services - Vector database (to be selected: Cloudflare Vectorize, Vertex AI Vector Search, Turbopuffer, or similar) - React with Remix or TanStack Start (TBD) - Google Workspace, Slack, Zoom, and standard remote collaboration tooling Please NOTE It is crucial that you complete the application form in full. As part of the application process, you will be required to record a video. If your application is successful, you will receive an email confirming next steps — the video is the first step of the interview process. If you do not record a video, we will not be able to consider you for ANY open roles. We connect top talent with vetted employers, competitive pay, and real growth opportunities.",
+    "source_posted": "2026-09-05T01:24:38.470+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": "$2.5K – $4K per month • Multiple Ranges",
+      "scrapeableCompensationSalarySummary": null,
+      "compensationTiers": [
+        {
+          "id": "62f8ce7d-d445-4542-aca8-1f9bbbd58259",
+          "tierSummary": "$2.5K – $3K per month",
+          "title": "Tier 1",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "3fb49214-2401-427e-9c6d-29acfe45836f",
+              "summary": "$2.5K – $3K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 2500,
+              "maxValue": 3000
+            }
+          ]
+        },
+        {
+          "id": "e73a7825-73bb-4389-afa3-0d43c417d6c4",
+          "tierSummary": "$3K – $4K per month",
+          "title": "Tier 2",
+          "additionalInformation": null,
+          "components": [
+            {
+              "id": "15386175-e2cc-4479-9a7d-70a34494698f",
+              "summary": "$3K – $4K per month",
+              "compensationType": "Salary",
+              "interval": "1 MONTH",
+              "currencyCode": "USD",
+              "minValue": 3000,
+              "maxValue": 4000
+            }
+          ]
+        }
+      ],
+      "summaryComponents": [
+        {
+          "minValue": 2500,
+          "maxValue": 4000,
+          "currencyCode": "USD",
+          "interval": "1 MONTH",
+          "compensationType": "Salary"
+        }
+      ]
+    },
+    "employer_posted": "2026-09-05T01:24:38.470+00:00",
+    "source": "employer:ashby:hirehangar",
+    "application_url": "https://jobs.ashbyhq.com/hirehangar/b26e2d5f-daba-4d1f-854a-ed81ebc22bdc/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/hirehangar?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "coperniq",
+    "title": "Senior Full-Stack Engineer",
+    "url": "https://jobs.ashbyhq.com/coperniq/2791caa3-e47a-44a6-a01a-c8d069c28c64",
+    "location": "Remote",
+    "text": "Coperniq is building the operating system for contractors. Our goal is simple: give contractors one system—and a team of AI agents—to run their entire business. It is a huge, underserved market, and we intend to build the company that defines it. We’re backed by Y Combinator and Initialized Capital. We’re now looking for a strong full-stack engineer to join our small team. You’ll work across the product, own projects end to end, and build software for complex contractor operations. OUR STACK Backend: Node.js, NestJS, MikroORM, PostgreSQL, TypeScript Frontend: React, TypeScript, GraphQL WHO WE’RE LOOKING FOR - Startup or founding-engineer experience - High energy and a strong bias toward shipping - Autonomous and proactive—you can own a project without constant follow-up - Experience building complex products across multiple domains - Strong judgment and the ability to work through ambiguity - 5+ years experience NICE TO HAVE - Experience building voice AI agents - Experience building AI-powered document or image editing and annotation",
+    "source_posted": "2024-12-19T21:06:21.216+00:00",
+    "advertised_pay": {
+      "compensationTierSummary": null,
+      "scrapeableCompensationSalarySummary": null,
+      "compensationTiers": [],
+      "summaryComponents": []
+    },
+    "employer_posted": "2024-12-19T21:06:21.216+00:00",
+    "source": "employer:ashby:coperniq",
+    "application_url": "https://jobs.ashbyhq.com/coperniq/2791caa3-e47a-44a6-a01a-c8d069c28c64/application",
+    "check": {
+      "checked_at": "2026-09-20T15:49:33+00:00",
+      "state": "reachable",
+      "final_url": "https://api.ashbyhq.com/posting-api/job-board/coperniq?includeCompensation=true",
+      "cached": true,
+      "note": "Job and application URL are present in current employer board response; not proof of recent posting."
+    }
+  },
+  {
+    "company": "CentralApp",
+    "title": "Product Engineer",
+    "url": "https://wellfound.com/jobs/4709941-product-engineer",
+    "location": "India remote",
+    "source": "employer:web-review",
+    "application_url": "https://wellfound.com/jobs/4709941-product-engineer",
+    "aliases": [
+      "https://in.linkedin.com/jobs/view/product-engineer-at-centralapp-4466471733"
+    ],
+    "employer_posted": "2026-09-12T10:15:47Z",
+    "text": "Employer Wellfound JobPosting baseSalary is EUR 30,000–42,000 per year; employer LinkedIn posting also labels it base. India explicitly eligible for remote work. Preferred timezones London through Singapore include India. No numeric minimum. Requires independent Haskell and React code review, backend/devops strength and end-to-end product ownership; fit unconfirmed. Employer Wellfound structured datePosted is 12 September 2026. Full-time employment listed by the employer."
+  },
+  {
+    "company": "AnswerThis",
+    "title": "Product Engineer",
+    "url": "https://in.linkedin.com/jobs/view/product-engineer-full-time-remote-%E2%80%94-india-at-answerthis-yc-f25-4444350139",
+    "location": "India remote",
+    "source": "employer:web-review",
+    "application_url": "https://in.linkedin.com/jobs/view/product-engineer-full-time-remote-%E2%80%94-india-at-answerthis-yc-f25-4444350139",
+    "text": "Employer LinkedIn posting labels INR 20–35 lakh per year as base pay. Fully remote within India; US working hours required. Founder hiring announcement specifies 1+ years shipping full-stack products; React/Next.js, Python/FastAPI, Postgres and RAG. Job and founder announcement show one month old; exact original date or a dated signal within 30 days not established. Full-time employment explicitly stated."
+  },
+  {
+    "company": "Scispot",
+    "title": "Full Stack AI Engineer",
+    "url": "https://in.linkedin.com/jobs/view/full-stack-ai-engineer-at-scispot-4431461258",
+    "location": "India; remote arrangement unconfirmed",
+    "source": "employer:web-review",
+    "application_url": "https://in.linkedin.com/jobs/view/full-stack-ai-engineer-at-scispot-4431461258",
+    "text": "Employer LinkedIn posting explicitly labels USD 80,000–120,000 per year as base pay. Job location is India. Working remotely from Hyderabad is not explicitly established by the viewed description. Entry-level metadata, no numeric minimum; independently shipped product and full-stack/AI ownership required. Personal fit unconfirmed. Employer LinkedIn job displays two months old; no recent dated hiring signal established. Full-time employment explicitly stated."
+  },
+  {
+    "company": "withRemote",
+    "title": "Full Stack Engineer – AI-native Infrastructure (AWS)",
+    "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-%E2%80%93-ai-native-infrastructure-aws-at-withremote-4466849083",
+    "location": "India remote",
+    "source": "employer:web-review",
+    "application_url": "https://in.linkedin.com/jobs/view/full-stack-engineer-%E2%80%93-ai-native-infrastructure-aws-at-withremote-4466849083",
+    "text": "Posting lists INR 20–30 lakh annual salary; fixed-base split is not established. India remote. Requires 5–10 years; exceeds requested range. LinkedIn explicitly says applications are no longer accepted. Permanent full-time position advertised."
+  },
+  {
+    "company": "ListButton",
+    "title": "Backend / Full Stack Engineer (backend focused)",
+    "url": "https://wellfound.com/jobs/4490146-backend-full-stack-engineer-backend-focused",
+    "location": "United States only",
+    "source": "employer:web-review",
+    "application_url": "https://wellfound.com/jobs/4490146-backend-full-stack-engineer-backend-focused",
+    "text": "Equity-only cofounder compensation; no guaranteed cash salary. Employer restricts remote hiring to the United States. One-year metadata does not resolve the location and cash-pay failures. Employer page shows two months old; no recent dated hiring signal established. Part-time cofounder arrangement, not established salaried employment."
+  },
+  {
+    "company": "HighLevel",
+    "title": "Software Development Engineer II - Conversations",
+    "url": "https://jobs.lever.co/gohighlevel/92002249-671d-4d08-96b0-e87c1d6082cb",
+    "location": "India remote",
+    "source": "employer:web-review",
+    "application_url": "https://jobs.lever.co/gohighlevel/92002249-671d-4d08-96b0-e87c1d6082cb",
+    "aliases": [
+      "https://himalayas.app/companies/highlevel/jobs/software-development-engineer-ii-conversations"
+    ],
+    "text": "No numerical salary on the employer requisition. Third-party ranges are not evidence. Employer specifies India and remote. Requires 2+ backend years, Node.js/Go or similar, queues, databases and frontend Vue or equivalent. Requires two completed years. Current employer application link is present; original posting date or recent dated hiring signal remains unverified. Employer labels this Employee India."
+  }
+]
