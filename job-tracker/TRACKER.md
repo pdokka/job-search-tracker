@@ -1,12 +1,12 @@
 # Daily job tracker
 
-Last collection: 2026-10-31T01:30:42+00:00
+Last collection: 2026-11-20T03:56:29+00:00
 
 **Target:** requested analyst/product titles; United States eligible; JD requires 2–5 years; full-time employee; employer-posted USD annual base range reaches at least $100,000.
 
 A disclosed range crossing $100,000 qualifies with a prominent caution. Current employer-JD evidence and a posting date within 30 days are required. Sponsorship silence remains “Not stated / needs confirmation,” never an inferred offer.
 
-**0 ready · 0 crossing-range caution · 3270 retained leads (including legacy history) · 66 discovered employer boards.** Collected leads are not qualifying jobs.
+**0 ready · 0 crossing-range caution · 3381 retained leads (including legacy history) · 68 discovered employer boards.** Collected leads are not qualifying jobs.
 
 ## Application queue
 
@@ -27,13 +27,13 @@ No role currently clears every evidence gate. See reviewed leads below; missing 
 | [DualEntry — Hardcore Engineer (All Levels)](https://jobs.ashbyhq.com/dualentry/f43f3646-8342-497c-b364-b14b3d6f382f) | Not verified | Unknown | Closed: Employer posting explicitly closed or removed |
 | [Frank Darling — Software Engineer — Business Systems & Integrations](https://careers.frankdarling.com/jobs/669856-software-engineer-business-systems-integrations-remote) | USD 2,000/month (guaranteed_cash) | 2026-07-24 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [Giant Swarm — Forward Deployed Engineer (100% Remote)](https://giant-swarm.jobs.personio.de/job/2774421) | EUR 60,000–90,000/year (base split unconfirmed) | Unknown | Closed: Employer posting explicitly closed or removed |
-| [Indeed — Software Engineer I](https://careers-indeed.icims.com/jobs/47811/software-engineer-i/job) | INR 2,020,000–3,240,000/year (base) | 2026-09-10 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
+| [Indeed — Software Engineer I](https://careers-indeed.icims.com/jobs/47811/software-engineer-i/job) | INR 2,020,000–3,240,000/year (base) | 2026-09-10 | Closed: Employer posting explicitly closed or removed |
 | [Innowhyte — AI Engineer (Remote)](https://innowhyte.freshteam.com/jobs/5Txw7T6QL7AN/ai-engineer-remote) | Not verified | 2026-03-06 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [ListButton — Backend / Full Stack Engineer (backend focused)](https://wellfound.com/jobs/4490146-backend-full-stack-engineer-backend-focused) | Not verified | Unknown | Closed: Employer posting explicitly closed or removed |
 | [MixRank — Junior Software Engineer — Remote (Global), Full-Time](https://www.ycombinator.com/companies/mixrank/jobs/Fnwsojk-junior-software-engineer-remote-global-full-time) | USD 12,000–24,000/year (base split unconfirmed) | Unknown | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [ProdE AI — Software Engineer — AI Agents](https://wellfound.com/jobs/4365598-software-engineer-ai-agents) | INR 2,500,000–4,000,000/year (base split unconfirmed) | 2026-06-19 | Closed: Employer posting explicitly closed or removed |
 | [Redule Ai — AI Engineer](https://wellfound.com/jobs/4722367-ai-engineer) | USD 120,000–130,000/year (base) | 2026-09-16 | Closed: Employer posting explicitly closed or removed |
-| [Sanctuary Computer — Senior Shopify Developer](https://wellfound.com/jobs/4735188-senior-shopify-developer) | USD 80,000–160,000/year (base) | 2026-09-18T12:51:16Z | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
+| [Sanctuary Computer — Senior Shopify Developer](https://wellfound.com/jobs/4735188-senior-shopify-developer) | USD 80,000–160,000/year (base) | 2026-09-18T12:51:16Z | Closed: Employer posting explicitly closed or removed |
 | [Scispot — Full Stack AI Engineer](https://in.linkedin.com/jobs/view/full-stack-ai-engineer-at-scispot-4431461258) | USD 80,000–120,000/year (base) | Unknown | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [Sun King — SDE I - Backend](https://himalayas.app/companies/sun-king/jobs/sde-i-backend) | Not verified | Unknown | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [TensorOps — Junior AI/ML Engineer](https://job-boards.eu.greenhouse.io/tensorops/jobs/4951329101) | EUR 30,000/year (base split unconfirmed) | 2026-08-12 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
@@ -54,8 +54,8 @@ No role currently clears every evidence gate. See reviewed leads below; missing 
 | [hirehangar — Full-Stack AI Engineer](https://jobs.ashbyhq.com/hirehangar/b26e2d5f-daba-4d1f-854a-ed81ebc22bdc) | USD 2,500–4,000/month (base) | 2026-09-05T01:24:38.470+00:00 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [infisical — Full Stack Engineer](https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628) | USD 100,000–180,000/year (base) | 2025-06-24T17:10:18.046+00:00 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [infisical — Senior Full Stack Engineer](https://jobs.ashbyhq.com/infisical/3b1dd1a3-e5e7-46e5-b1d2-862f672d8878) | USD 180,000–250,000/year (base) | 2026-06-09T00:39:39.914+00:00 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
-| [lingodotdev — Senior Fullstack Engineer](https://jobs.ashbyhq.com/lingodotdev/15b685f0-d5b3-4f13-8bbd-b24046e08ca9) | Not verified | 2026-05-18 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
-| [lingodotdev — Senior Content Engineer](https://jobs.ashbyhq.com/lingodotdev/ff88132a-cb79-4d35-a6a0-a6230de7a013) | Not verified | 2026-09-13 | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
+| [lingodotdev — Senior Fullstack Engineer](https://jobs.ashbyhq.com/lingodotdev/15b685f0-d5b3-4f13-8bbd-b24046e08ca9) | Not verified | 2026-05-18 | Closed: Employer posting explicitly closed or removed |
+| [lingodotdev — Senior Content Engineer](https://jobs.ashbyhq.com/lingodotdev/ff88132a-cb79-4d35-a6a0-a6230de7a013) | Not verified | 2026-09-13 | Closed: Employer posting explicitly closed or removed |
 | [micro1 — Associate Forward Deployed Engineer](https://himalayas.app/companies/micro1/jobs/associate-forward-deployed-engineer) | USD 40–60/hour (unverified) | Unknown | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [particle41llc — AI Engineer](https://job-boards.greenhouse.io/particle41llc/jobs/4973733008) | Not verified | Unknown | Needs verification: Review predates the current US analyst/product policy; new employer-JD evidence is required |
 | [pragmatike — AI Engineer – Agentic AI & Cloud Discovery](https://jobs.ashbyhq.com/pragmatike/a4cac55a-bb8b-467c-8063-aadc5dc4a341) | Not verified | 2026-09-17 | Closed: Employer posting explicitly closed or removed |
@@ -70,63 +70,68 @@ Public feeds have different coverage, delays and page limits. Counts include irr
 
 | Source | Rows fetched | Pages | Outcome |
 |---|---|---|---|
-| remotive | 12 | 1 | Fetched available response; not a whole-internet census |
-| remoteok | 99 | 1 | Fetched available response; not a whole-internet census |
+| remotive | 15 | 1 | Fetched available response; not a whole-internet census |
+| remoteok | 97 | 1 | Fetched available response; not a whole-internet census |
 | arbeitnow | 900 | 3 | Partial: further pages remain |
 | jobicy | 100 | 1 | Fetched available response; not a whole-internet census |
-| himalayas | 400 | 20 | Partial: further pages remain |
-| wwr | 96 | 1 | Fetched available response; not a whole-internet census |
-| himalayas_us_business_analyst | 56 | 3 | Partial: further pages remain |
-| himalayas_us_data_analyst | 56 | 3 | Partial: further pages remain |
-| himalayas_us_systems_analyst | 59 | 3 | Partial: further pages remain |
-| himalayas_us_business_systems_analyst | 59 | 3 | Partial: further pages remain |
-| himalayas_us_product_owner | 59 | 3 | Partial: further pages remain |
-| himalayas_us_product_analyst | 58 | 3 | Partial: further pages remain |
-| himalayas_us_associate_product_manager | 60 | 3 | Partial: further pages remain |
-| himalayas_us_product_manager | 22 | 3 | Partial: further pages remain |
-| himalayas_us_financial_analyst | 55 | 3 | Partial: further pages remain |
-| himalayas_us_business_intelligence_analyst | 60 | 3 | Partial: further pages remain |
-| Hacker News hiring announcements | 3 | 1 | Fetched available response; not a whole-internet census |
-| lever:dnb. | 0 | 1 | HTTP Error 404: Not Found |
-| ashby:lemon-io | 5 | 1 | Fetched available response; not a whole-internet census |
-| lever:apryse | 21 | 1 | Fetched available response; not a whole-internet census |
-| lever:penumbrainc | 74 | 1 | Fetched available response; not a whole-internet census |
-| ashby:tolmo | 1 | 1 | Fetched available response; not a whole-internet census |
-| ashby:hiya | 28 | 1 | Fetched available response; not a whole-internet census |
-| ashby:artificialanalysis | 18 | 1 | Fetched available response; not a whole-internet census |
-| ashby:sentilink | 39 | 1 | Fetched available response; not a whole-internet census |
-| ashby:Mastra | 3 | 1 | Fetched available response; not a whole-internet census |
-| ashby:turquoise-health | 16 | 1 | Fetched available response; not a whole-internet census |
-| ashby:close | 6 | 1 | Fetched available response; not a whole-internet census |
-| ashby:everis | 0 | 1 | Fetched available response; not a whole-internet census |
-| lever:termgrid | 6 | 1 | Fetched available response; not a whole-internet census |
-| ashby:lingodotdev | 3 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:yipitdatajobs | 42 | 1 | Fetched available response; not a whole-internet census |
-| ashby:bio | 11 | 1 | Fetched available response; not a whole-internet census |
-| ashby:infisical | 12 | 1 | Fetched available response; not a whole-internet census |
-| ashby:fathom.video | 0 | 1 | Fetched available response; not a whole-internet census |
-| ashby:asteriAI | 5 | 1 | Fetched available response; not a whole-internet census |
-| ashby:hirehangar | 113 | 1 | Fetched available response; not a whole-internet census |
-| ashby:coperniq | 0 | 1 | Fetched available response; not a whole-internet census |
-| lever:gohighlevel | 108 | 1 | Fetched available response; not a whole-internet census |
-| lever:caseware. | 0 | 1 | HTTP Error 404: Not Found |
-| ashby:pragmatike | 70 | 1 | Fetched available response; not a whole-internet census |
-| ashby:ravenna | 7 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:particle41llc | 25 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:anthropic | 675 | 1 | Fetched available response; not a whole-internet census |
-| ashby:smarkets | 6 | 1 | Fetched available response; not a whole-internet census |
-| ashby:stream | 8 | 1 | Fetched available response; not a whole-internet census |
+| himalayas | 161 | 9 | Partial: further pages remain |
+| wwr | 93 | 1 | Fetched available response; not a whole-internet census |
+| himalayas_us_business_analyst | 60 | 3 | Partial: further pages remain |
+| himalayas_us_data_analyst | 60 | 3 | Partial: further pages remain |
+| himalayas_us_systems_analyst | 60 | 3 | Partial: further pages remain |
+| himalayas_us_business_systems_analyst | 60 | 3 | Partial: further pages remain |
+| himalayas_us_product_owner | 60 | 3 | Partial: further pages remain |
+| himalayas_us_product_analyst | 60 | 3 | Partial: further pages remain |
+| himalayas_us_associate_product_manager | 40 | 2 | HTTP Error 429: Too Many Requests |
+| himalayas_us_product_manager | 60 | 3 | Partial: further pages remain |
+| himalayas_us_financial_analyst | 20 | 1 | HTTP Error 429: Too Many Requests |
+| himalayas_us_business_intelligence_analyst | 20 | 1 | HTTP Error 429: Too Many Requests |
+| Hacker News hiring announcements | 2 | 1 | Fetched available response; not a whole-internet census |
+| ashby:kuro | 8 | 1 | Fetched available response; not a whole-internet census |
+| ashby:omnea | 67 | 1 | Fetched available response; not a whole-internet census |
+| ashby:odyssey | 3 | 1 | Fetched available response; not a whole-internet census |
+| lever:loftorbital | 87 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:relativity | 403 | 1 | Fetched available response; not a whole-internet census |
+| ashby:productgenius | 0 | 1 | Fetched available response; not a whole-internet census |
+| ashby:DeepL | 10 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:mattermost | 10 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:blackcanyonconsulting | 80 | 1 | Fetched available response; not a whole-internet census |
+| ashby:LatchBio | 43 | 1 | Fetched available response; not a whole-internet census |
+| lever:rai | 24 | 1 | Fetched available response; not a whole-internet census |
+| ashby:reframesystems | 32 | 1 | Fetched available response; not a whole-internet census |
+| ashby:Neon | 1 | 1 | Fetched available response; not a whole-internet census |
+| ashby:prior-labs | 25 | 1 | Fetched available response; not a whole-internet census |
+| ashby:checkly | 2 | 1 | Fetched available response; not a whole-internet census |
+| ashby:oscilar | 24 | 1 | Fetched available response; not a whole-internet census |
+| ashby:norm-ai | 0 | 1 | HTTP Error 404: Not Found |
+| ashby:colonist | 4 | 1 | Fetched available response; not a whole-internet census |
+| ashby:livekit | 30 | 1 | Fetched available response; not a whole-internet census |
+| ashby:deeter-analytics | 4 | 1 | Fetched available response; not a whole-internet census |
+| ashby:permitflow | 25 | 1 | Fetched available response; not a whole-internet census |
+| ashby:langfuse | 0 | 1 | Fetched available response; not a whole-internet census |
+| ashby:anterior | 5 | 1 | Fetched available response; not a whole-internet census |
+| lever:caseware | 30 | 1 | Fetched available response; not a whole-internet census |
+| lever:sugarcrm | 0 | 1 | Fetched available response; not a whole-internet census |
+| ashby:dualentry | 66 | 1 | Fetched available response; not a whole-internet census |
+| ashby:1password | 81 | 1 | Fetched available response; not a whole-internet census |
+| lever:dnb | 85 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:anthropic | 638 | 1 | Fetched available response; not a whole-internet census |
+| ashby:smarkets | 7 | 1 | Fetched available response; not a whole-internet census |
+| ashby:stream | 6 | 1 | Fetched available response; not a whole-internet census |
 | lever:findigs | 3 | 1 | Fetched available response; not a whole-internet census |
 | greenhouse:wikimedia | 15 | 1 | Fetched available response; not a whole-internet census |
 | ashby:category-labs | 1 | 1 | Fetched available response; not a whole-internet census |
-| ashby:comity | 4 | 1 | Fetched available response; not a whole-internet census |
+| ashby:comity | 3 | 1 | Fetched available response; not a whole-internet census |
 | ashby:runway-ml | 48 | 1 | Fetched available response; not a whole-internet census |
-| ashby:middesk | 18 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:oklo | 78 | 1 | Fetched available response; not a whole-internet census |
-| ashby:chariotclaims | 11 | 1 | Fetched available response; not a whole-internet census |
+| ashby:middesk | 17 | 1 | Fetched available response; not a whole-internet census |
+| greenhouse:oklo | 54 | 1 | Fetched available response; not a whole-internet census |
+| ashby:chariotclaims | 10 | 1 | Fetched available response; not a whole-internet census |
 | greenhouse:novacredit | 7 | 1 | Fetched available response; not a whole-internet census |
-| greenhouse:discord | 41 | 1 | Fetched available response; not a whole-internet census |
-| ashby:duck-duck-go | 10 | 1 | Fetched available response; not a whole-internet census |
+
+Earlier employer-board failures awaiting recheck (not scanned in this pass):
+
+- lever:caseware.: HTTP Error 404: Not Found (last attempt: 2026-10-31T01:30:42+00:00).
+- lever:dnb.: HTTP Error 404: Not Found (last attempt: 2026-10-31T01:30:42+00:00).
 
 Employer-link discovery: 20 pages inspected; 9 could not be fetched. Blocked pages require another public source or browser verification.
 

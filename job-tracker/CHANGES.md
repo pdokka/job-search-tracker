@@ -4,6 +4,10 @@ Queue transitions are kept separately from baseline and new-match reports.
 
 | Changed at | Job | From | To | Notes |
 |---|---|---|---|---|
+| 2026-11-20T03:56:55+00:00 | [Senior Shopify Developer](https://wellfound.com/jobs/4735188-senior-shopify-developer) | Needs verification | Closed | Employer posting explicitly closed or removed |
+| 2026-11-20T03:56:55+00:00 | [Senior Content Engineer](https://jobs.ashbyhq.com/lingodotdev/ff88132a-cb79-4d35-a6a0-a6230de7a013) | Needs verification | Closed | Employer posting explicitly closed or removed |
+| 2026-11-20T03:56:55+00:00 | [Senior Fullstack Engineer](https://jobs.ashbyhq.com/lingodotdev/15b685f0-d5b3-4f13-8bbd-b24046e08ca9) | Needs verification | Closed | Employer posting explicitly closed or removed |
+| 2026-11-20T03:56:55+00:00 | [Software Engineer I](https://careers-indeed.icims.com/jobs/47811/software-engineer-i/job) | Needs verification | Closed | Employer posting explicitly closed or removed |
 | 2026-10-31T01:31:24+00:00 | [AI Engineer – Agentic AI & Cloud Discovery](https://jobs.ashbyhq.com/pragmatike/a4cac55a-bb8b-467c-8063-aadc5dc4a341) | Needs verification | Closed | Employer posting explicitly closed or removed |
 | 2026-10-31T01:31:24+00:00 | [Data Engineer](https://webengage.hire.trakstar.com/jobs/fk0zs8y) | Needs verification | Closed | Employer posting explicitly closed or removed |
 | 2026-10-31T01:31:24+00:00 | [Junior Software Engineer - Consumer Team](https://job-boards.eu.greenhouse.io/clarityai/jobs/4847799101) | Needs verification | Closed | Employer posting explicitly closed or removed |
